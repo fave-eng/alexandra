@@ -3421,3 +3421,32 @@ body[data-view="lesson"] {
   .workbook-letter-answer input {width:30px;}
   .workbook-letter-table th:first-child {width:31%;}
 }
+
+
+/* Homework 4 · Life events revision: keep the source text visible while answering.
+   Exercise-card clipping otherwise blocks position: sticky. */
+.exercise-card[data-task="life-review-2"],
+.exercise-card[data-task="life-review-3"] {
+  overflow: visible;
+}
+
+@media (min-width: 901px) {
+  .exercise-card[data-task="life-review-2"] .exercise-reading-reference,
+  .exercise-card[data-task="life-review-3"] .exercise-reading-reference {
+    position: sticky;
+    top: 92px;
+    align-self: start;
+    max-height: calc(100vh - 112px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+}
+
+@media (max-width: 900px) {
+  .exercise-card[data-task="life-review-2"] .exercise-reading-reference,
+  .exercise-card[data-task="life-review-3"] .exercise-reading-reference {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
