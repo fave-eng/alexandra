@@ -1,0 +1,659 @@
+{
+  "id": "lesson-1",
+  "number": 1,
+  "title": "Homework 1 · Lesson 1A",
+  "subtitle": "Speakout A1 (3rd edition) · Hello and goodbye · Be: I, you · Countries and nationalities",
+  "status": "available",
+  "page": "lesson.html?id=lesson-1",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-lesson-1a",
+  "grammarIds": [
+    "be-i-you-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 49,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "wb-1a-section",
+      "title": "Lesson 1A",
+      "eyebrow": "Speakout 3rd edition · Workbook",
+      "text": "Vocabulary · Grammar · Listening · Writing"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-1",
+      "title": "1 · hello and goodbye",
+      "instructions": "Listen. Choose the correct words to complete the sentences.",
+      "audio": "audio/SO3_A1_WB_1A_Audio_1_01.mp3",
+      "scenes": [
+        {
+          "left": "1",
+          "right": "2",
+          "image": "images/lesson-1/wb-1a-greeting-1.png",
+          "alt": "Two people shaking hands"
+        },
+        {
+          "left": "3",
+          "right": "4",
+          "image": "images/lesson-1/wb-1a-greeting-2.png",
+          "alt": "Two people saying goodbye"
+        },
+        {
+          "left": "5",
+          "right": "6",
+          "image": "images/lesson-1/wb-1a-greeting-3.png",
+          "alt": "Two people greeting each other"
+        },
+        {
+          "left": "7",
+          "right": "8",
+          "image": "images/lesson-1/wb-1a-greeting-4.png",
+          "alt": "Two people waving goodbye"
+        }
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "I’m Ben.",
+          "input": "single",
+          "options": [
+            "Good morning",
+            "Good afternoon"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Ben. I’m Edward.",
+          "input": "single",
+          "options": [
+            "Hi",
+            "Hello"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Sally!",
+          "input": "single",
+          "options": [
+            "Goodbye",
+            "Bye"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "you!",
+          "input": "single",
+          "options": [
+            "Goodbye",
+            "See you"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "I’m Adam.",
+          "input": "single",
+          "options": [
+            "Hi",
+            "Hey"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Adam. I’m Jodie. Nice to meet you.",
+          "input": "single",
+          "options": [
+            "Hello",
+            "Hey"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Yasmin!",
+          "input": "single",
+          "options": [
+            "Good evening",
+            "Good night"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "Laura!",
+          "input": "single",
+          "options": [
+            "Bye",
+            "See you"
+          ],
+          "answer": 0
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-2",
+      "title": "2 · countries and nationalities",
+      "instructions": "Choose the correct word to complete the sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Hi, I’m Tom. I’m ______.",
+          "input": "single",
+          "options": [
+            "the US",
+            "American"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Are you from ______?",
+          "input": "single",
+          "options": [
+            "Turkey",
+            "Turkish"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Good morning. I’m Maxime. I’m from ______.",
+          "input": "single",
+          "options": [
+            "France",
+            "French"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "I’m not British, I’m ______.",
+          "input": "single",
+          "options": [
+            "Australia",
+            "Australian"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Are you ______?",
+          "input": "single",
+          "options": [
+            "Brazilian",
+            "Brazil"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Hey, I’m Ximena. I’m ______.",
+          "input": "single",
+          "options": [
+            "Mexican",
+            "Mexico"
+          ],
+          "answer": 0
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-3",
+      "title": "3 · present simple be: I, you",
+      "instructions": "Put the words in the correct order to make sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "from / I’m / India .",
+          "input": "text",
+          "answer": "I’m from India."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "not / from / Poland / I’m .",
+          "input": "text",
+          "answer": "I’m not from Poland."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "you / are / student / a ?",
+          "input": "text",
+          "answer": "Are you a student?"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "are / you / South Korean .",
+          "input": "text",
+          "answer": "You are South Korean."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "aren’t / Vietnamese / you .",
+          "input": "text",
+          "answer": "You aren’t Vietnamese."
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "the / you / are / US / from ?",
+          "input": "text",
+          "answer": "Are you from the US?"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "not / teacher / a / I’m .",
+          "input": "text",
+          "answer": "I’m not a teacher."
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "from / you / are / where ?",
+          "input": "text",
+          "answer": "Where are you from?"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-4",
+      "title": "4 · present simple be: I, you",
+      "instructions": "The sentences below have a mistake. Choose the best option to correct the mistake.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Hello, I Pablo. Nice to meet you.",
+          "input": "single",
+          "options": [
+            "I’m",
+            "I are",
+            "am I"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "You not from Japan.",
+          "input": "single",
+          "options": [
+            "You no",
+            "You aren’t",
+            "You am not"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "You are from Ankara?",
+          "input": "single",
+          "options": [
+            "You",
+            "Are you",
+            "Be you"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Where you from?",
+          "input": "single",
+          "options": [
+            "You are",
+            "Where you are",
+            "Where are you"
+          ],
+          "answer": 2
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-5",
+      "title": "5A · present simple be: I, you",
+      "instructions": "Complete the conversation with the missing words. Use contractions where possible.",
+      "audioAfter": "audio/SO3_A1_WB_1A_Audio_1_02.mp3",
+      "audioAfterCaption": "5B · Listen and check.",
+      "items": [
+        {
+          "id": "conversation",
+          "number": "",
+          "prompt": "A / B",
+          "input": "gaps",
+          "layout": "dialogue",
+          "wideGaps": true,
+          "segments": [
+            "A: Hello, ¹",
+            " Mina. Nice to meet you.\nB: Hi Mina. ²",
+            " Andressa. Nice to meet you, too. ³",
+            " you from?\nA: ⁴",
+            " Yokohama in Japan. ⁵",
+            " Portuguese?\nB: No, ⁶",
+            ". I’m Brazilian.\nA: Wow! ⁷",
+            " from Rio de Janeiro?\nB: ⁸",
+            ", I am."
+          ],
+          "answers": [
+            "I’m",
+            "I’m",
+            "Where are",
+            "I’m from",
+            "Are you",
+            "I’m not",
+            "Are you",
+            "Yes"
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-7b",
+      "title": "7B · LISTENING",
+      "instructions": "Listen again. Choose the correct alternative.",
+      "audio": "audio/SO3_A1_WB_1A_Audio_1_04.mp3",
+      "people": [
+        {
+          "name": "Hugo Martin",
+          "itemIds": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "name": "Emi Ito",
+          "itemIds": [
+            "4",
+            "5",
+            "6"
+          ]
+        },
+        {
+          "name": "Jess Fraser",
+          "itemIds": [
+            "7",
+            "8",
+            "9"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Nationality:",
+          "input": "single",
+          "options": [
+            "Spanish",
+            "French"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "City:",
+          "input": "single",
+          "options": [
+            "Paris",
+            "Marseilles"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Occupation:",
+          "input": "single",
+          "options": [
+            "Student",
+            "Teacher"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Nationality:",
+          "input": "single",
+          "options": [
+            "Japanese",
+            "French"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "City:",
+          "input": "single",
+          "options": [
+            "Tokyo",
+            "Osaka"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Occupation:",
+          "input": "single",
+          "options": [
+            "Student",
+            "Teacher"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Nationality:",
+          "input": "single",
+          "options": [
+            "British",
+            "American"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "City:",
+          "input": "single",
+          "options": [
+            "London",
+            "Cardiff"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "Occupation:",
+          "input": "single",
+          "options": [
+            "Student",
+            "Teacher"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1a-8a",
+      "title": "8A · WRITING",
+      "instructions": "Read the chat messages. Complete the table.",
+      "chatMessages": [
+        {
+          "name": "Ewa",
+          "text": "Hello everyone. I’m Ewa. I’m from warsaw in Poland. Where are you from"
+        },
+        {
+          "name": "Peter",
+          "text": "Hi Ewa, I’m Peter. I’m from Geneva in switzerland.",
+          "side": "right"
+        },
+        {
+          "name": "Noemi",
+          "text": "Hello everyone, I’m noemi. I’m also Swiss"
+        },
+        {
+          "name": "Peter",
+          "text": "really? Where are you from Are you from geneva",
+          "side": "right"
+        },
+        {
+          "name": "Noemi",
+          "text": "No, I’m not. I’m from Zurich."
+        },
+        {
+          "name": "Wang",
+          "text": "Hi, I’m Wang. I’m chinese. I’m from Shanghai."
+        },
+        {
+          "name": "Ewa",
+          "text": "Hi Wang. Are you in China now"
+        },
+        {
+          "name": "Wang",
+          "text": "No, I’m not. I’m in the UK.",
+          "side": "right"
+        }
+      ],
+      "tableHeaders": [
+        "name",
+        "city",
+        "country"
+      ],
+      "tableRows": [
+        [
+          "Ewa",
+          {
+            "itemId": "1"
+          },
+          "Poland"
+        ],
+        [
+          {
+            "itemId": "2"
+          },
+          "Geneva",
+          {
+            "itemId": "3"
+          }
+        ],
+        [
+          "Noemi",
+          {
+            "itemId": "4"
+          },
+          "Switzerland"
+        ],
+        [
+          {
+            "itemId": "5"
+          },
+          {
+            "itemId": "6"
+          },
+          "China"
+        ]
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Ewa · city",
+          "input": "text",
+          "answer": "Warsaw"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Geneva · name",
+          "input": "text",
+          "answer": "Peter"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Geneva · country",
+          "input": "text",
+          "answer": "Switzerland"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Noemi · city",
+          "input": "text",
+          "answer": "Zurich"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "China · name",
+          "input": "text",
+          "answer": "Wang"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Wang · city",
+          "input": "text",
+          "answer": "Shanghai"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "grammar-link",
+      "id": "be-grammar-link",
+      "title": "Present simple be: I, you",
+      "text": "Review affirmative, negative and question forms, then complete 16 practice tasks.",
+      "grammarId": "be-i-you-a1",
+      "buttonLabel": "Open grammar"
+    }
+  ]
+}

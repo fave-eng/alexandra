@@ -3256,3 +3256,62 @@ body[data-view="lesson"] #lesson-root {
   .reading-quiz-reference { position: static; }
   .reading-quiz-layout { grid-template-columns: 1fr; }
 }
+
+/* Speakout Workbook 1A: digitised original exercise layouts */
+.workbook-scenes, .workbook-people { display:grid; gap:14px; padding:16px; background:#f6f8fb; }
+.workbook-scene, .workbook-person { background:#fff; border:1px solid #dce4ee; border-radius:16px; padding:16px; }
+.workbook-scene h4,.workbook-person h4 { margin:0 0 12px; color:#244a72; font-size:1rem; }
+.workbook-scene-inner { display:grid; grid-template-columns:minmax(0,1fr) minmax(90px,190px) minmax(0,1fr); align-items:center; gap:12px; }
+.workbook-scene-inner>img { width:100%; max-height:205px; object-fit:contain; }
+.workbook-scene .exercise-item, .workbook-person .exercise-item { padding:12px; box-shadow:none; }
+.workbook-scene .exercise-item-header { display:flex; flex-direction:column; gap:5px; }
+.workbook-scene .exercise-control,.workbook-person .exercise-control { padding-left:0; }
+.workbook-scene .compact-options { grid-template-columns:1fr; }
+.workbook-scene-answer { min-width:0; }
+.workbook-person-fields { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.workbook-person .compact-options { grid-template-columns:1fr; }
+.workbook-chat { max-width:700px; margin:16px 0 0; overflow:hidden; border-radius:13px; background:#e7e9ee; border:1px solid #cbd3df; }
+.workbook-chat-top { background:#28567e; color:#fff; font-weight:800; padding:10px 14px; }
+.workbook-chat-body { display:flex; flex-direction:column; gap:9px; padding:14px; }
+.workbook-chat-message { max-width:87%; width:fit-content; border-radius:10px 10px 10px 3px; background:#fff; padding:11px 13px; line-height:1.6; overflow-wrap:anywhere; color:#233248; }
+.workbook-chat-message.on-right { margin-left:auto; border-radius:10px 10px 3px 10px; }
+.workbook-table-scroll { overflow-x:auto; background:#f6f8fb; padding:16px; }
+.workbook-table { width:100%; border-collapse:collapse; background:white; min-width:390px; table-layout:fixed; }
+.workbook-table th { background:#28567e; color:#fff; text-transform:lowercase; letter-spacing:.01em; }
+.workbook-table th,.workbook-table td { border:1px solid #cbd5e1; padding:10px; text-align:left; }
+.workbook-table-gap { padding:4px; border-radius:8px; position:relative; }
+.workbook-table-number { color:#64748b; font-size:.72rem; margin-right:3px; }
+.workbook-table-gap .text-field { max-width:100%; min-width:0; width:100%; padding:9px 10px; }
+.workbook-table-gap .feedback { font-size:.75rem; }
+.workbook-after-audio { border-top:1px solid #dce4ee; padding:16px 24px 22px; }
+.workbook-after-audio strong { display:block; margin-bottom:8px; }
+@media(max-width:700px) {
+  .workbook-scene-inner { grid-template-columns:1fr 1fr; }
+  .workbook-scene-inner>img { grid-column:1/-1; grid-row:1; max-height:160px; justify-self:center; }
+  .workbook-scene .exercise-item { padding:10px; }
+  .workbook-scene .option { padding:7px; font-size:.82rem; min-height:40px; }
+  .workbook-person-fields { grid-template-columns:1fr; }
+  .workbook-table-scroll { padding:8px; }
+  .workbook-chat-message { max-width:95%; }
+}
+/* Accessible labels without duplicated text inside workbook table cells */
+.workbook-table .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.workbook-table {
+  min-width: 310px;
+  font-size: .9rem;
+}
+.workbook-table th,
+.workbook-table td {
+  padding: 8px 6px;
+  overflow-wrap: anywhere;
+}

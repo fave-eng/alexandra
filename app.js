@@ -1119,6 +1119,37 @@
     </section>`;
   }
 
+  function renderExerciseChat(block) {
+    const messages = Array.isArray(block.chatMessages) ? block.chatMessages : [];
+    if (!messages.length) return '';
+    return `<div class="workbook-chat" aria-label="Chat messages"><div class="workbook-chat-top">New students</div><div class="workbook-chat-body">${messages.map((entry) => `<div class="workbook-chat-message ${entry.side === 'right' ? 'on-right' : ''}"><strong>${escapeHtml(entry.name || '')}:</strong> ${escapeHtml(entry.text || '')}</div>`).join('')}</div></div>`;
+  }
+
+  function renderWorkbookExerciseItems(block, id, items) {
+    const lookup = new Map(items.map((item, index) => [safeText(item.id, `${index + 1}`), {item,index}]));
+    const renderById = (itemId) => {
+      const found = lookup.get(safeText(itemId));
+      return found ? renderExerciseItem(found.item, id, found.index) : '';
+    };
+    if (Array.isArray(block.scenes) && block.scenes.length) {
+      return `<div class="workbook-scenes">${block.scenes.map((scene, index) => `<section class="workbook-scene"><h4>${index + 1}</h4><div class="workbook-scene-inner"><div class="workbook-scene-answer">${renderById(scene.left)}</div><img loading="lazy" src="${escapeHtml(scene.image || '')}" alt="${escapeHtml(scene.alt || '')}"><div class="workbook-scene-answer">${renderById(scene.right)}</div></div></section>`).join('')}</div>`;
+    }
+    if (Array.isArray(block.people) && block.people.length) {
+      return `<div class="workbook-people">${block.people.map((person) => `<section class="workbook-person"><h4>${escapeHtml(person.name || '')}</h4><div class="workbook-person-fields">${(person.itemIds || []).map(renderById).join('')}</div></section>`).join('')}</div>`;
+    }
+    if (Array.isArray(block.tableRows) && block.tableRows.length) {
+      const headers = Array.isArray(block.tableHeaders) ? block.tableHeaders : [];
+      return `<div class="workbook-table-scroll"><table class="workbook-table"><thead><tr>${headers.map((header) => `<th scope="col">${escapeHtml(header)}</th>`).join('')}</tr></thead><tbody>${block.tableRows.map((row) => `<tr>${row.map((cell) => {
+        if (typeof cell === 'string') return `<td>${escapeHtml(cell)}</td>`;
+        const found = lookup.get(safeText(cell.itemId));
+        if (!found) return '<td></td>';
+        const {item} = found;
+        return `<td><div class="workbook-table-gap exercise-item" data-exercise-item="${escapeHtml(item.id)}" data-input-type="text"><label for="workbook-${escapeHtml(id)}-${escapeHtml(item.id)}" class="sr-only">${escapeHtml(item.prompt || '')}</label><span class="workbook-table-number">${escapeHtml(item.number || '')}</span><input id="workbook-${escapeHtml(id)}-${escapeHtml(item.id)}" class="text-field" type="text" autocomplete="off" aria-label="${escapeHtml(item.prompt || '')}"><div class="feedback" aria-live="polite"></div></div></td>`;
+      }).join('')}</tr>`).join('')}</tbody></table></div>`;
+    }
+    return `<div class="exercise-items">${items.map((item, index) => renderExerciseItem(item, id, index)).join('')}</div>`;
+  }
+
   function renderExerciseItem(item, blockId, index) {
     const itemId = safeText(item.id, `${index + 1}`);
     const number = item.number === undefined ? index + 1 : item.number;
@@ -1774,11 +1805,11 @@
       const stickyImage = block.stickyImage && typeof block.stickyImage === 'object' && block.stickyImage.src
         ? `<figure class="exercise-sticky-media"><img src="${escapeHtml(block.stickyImage.src)}" alt="${escapeHtml(block.stickyImage.alt || '')}" loading="lazy">${block.stickyImage.caption ? `<figcaption>${escapeHtml(block.stickyImage.caption)}</figcaption>` : ''}</figure>`
         : '';
-      const exerciseItems = `<div class="exercise-items">${items.map((item, itemIndex) => renderExerciseItem(item, id, itemIndex)).join('')}</div>`;
+      const exerciseItems = renderWorkbookExerciseItems(block, id, items);
       const dependency = block.dependsOn ? `<p class="exercise-dependency" data-exercise-dependency></p>` : '';
       return `<article class="card lesson-block exercise-card${stickyImage ? ' has-sticky-media' : ''}" data-task="${escapeHtml(id)}" data-type="exercise">
-        <div class="exercise-heading"><span class="eyebrow">Exercise</span><h3>${title}</h3>${block.instructions ? `<p class="muted exercise-instructions">${escapeHtml(block.instructions)}</p>` : ''}${player}${wordBank}${media}${dialogue}${contentCards}</div>
-        ${dependency}${stickyImage ? `<div class="exercise-sticky-layout">${stickyImage}${exerciseItems}</div>` : exerciseItems}
+        <div class="exercise-heading"><span class="eyebrow">Exercise</span><h3>${title}</h3>${block.instructions ? `<p class="muted exercise-instructions">${escapeHtml(block.instructions)}</p>` : ''}${player}${wordBank}${media}${dialogue}${renderExerciseChat(block)}${contentCards}</div>
+        ${dependency}${stickyImage ? `<div class="exercise-sticky-layout">${stickyImage}${exerciseItems}</div>` : exerciseItems}${block.audioAfter ? `<div class="workbook-after-audio"><strong>${escapeHtml(block.audioAfterCaption || 'Listen and check.')}</strong>${renderLessonAudio({audio:block.audioAfter})}</div>` : ''}
       </article>`;
     }
     if (block.type === 'family-tree') return renderFamilyTreeBlock(block, id, title);
@@ -1842,7 +1873,7 @@
       correct = JSON.stringify(actual) === JSON.stringify(expected);
     } else if (inputType === 'single') {
       actual = itemNode.querySelector('input:checked')?.value ?? '';
-      correct = Number(actual) === Number(item.answer);
+      correct = actual !== '' && Number(actual) === Number(item.answer);
     } else if (inputType === 'select') {
       actual = itemNode.querySelector('select')?.value ?? '';
       correct = actual !== '' && Number(actual) === Number(item.answer);
@@ -1881,6 +1912,17 @@
     }
 
     return { actual, correct };
+  }
+
+  function collectExerciseDraft(block, node) {
+    const answers = {};
+    (Array.isArray(block.items) ? block.items : []).forEach((item, index) => {
+      if (item.example) return;
+      const itemId = safeText(item.id, `${index + 1}`);
+      const itemNode = node.querySelector(`[data-exercise-item="${CSS.escape(itemId)}"]`);
+      if (itemNode) answers[itemId] = checkExerciseItem(item, itemNode).actual;
+    });
+    return answers;
   }
 
   function checkExerciseBlock(block, node) {
@@ -2259,7 +2301,9 @@
         if (!node) return;
         answers[taskId] = block.type === 'reading-quiz'
           ? collectReadingQuizAnswers(node)
-          : checkLessonTask(block, node).actual;
+          : block.type === 'exercise'
+            ? collectExerciseDraft(block, node)
+            : checkLessonTask(block, node).actual;
       });
       return answers;
     };
