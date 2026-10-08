@@ -1,0 +1,575 @@
+{
+  "id": "lesson-3",
+  "number": 3,
+  "title": "Homework 3 · Lesson 1C",
+  "subtitle": "Speakout A1 (3rd edition) · The alphabet · Asking and answering simple questions",
+  "status": "available",
+  "page": "lesson.html?id=lesson-3",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-lesson-1c",
+  "grammarIds": [],
+  "autosaveDraft": true,
+  "totalPoints": 43,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "wb-1c-heading",
+      "title": "Lesson 1C",
+      "eyebrow": "Speakout 3rd edition · Workbook",
+      "text": "Vocabulary · The alphabet · Pronunciation · How to ask and answer simple questions · Speaking"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-1a",
+      "title": "1A · VOCABULARY · the alphabet",
+      "instructions": "Complete the table with the correct letters.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Letter 1",
+          "input": "text",
+          "answer": "J"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Letter 2",
+          "input": "text",
+          "answer": "K"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Letter 3",
+          "input": "text",
+          "answer": "D"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Letter 4",
+          "input": "text",
+          "answer": "P"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Letter 5",
+          "input": "text",
+          "answer": "F"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Letter 6",
+          "input": "text",
+          "answer": "N"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Letter 7",
+          "input": "text",
+          "answer": "I"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "Letter 8",
+          "input": "text",
+          "answer": "O"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "Letter 9",
+          "input": "text",
+          "answer": "U"
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "prompt": "Letter 10",
+          "input": "text",
+          "answer": "R"
+        }
+      ],
+      "autosaveDraft": true,
+      "letterRows": [
+        {
+          "sound": "name /eɪ/",
+          "letters": [
+            "A",
+            "H",
+            {
+              "itemId": "1"
+            },
+            {
+              "itemId": "2"
+            }
+          ]
+        },
+        {
+          "sound": "three /iː/",
+          "letters": [
+            "B",
+            "C",
+            {
+              "itemId": "3"
+            },
+            "E",
+            "G",
+            {
+              "itemId": "4"
+            },
+            "T",
+            "V"
+          ]
+        },
+        {
+          "sound": "ten /e/",
+          "letters": [
+            {
+              "itemId": "5"
+            },
+            "L",
+            "M",
+            {
+              "itemId": "6"
+            },
+            "S",
+            "X",
+            "Z"
+          ]
+        },
+        {
+          "sound": "nine /aɪ/",
+          "letters": [
+            {
+              "itemId": "7"
+            },
+            "Y"
+          ]
+        },
+        {
+          "sound": "no /əʊ/",
+          "letters": [
+            {
+              "itemId": "8"
+            }
+          ]
+        },
+        {
+          "sound": "you /uː/",
+          "letters": [
+            "Q",
+            {
+              "itemId": "9"
+            },
+            "W"
+          ]
+        },
+        {
+          "sound": "car /ɑː/",
+          "letters": [
+            {
+              "itemId": "10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-1b",
+      "title": "1B · VOCABULARY · the alphabet",
+      "instructions": "Underline the letter which has a different sound.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "H K S A",
+          "input": "single",
+          "options": [
+            "H",
+            "K",
+            "S",
+            "A"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "N Z U F",
+          "input": "single",
+          "options": [
+            "N",
+            "Z",
+            "U",
+            "F"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "W O U Q",
+          "input": "single",
+          "options": [
+            "W",
+            "O",
+            "U",
+            "Q"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "B G R T",
+          "input": "single",
+          "options": [
+            "B",
+            "G",
+            "R",
+            "T"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Y V P C",
+          "input": "single",
+          "options": [
+            "Y",
+            "V",
+            "P",
+            "C"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "L F Z E",
+          "input": "single",
+          "options": [
+            "L",
+            "F",
+            "Z",
+            "E"
+          ],
+          "answer": 3
+        }
+      ],
+      "autosaveDraft": true,
+      "audioAfter": "audio/SO3_A1_WB_1C_Audio_1_06.mp3",
+      "audioAfterCaption": "1C · 1.06 | Listen and check your answers."
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-2",
+      "title": "2 · PRONUNCIATION · the alphabet",
+      "instructions": "1.07 | Listen and write the words.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "",
+          "input": "text",
+          "answer": "doctor"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "",
+          "input": "text",
+          "answer": "park"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "",
+          "input": "text",
+          "answer": "Argentina"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "",
+          "input": "text",
+          "answer": "book"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "",
+          "input": "text",
+          "answer": "teacher"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "",
+          "input": "text",
+          "answer": "photo"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "",
+          "input": "text",
+          "answer": "artist"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "",
+          "input": "text",
+          "answer": "Vietnam"
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_1C_Audio_1_07.mp3"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-3a",
+      "title": "3A · HOW TO… · ask and answer simple questions",
+      "instructions": "1.08 | Listen to the conversation. Where are the speakers?",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Where are the speakers?",
+          "input": "single",
+          "options": [
+            "A",
+            "B"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_1C_Audio_1_08.mp3",
+      "stickyImage": {
+        "src": "images/lesson-3/wb-1c-places.png",
+        "alt": "Original workbook photographs: A shows a HOTEL entrance; B shows people in a conference building."
+      }
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-3b",
+      "title": "3B · HOW TO… · Student Card",
+      "instructions": "1.08 | Listen again and complete the information.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Name",
+          "input": "text",
+          "answer": "Isabel Fernandez"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Nationality",
+          "input": "text",
+          "answer": "Spanish"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Address",
+          "input": "text",
+          "answer": "5 Lennox Street, Bristol"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Phone",
+          "input": "text",
+          "answer": "713 9205"
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_1C_Audio_1_08.mp3",
+      "tableHeaders": [
+        "Student Card",
+        "Information"
+      ],
+      "tableRows": [
+        [
+          "Name",
+          {
+            "itemId": "1"
+          }
+        ],
+        [
+          "Nationality",
+          {
+            "itemId": "2"
+          }
+        ],
+        [
+          "Address",
+          {
+            "itemId": "3"
+          }
+        ],
+        [
+          "Phone",
+          {
+            "itemId": "4"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-3c",
+      "title": "3C · HOW TO… · Questions",
+      "instructions": "1.09 | Write the questions for the answers below. Then listen and check.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "It’s Tanaka.",
+          "input": "text",
+          "answer": "What’s your surname?",
+          "acceptedAnswers": [
+            "What’s your surname?",
+            "What is your surname?"
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "T-A-N-A-K-A.",
+          "input": "text",
+          "answer": "How do you spell your surname?",
+          "acceptedAnswers": [
+            "How do you spell your surname?"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Maika.",
+          "input": "text",
+          "answer": "What’s your first name?",
+          "acceptedAnswers": [
+            "What’s your first name?",
+            "What is your first name?"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "It’s 2 Park Street.",
+          "input": "text",
+          "answer": "What’s your address?",
+          "acceptedAnswers": [
+            "What’s your address?",
+            "What is your address?"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "It’s 629 3301.",
+          "input": "text",
+          "answer": "What’s your phone number?",
+          "acceptedAnswers": [
+            "What’s your phone number?",
+            "What is your phone number?"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Yes. It’s 629 3301.",
+          "input": "text",
+          "answer": "Can you repeat that please?",
+          "acceptedAnswers": [
+            "Can you repeat that please?",
+            "Can you repeat that, please?"
+          ]
+        }
+      ],
+      "autosaveDraft": true,
+      "audioAfter": "audio/SO3_A1_WB_1C_Audio_1_09.mp3",
+      "audioAfterCaption": "1.09 | Listen and check."
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1c-4a",
+      "title": "4A · SPEAKING",
+      "instructions": "1.10 | Complete the conversation with the words in the box. Then listen and check your answers.",
+      "items": [
+        {
+          "id": "dialogue",
+          "number": "",
+          "prompt": "",
+          "input": "gaps",
+          "layout": "dialogue",
+          "segments": [
+            "A: Hello, can I ",
+            " you?\nB: Yes. I’m here for the conference.\nA: Just a ",
+            ". What’s your name?\nB: It’s Elizabeth Browne.\nA: How do you ",
+            " your surname?\nB: It’s B-R-O-W-N-E.\nA: Thank you. And your first name … E-L-I-S-A-B-E-T-H?\nB: No, that’s ",
+            ". It’s E-L-I-Z-A-B-E-T-H.\nA: ",
+            ", E-L-I-Z-A-B-E-T-H?\nB: Yes, that’s ",
+            ".\nA: ",
+            ". Here’s your name card. The conference is in room seven.\nB: Thank you.\nA: No ",
+            "."
+          ],
+          "answers": [
+            "help",
+            "moment",
+            "spell",
+            "wrong",
+            "sorry",
+            "right",
+            "Perfect",
+            "problem"
+          ]
+        }
+      ],
+      "autosaveDraft": true,
+      "wordBank": [
+        "help",
+        "moment",
+        "perfect",
+        "problem",
+        "right",
+        "sorry",
+        "spell",
+        "wrong"
+      ],
+      "audioAfter": "audio/SO3_A1_WB_1C_Audio_1_10.mp3",
+      "audioAfterCaption": "1.10 | Listen and check your answers."
+    },
+    {
+      "type": "audio",
+      "id": "wb-1c-4b",
+      "title": "4B · SPEAKING",
+      "text": "1.11 | You are B in the conversation in Ex 4A. Listen and speak after the beep. Record the conversation if you can.",
+      "response": false,
+      "audio": "audio/SO3_A1_WB_1C_Audio_1_11.mp3"
+    },
+    {
+      "type": "info",
+      "id": "wb-1c-4c",
+      "title": "4C · SPEAKING",
+      "text": "Listen to your recording and compare it with the model in Ex 4A."
+    }
+  ]
+}

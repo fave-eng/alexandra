@@ -1142,6 +1142,21 @@
     if (Array.isArray(block.people) && block.people.length) {
       return `<div class="workbook-people">${block.people.map((person) => `<section class="workbook-person"><h4>${escapeHtml(person.name || '')}</h4><div class="workbook-person-fields">${(person.itemIds || []).map(renderById).join('')}</div></section>`).join('')}</div>`;
     }
+    if (Array.isArray(block.letterRows) && block.letterRows.length) {
+      const rows = block.letterRows.map((row) => {
+        const letters = Array.isArray(row.letters) ? row.letters : [];
+        const cells = letters.map((letter) => {
+          if (typeof letter === 'string') return `<span class="workbook-letter-fixed">${escapeHtml(letter)}</span>`;
+          const id = safeText(letter?.itemId);
+          const found = lookup.get(id);
+          if (!found) return '';
+          const fieldId = `wb-letter-${safeText(block.id)}-${id}`;
+          return `<span class="workbook-letter-answer exercise-item" data-exercise-item="${escapeHtml(id)}" data-input-type="text"><label class="sr-only" for="${escapeHtml(fieldId)}">Letter ${escapeHtml(id)}</label><sup>${escapeHtml(id)}</sup><input id="${escapeHtml(fieldId)}" maxlength="1" inputmode="text" autocomplete="off" aria-label="Letter ${escapeHtml(id)}"><span class="feedback" aria-live="polite"></span></span>`;
+        }).join(' ');
+        return `<tr><td>${escapeHtml(row.sound || '')}</td><td><div class="workbook-letter-row">${cells}</div></td></tr>`;
+      }).join('');
+      return `<div class="workbook-letter-scroll"><table class="workbook-letter-table"><thead><tr><th>sound</th><th>letter</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
     if (Array.isArray(block.tableRows) && block.tableRows.length) {
       const headers = Array.isArray(block.tableHeaders) ? block.tableHeaders : [];
       return `<div class="workbook-table-scroll"><table class="workbook-table"><thead><tr>${headers.map((header) => `<th scope="col">${escapeHtml(header)}</th>`).join('')}</tr></thead><tbody>${block.tableRows.map((row) => `<tr>${row.map((cell) => {

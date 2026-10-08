@@ -443,5 +443,196 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-1c",
+    "title": "Lesson 1C · The alphabet and simple questions",
+    "label": "Unit 1 · Lesson 1C",
+    "icon": "🔤",
+    "type": "lesson",
+    "linkedLessonId": "lesson-3",
+    "page": "vocabulary.html?id=vocab-lesson-1c",
+    "words": [
+      {
+        "id": "wb-1c-word-01",
+        "en": "address",
+        "ru": "адрес",
+        "transcription": "",
+        "exampleEn": "What’s your address?",
+        "exampleRu": "Какой у тебя адрес?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-02",
+        "en": "alphabet",
+        "ru": "алфавит",
+        "transcription": "",
+        "exampleEn": "Listen to the alphabet.",
+        "exampleRu": "Послушай алфавит.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-03",
+        "en": "beep",
+        "ru": "звуковой сигнал",
+        "transcription": "",
+        "exampleEn": "Speak after the beep.",
+        "exampleRu": "Говори после сигнала.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-04",
+        "en": "conference",
+        "ru": "конференция",
+        "transcription": "",
+        "exampleEn": "I’m here for the conference.",
+        "exampleRu": "Я здесь на конференции.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-05",
+        "en": "correct",
+        "ru": "правильный",
+        "transcription": "",
+        "exampleEn": "Choose the correct letters.",
+        "exampleRu": "Выбери правильные буквы.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-06",
+        "en": "first name",
+        "ru": "имя",
+        "transcription": "",
+        "exampleEn": "What’s your first name?",
+        "exampleRu": "Как тебя зовут?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-07",
+        "en": "letter",
+        "ru": "буква",
+        "transcription": "",
+        "exampleEn": "Write the letter.",
+        "exampleRu": "Напиши букву.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-08",
+        "en": "moment",
+        "ru": "момент",
+        "transcription": "",
+        "exampleEn": "Just a moment.",
+        "exampleRu": "Один момент.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-09",
+        "en": "name card",
+        "ru": "бейдж с именем",
+        "transcription": "",
+        "exampleEn": "Here’s your name card.",
+        "exampleRu": "Вот твой бейдж.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-10",
+        "en": "No problem",
+        "ru": "Без проблем",
+        "transcription": "",
+        "exampleEn": "No problem.",
+        "exampleRu": "Без проблем.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-11",
+        "en": "perfect",
+        "ru": "отлично",
+        "transcription": "",
+        "exampleEn": "Perfect!",
+        "exampleRu": "Отлично!",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-12",
+        "en": "phone number",
+        "ru": "номер телефона",
+        "transcription": "",
+        "exampleEn": "What’s your phone number?",
+        "exampleRu": "Какой у тебя номер телефона?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-13",
+        "en": "repeat",
+        "ru": "повторять",
+        "transcription": "",
+        "exampleEn": "Can you repeat that, please?",
+        "exampleRu": "Можешь повторить, пожалуйста?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-14",
+        "en": "right",
+        "ru": "правильный, верный",
+        "transcription": "",
+        "exampleEn": "Yes, that’s right.",
+        "exampleRu": "Да, всё правильно.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-15",
+        "en": "room",
+        "ru": "комната; зал",
+        "transcription": "",
+        "exampleEn": "The conference is in room seven.",
+        "exampleRu": "Конференция в седьмом зале.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-16",
+        "en": "sorry",
+        "ru": "извините; прости",
+        "transcription": "",
+        "exampleEn": "Sorry, is that correct?",
+        "exampleRu": "Извините, это правильно?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-17",
+        "en": "sound",
+        "ru": "звук",
+        "transcription": "",
+        "exampleEn": "The letter has a different sound.",
+        "exampleRu": "У буквы другой звук.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-18",
+        "en": "spell",
+        "ru": "произносить по буквам",
+        "transcription": "",
+        "exampleEn": "How do you spell your surname?",
+        "exampleRu": "Как пишется твоя фамилия по буквам?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-19",
+        "en": "surname",
+        "ru": "фамилия",
+        "transcription": "",
+        "exampleEn": "What’s your surname?",
+        "exampleRu": "Какая у тебя фамилия?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1c-word-20",
+        "en": "wrong",
+        "ru": "неправильный",
+        "transcription": "",
+        "exampleEn": "No, that’s wrong.",
+        "exampleRu": "Нет, это неправильно.",
+        "audio": ""
+      }
+    ]
   }
 ];
