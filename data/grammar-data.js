@@ -1714,5 +1714,285 @@ window.GRAMMAR_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "be-we-you-they-a1",
+    "linkedLessonId": "lesson-7",
+    "order": 8,
+    "title": "Present simple be: we, you, they",
+    "level": "A1",
+    "status": "available",
+    "page": "grammar-topic.html?id=be-we-you-they-a1",
+    "overview": {
+      "lead": "Use are with we, you and they. Use be to describe people, say where they are from and ask simple questions.",
+      "keyRule": "We are / We’re · You are / You’re · They are / They’re",
+      "example": "We’re tired. Are they from Turkey?",
+      "subjects": [
+        "we → are",
+        "you → are",
+        "they → are"
+      ]
+    },
+    "uses": [
+      {
+        "icon": "1",
+        "title": "Talk about a group",
+        "text": "Use we to talk about yourself and other people together.",
+        "example": "We are students."
+      },
+      {
+        "icon": "2",
+        "title": "Talk to people",
+        "text": "You can be singular or plural. Use are both times.",
+        "example": "You are my friends."
+      },
+      {
+        "icon": "3",
+        "title": "Talk about other people",
+        "text": "Use they for two or more people or things.",
+        "example": "They are friendly."
+      }
+    ],
+    "forms": [
+      {
+        "id": "positive",
+        "icon": "+",
+        "title": "Affirmative",
+        "formula": "We / You / They + are",
+        "example": "We are British. You are friendly. They are students.",
+        "translation": "Мы британцы. Вы дружелюбные. Они студенты.",
+        "note": "In speaking, use we’re, you’re and they’re."
+      },
+      {
+        "id": "negative",
+        "icon": "−",
+        "title": "Negative",
+        "formula": "We / You / They + are not",
+        "example": "We aren’t late. They’re not old.",
+        "translation": "Мы не опоздали. Они не старые.",
+        "note": "Use aren’t or ’re not. Both are correct."
+      },
+      {
+        "id": "question",
+        "icon": "?",
+        "title": "Questions",
+        "formula": "Are + we / you / they + ...?",
+        "example": "Are you students? Where are they from?",
+        "translation": "Вы студенты? Откуда они?",
+        "note": "In questions, are comes before the subject. Where / Who comes first in information questions."
+      },
+      {
+        "id": "short",
+        "icon": "✓",
+        "title": "Short answers",
+        "formula": "Yes, we / you / they are. · No, we / you / they aren’t.",
+        "example": "Are they old? No, they aren’t.",
+        "translation": "Они старые? Нет.",
+        "note": "Do not say “Yes, they’re” as a short answer. Say “Yes, they are”."
+      }
+    ],
+    "questionBuilder": {
+      "title": "Question word order",
+      "note": "Question word → are → subject → the rest.",
+      "pattern": [
+        "Where",
+        "are",
+        "they",
+        "from?"
+      ],
+      "example": "Where are they from?",
+      "translation": "Откуда они?"
+    },
+    "commonMistakes": [
+      {
+        "wrong": "They is very friendly.",
+        "right": "They are very friendly.",
+        "reason": "Use are with they."
+      },
+      {
+        "wrong": "Where they are from?",
+        "right": "Where are they from?",
+        "reason": "Use are before they in a question."
+      },
+      {
+        "wrong": "Yes, they’re.",
+        "right": "Yes, they are.",
+        "reason": "Use the full form in a positive short answer."
+      },
+      {
+        "wrong": "We are not no happy.",
+        "right": "We are not happy.",
+        "reason": "Use one negative form with be."
+      }
+    ],
+    "quizExercises": [
+      {
+        "title": "Choose the form",
+        "instructions": "Choose am, is or are.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "We ___ from Turkey.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 2
+          },
+          {
+            "type": "single",
+            "prompt": "They ___ not old.",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "You ___ my friend.",
+            "options": [
+              "am",
+              "are",
+              "is"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "___ your parents Australian?",
+            "options": [
+              "Is",
+              "Are",
+              "Am"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "title": "Complete the sentences",
+        "instructions": "Write the correct form of be. Use contractions where possible.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "We ___ happy here.",
+            "answer": "are"
+          },
+          {
+            "type": "text",
+            "prompt": "They ___ from Spain.",
+            "answer": "are"
+          },
+          {
+            "type": "text",
+            "prompt": "You ___ not late.",
+            "answer": "are"
+          },
+          {
+            "type": "text",
+            "prompt": "Where ___ they from?",
+            "answer": "are"
+          }
+        ]
+      },
+      {
+        "title": "Find the correct sentence",
+        "instructions": "Choose the correct sentence.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "Choose the correct negative sentence.",
+            "options": [
+              "They isn’t cold.",
+              "They aren’t cold.",
+              "They not cold."
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "Choose the correct short answer to “Are you students?”",
+            "options": [
+              "Yes, we’re.",
+              "Yes, we are.",
+              "Yes, we is."
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "Choose the correct question.",
+            "options": [
+              "Where are they from?",
+              "Where they are from?",
+              "Where is they from?"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "single",
+            "prompt": "Choose the correct answer to “Are they new?”",
+            "options": [
+              "No, they're not.",
+              "No, they not.",
+              "No, they isn’t."
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "title": "Build questions and answers",
+        "instructions": "Put the words in the correct order.",
+        "items": [
+          {
+            "type": "reorder",
+            "prompt": "are / where / you / from",
+            "tokens": [
+              "are",
+              "where",
+              "you",
+              "from"
+            ],
+            "answer": "Where are you from?"
+          },
+          {
+            "type": "reorder",
+            "prompt": "they / tired / are",
+            "tokens": [
+              "they",
+              "tired",
+              "are"
+            ],
+            "answer": "Are they tired?"
+          },
+          {
+            "type": "reorder",
+            "prompt": "are / we / not / old",
+            "tokens": [
+              "are",
+              "we",
+              "not",
+              "old"
+            ],
+            "answer": "We are not old."
+          },
+          {
+            "type": "reorder",
+            "prompt": "they / from / are / France",
+            "tokens": [
+              "they",
+              "from",
+              "are",
+              "France"
+            ],
+            "answer": "They are from France."
+          }
+        ]
+      }
+    ]
   }
 ];

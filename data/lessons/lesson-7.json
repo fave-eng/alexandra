@@ -1,0 +1,844 @@
+{
+  "id": "lesson-7",
+  "number": 7,
+  "title": "Homework 7 · Lesson 2A",
+  "subtitle": "Speakout A1 (3rd edition) · Unit 2 · Lesson 2A · Numbers · Adjectives · be: we, you, they · Reading",
+  "status": "available",
+  "page": "lesson.html?id=lesson-7",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-lesson-2a",
+  "grammarIds": [
+    "be-we-you-they-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 60,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "wb-2a-intro",
+      "title": "Lesson 2A",
+      "eyebrow": "Speakout A1 · Workbook",
+      "text": "Numbers 11–100 · Common adjectives (1) · Present simple be: we, you, they · Reading"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-1b",
+      "title": "1B · VOCABULARY · numbers 11–100",
+      "instructions": "Match the words with the numbers in the box.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "eighty",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "a hundred",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "ninety",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 7
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "thirty",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "sixty",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "fifty",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "twenty",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "forty",
+          "input": "select",
+          "options": [
+            "60",
+            "80",
+            "30",
+            "100",
+            "50",
+            "40",
+            "20",
+            "90"
+          ],
+          "answer": 5
+        }
+      ],
+      "autosaveDraft": true,
+      "wordBank": [
+        "60",
+        "80",
+        "30",
+        "100",
+        "50",
+        "40",
+        "20",
+        "90"
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-1c",
+      "title": "1C · VOCABULARY · numbers 11–100",
+      "instructions": "2.01 | Listen and write the numbers.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "",
+          "input": "text",
+          "answer": "12"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "",
+          "input": "text",
+          "answer": "73"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "",
+          "input": "text",
+          "answer": "89"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "",
+          "input": "text",
+          "answer": "19"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "",
+          "input": "text",
+          "answer": "30"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "",
+          "input": "text",
+          "answer": "99"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "",
+          "input": "text",
+          "answer": "13"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "",
+          "input": "text",
+          "answer": "22"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "",
+          "input": "text",
+          "answer": "46"
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "prompt": "",
+          "input": "text",
+          "answer": "60"
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_2A_Audio_2_01.mp3"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-3b",
+      "title": "3B · VOCABULARY · common adjectives (1)",
+      "instructions": "Write a word to fill the gaps.",
+      "items": [
+        {
+          "id": "example",
+          "number": "",
+          "prompt": "The opposite of hot is cold.",
+          "example": true,
+          "exampleAnswer": "cold"
+        },
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "The opposite of easy is ______.",
+          "input": "text",
+          "answer": "difficult"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "The opposite of small is ______.",
+          "input": "text",
+          "answer": "big",
+          "acceptedAnswers": [
+            "big",
+            "large"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "The opposite of happy is ______.",
+          "input": "text",
+          "answer": "sad",
+          "acceptedAnswers": [
+            "sad",
+            "unhappy"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "The opposite of young is ______.",
+          "input": "text",
+          "answer": "old"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "The opposite of good is ______.",
+          "input": "text",
+          "answer": "bad"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-3c",
+      "title": "3C · VOCABULARY · common adjectives (1)",
+      "instructions": "Choose the correct alternative.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "",
+          "input": "inline-single",
+          "segments": [
+            "I’m very ",
+            " today."
+          ],
+          "choices": [
+            {
+              "options": [
+                "favourite",
+                "tired",
+                "young"
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "",
+          "input": "inline-single",
+          "segments": [
+            "My bike is ",
+            "."
+          ],
+          "choices": [
+            {
+              "options": [
+                "friendly",
+                "young",
+                "new"
+              ],
+              "answer": 2
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "",
+          "input": "inline-single",
+          "segments": [
+            "My ",
+            " city is Madrid."
+          ],
+          "choices": [
+            {
+              "options": [
+                "favourite",
+                "difficult",
+                "happy"
+              ],
+              "answer": 0
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "",
+          "input": "inline-single",
+          "segments": [
+            "The mountains in Scotland are ",
+            "."
+          ],
+          "choices": [
+            {
+              "options": [
+                "sad",
+                "new",
+                "beautiful"
+              ],
+              "answer": 2
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "",
+          "input": "inline-single",
+          "segments": [
+            "Australian people are very ",
+            "."
+          ],
+          "choices": [
+            {
+              "options": [
+                "favourite",
+                "friendly",
+                "new"
+              ],
+              "answer": 1
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "",
+          "input": "inline-single",
+          "segments": [
+            "My job isn’t difficult. It’s ",
+            "."
+          ],
+          "choices": [
+            {
+              "options": [
+                "easy",
+                "sad",
+                "small"
+              ],
+              "answer": 0
+            }
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-4b",
+      "title": "4B · GRAMMAR · present simple be: we, you, they",
+      "instructions": "Complete the conversation with the words in the box.",
+      "items": [
+        {
+          "id": "conversation",
+          "number": "",
+          "prompt": "",
+          "input": "select-gaps",
+          "layout": "dialogue",
+          "segments": [
+            "A: ¹ ",
+            " are they?\nB: ² ",
+            " my friends, Jaime and Beatriz.\nA: ³ ",
+            " are they from?\nB: They’re ⁴ ",
+            " Mexico.\nA: ⁵ ",
+            " they from Mexico City?\nB: No, they’re ⁶ ",
+            ". They’re from Mérida.\nA: Are ⁷ ",
+            " students?\nB: ⁸ ",
+            " they are."
+          ],
+          "options": [
+            "are",
+            "from",
+            "not",
+            "they",
+            "they’re",
+            "where",
+            "who",
+            "yes"
+          ],
+          "answers": [
+            6,
+            4,
+            5,
+            1,
+            0,
+            2,
+            3,
+            7
+          ]
+        }
+      ],
+      "autosaveDraft": true,
+      "wordBank": [
+        "are",
+        "from",
+        "not",
+        "they",
+        "they’re",
+        "where",
+        "who",
+        "yes"
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-4d",
+      "title": "4D · GRAMMAR · word order",
+      "instructions": "Put the words in the correct order to make sentences.",
+      "items": [
+        {
+          "id": "1a",
+          "number": "1A",
+          "prompt": "from / are / Where / you and Zeynep ?",
+          "input": "word-order",
+          "tokens": [
+            "from",
+            "are",
+            "Where",
+            "you and Zeynep"
+          ],
+          "answer": "Where are you and Zeynep from?",
+          "acceptedAnswers": [
+            "Where are you and Zeynep from?",
+            "Where are you and Zeynep from?"
+          ]
+        },
+        {
+          "id": "1b",
+          "number": "1B",
+          "prompt": "Turkey / We / are / from .",
+          "input": "word-order",
+          "tokens": [
+            "Turkey",
+            "We",
+            "are",
+            "from"
+          ],
+          "answer": "We are from Turkey.",
+          "acceptedAnswers": [
+            "We are from Turkey.",
+            "We are from Turkey."
+          ]
+        },
+        {
+          "id": "2a",
+          "number": "2A",
+          "prompt": "doctors / Jane and Andy / Are ?",
+          "input": "word-order",
+          "tokens": [
+            "doctors",
+            "Jane and Andy",
+            "Are"
+          ],
+          "answer": "Are Jane and Andy doctors?",
+          "acceptedAnswers": [
+            "Are Jane and Andy doctors?",
+            "Are Jane and Andy doctors?"
+          ]
+        },
+        {
+          "id": "2b",
+          "number": "2B",
+          "prompt": "they’re / No / not .",
+          "input": "word-order",
+          "tokens": [
+            "they’re",
+            "No",
+            "not"
+          ],
+          "answer": "No, they’re not.",
+          "acceptedAnswers": [
+            "No, they’re not.",
+            "No they’re not."
+          ]
+        },
+        {
+          "id": "3a",
+          "number": "3A",
+          "prompt": "the bikes / new / Are ?",
+          "input": "word-order",
+          "tokens": [
+            "the bikes",
+            "new",
+            "Are"
+          ],
+          "answer": "Are the bikes new?",
+          "acceptedAnswers": [
+            "Are the bikes new?",
+            "Are the bikes new?"
+          ]
+        },
+        {
+          "id": "3b",
+          "number": "3B",
+          "prompt": "they’re / No / old .",
+          "input": "word-order",
+          "tokens": [
+            "they’re",
+            "No",
+            "old"
+          ],
+          "answer": "No, they’re old.",
+          "acceptedAnswers": [
+            "No, they’re old.",
+            "No they’re old."
+          ]
+        },
+        {
+          "id": "4a",
+          "number": "4A",
+          "prompt": "John and Simon / cold / are ?",
+          "input": "word-order",
+          "tokens": [
+            "John and Simon",
+            "cold",
+            "are"
+          ],
+          "answer": "Are John and Simon cold?",
+          "acceptedAnswers": [
+            "Are John and Simon cold?",
+            "Are John and Simon cold?"
+          ]
+        },
+        {
+          "id": "4b",
+          "number": "4B",
+          "prompt": "are / they / Yes .",
+          "input": "word-order",
+          "tokens": [
+            "are",
+            "they",
+            "Yes"
+          ],
+          "answer": "Yes, they are.",
+          "acceptedAnswers": [
+            "Yes, they are.",
+            "Yes they are."
+          ]
+        },
+        {
+          "id": "5a",
+          "number": "5A",
+          "prompt": "they / are / Who ?",
+          "input": "word-order",
+          "tokens": [
+            "they",
+            "are",
+            "Who"
+          ],
+          "answer": "Who are they?",
+          "acceptedAnswers": [
+            "Who are they?",
+            "Who are they?"
+          ]
+        },
+        {
+          "id": "5b",
+          "number": "5B",
+          "prompt": "my friends / They’re .",
+          "input": "word-order",
+          "tokens": [
+            "my friends",
+            "They’re"
+          ],
+          "answer": "They’re my friends.",
+          "acceptedAnswers": [
+            "They’re my friends.",
+            "They’re my friends."
+          ]
+        },
+        {
+          "id": "6a",
+          "number": "6A",
+          "prompt": "your parents / Are / Australian ?",
+          "input": "word-order",
+          "tokens": [
+            "your parents",
+            "Are",
+            "Australian"
+          ],
+          "answer": "Are your parents Australian?",
+          "acceptedAnswers": [
+            "Are your parents Australian?",
+            "Are your parents Australian?"
+          ]
+        },
+        {
+          "id": "6b",
+          "number": "6B",
+          "prompt": "they / are / Yes .",
+          "input": "word-order",
+          "tokens": [
+            "they",
+            "are",
+            "Yes"
+          ],
+          "answer": "Yes, they are.",
+          "acceptedAnswers": [
+            "Yes, they are.",
+            "Yes they are."
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2a-5cd",
+      "title": "5C–5D · READING · The Secret Garden",
+      "instructions": "5C Read the webpage again. Are the statements True (T) or False (F)?\n5D Find adjectives with the opposite meaning in the webpage.",
+      "items": [
+        {
+          "id": "c1",
+          "number": "C 1",
+          "prompt": "The Secret Garden hotel is in a small village.",
+          "input": "select",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "c2",
+          "number": "C 2",
+          "prompt": "The hotel has six rooms.",
+          "input": "select",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "c3",
+          "number": "C 3",
+          "prompt": "Becky says the mountains are very cold.",
+          "input": "select",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "c4",
+          "number": "C 4",
+          "prompt": "Becky is married to John.",
+          "input": "select",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "c5",
+          "number": "C 5",
+          "prompt": "John is from the UK.",
+          "input": "select",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "c6",
+          "number": "C 6",
+          "prompt": "John says his favourite thing in Switzerland is the friendly people.",
+          "input": "select",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "d1",
+          "number": "D 1",
+          "prompt": "sad",
+          "input": "text",
+          "answer": "happy"
+        },
+        {
+          "id": "d2",
+          "number": "D 2",
+          "prompt": "hot",
+          "input": "text",
+          "answer": "cold"
+        },
+        {
+          "id": "d3",
+          "number": "D 3",
+          "prompt": "big",
+          "input": "text",
+          "answer": "small"
+        },
+        {
+          "id": "d4",
+          "number": "D 4",
+          "prompt": "bad",
+          "input": "text",
+          "answer": "good"
+        },
+        {
+          "id": "d5",
+          "number": "D 5",
+          "prompt": "new",
+          "input": "text",
+          "answer": "old"
+        }
+      ],
+      "autosaveDraft": true,
+      "readingAside": true,
+      "contentTitle": "About us",
+      "contentCards": [
+        {
+          "headline": "About us",
+          "text": "Hi! Welcome to the Secret Garden. We’re Becky and John and this is our hotel! It’s in Gimmelwald. Gimmelwald is a small village (only 130 people) in the mountains. The hotel is in an old house with eight rooms."
+        },
+        {
+          "headline": "Becky",
+          "text": "Hello, I’m Becky. I’m 35 and I’m from Glasgow in the UK. I’m very happy here in Switzerland. The people are friendly, and the food is good. In the winter it’s very cold, but the mountains are beautiful. My favourite things in Gimmelwald are the cows on the mountains. They’re very happy!"
+        },
+        {
+          "headline": "John",
+          "text": "Hi, I’m John. I’m 34 and I’m married to Becky. I’m British too, but now Switzerland is our home. Our jobs aren’t easy – French and German are difficult for me. We’re very tired at night, but we’re happy. My favourite thing in Switzerland is the chocolate. It’s very good!"
+        }
+      ]
+    },
+    {
+      "type": "grammar-link",
+      "id": "wb-2a-grammar-link",
+      "title": "Present simple be: we, you, they",
+      "text": "Review this grammar before completing the homework.",
+      "grammarId": "be-we-you-they-a1",
+      "buttonLabel": "Review grammar"
+    }
+  ]
+}

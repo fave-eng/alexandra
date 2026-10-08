@@ -3483,3 +3483,19 @@ body[data-view="lesson"] {
  .word-order-bank,.word-order-answer { gap: 7px; padding: 9px; }
  .word-order-chip { padding: 10px 11px; font-size: .9rem; }
 }
+
+/* Workbook 2A: allow the original digital reading passage to follow the questions. */
+.exercise-card[data-task="wb-2a-5cd"] { overflow:visible; }
+@media (min-width:901px) {
+ .exercise-card[data-task="wb-2a-5cd"] .exercise-reading-reference { position:sticky; top:92px; max-height:calc(100vh - 112px); overflow-y:auto; align-self:start; scrollbar-width:thin; }
+}
+@media (max-width:900px) {
+ .exercise-card[data-task="wb-2a-5cd"] .exercise-reading-reference { position:static; max-height:none; overflow:visible; }
+}
+.exercise-card[data-task="wb-2a-4d"] .exercise-item { overflow:visible; }
+.exercise-card[data-task="wb-2a-4d"] .exercise-control { padding-left:0; }
+.exercise-card[data-task="wb-2a-4d"] [data-exercise-item$="a"] .word-order-punctuation { font-size:0; }
+.exercise-card[data-task="wb-2a-4d"] [data-exercise-item$="a"] .word-order-punctuation::after { content:"?"; font-size:1rem; }
+.exercise-card[data-task="wb-2a-4b"] .dialogue-answer-select { min-width:100px; max-width:140px; }
+.exercise-card[data-task="wb-2a-4b"] .sentence-gaps.is-dialogue { white-space:pre-line; line-height:2.45; }
+.exercise-card[data-task="wb-2a-5cd"] .exercise-instructions { white-space:pre-line; }

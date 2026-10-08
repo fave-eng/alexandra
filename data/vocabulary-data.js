@@ -1018,5 +1018,232 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-2a",
+    "title": "Lesson 2A · Numbers and adjectives",
+    "label": "Unit 2 · Lesson 2A",
+    "icon": "🔢",
+    "type": "lesson",
+    "linkedLessonId": "lesson-7",
+    "page": "vocabulary.html?id=vocab-lesson-2a",
+    "words": [
+      {
+        "id": "wb-2a-word-01",
+        "en": "a hundred",
+        "ru": "сто",
+        "transcription": "",
+        "exampleEn": "A hundred is 100.",
+        "exampleRu": "Сто — это 100.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-02",
+        "en": "beautiful",
+        "ru": "красивый",
+        "transcription": "",
+        "exampleEn": "The mountains are beautiful.",
+        "exampleRu": "Горы красивые.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-03",
+        "en": "chocolate",
+        "ru": "шоколад",
+        "transcription": "",
+        "exampleEn": "The chocolate is very good.",
+        "exampleRu": "Шоколад очень вкусный.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-04",
+        "en": "cold",
+        "ru": "холодный; холодно",
+        "transcription": "",
+        "exampleEn": "It is very cold in winter.",
+        "exampleRu": "Зимой очень холодно.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-05",
+        "en": "cow",
+        "ru": "корова",
+        "transcription": "",
+        "exampleEn": "The cows are happy.",
+        "exampleRu": "Коровы счастливы.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-06",
+        "en": "easy",
+        "ru": "лёгкий; простой",
+        "transcription": "",
+        "exampleEn": "My job is easy.",
+        "exampleRu": "Моя работа лёгкая.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-07",
+        "en": "eighty",
+        "ru": "восемьдесят",
+        "transcription": "",
+        "exampleEn": "Eighty is a number.",
+        "exampleRu": "Восемьдесят — это число.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-08",
+        "en": "favourite",
+        "ru": "любимый",
+        "transcription": "",
+        "exampleEn": "My favourite city is Madrid.",
+        "exampleRu": "Мой любимый город — Мадрид.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-09",
+        "en": "fifty",
+        "ru": "пятьдесят",
+        "transcription": "",
+        "exampleEn": "Fifty is 50.",
+        "exampleRu": "Пятьдесят — это 50.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-10",
+        "en": "forty",
+        "ru": "сорок",
+        "transcription": "",
+        "exampleEn": "Forty is 40.",
+        "exampleRu": "Сорок — это 40.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-11",
+        "en": "friendly",
+        "ru": "дружелюбный",
+        "transcription": "",
+        "exampleEn": "The people are friendly.",
+        "exampleRu": "Люди дружелюбные.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-12",
+        "en": "hotel",
+        "ru": "отель",
+        "transcription": "",
+        "exampleEn": "This is our hotel.",
+        "exampleRu": "Это наш отель.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-13",
+        "en": "mountain",
+        "ru": "гора",
+        "transcription": "",
+        "exampleEn": "The hotel is in the mountains.",
+        "exampleRu": "Отель находится в горах.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-14",
+        "en": "new",
+        "ru": "новый",
+        "transcription": "",
+        "exampleEn": "My bike is new.",
+        "exampleRu": "Мой велосипед новый.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-15",
+        "en": "ninety",
+        "ru": "девяносто",
+        "transcription": "",
+        "exampleEn": "Ninety is a number.",
+        "exampleRu": "Девяносто — это число.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-16",
+        "en": "old",
+        "ru": "старый",
+        "transcription": "",
+        "exampleEn": "The hotel is in an old house.",
+        "exampleRu": "Отель находится в старом доме.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-17",
+        "en": "sixty",
+        "ru": "шестьдесят",
+        "transcription": "",
+        "exampleEn": "Sixty is 60.",
+        "exampleRu": "Шестьдесят — это 60.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-18",
+        "en": "small",
+        "ru": "маленький",
+        "transcription": "",
+        "exampleEn": "It is a small village.",
+        "exampleRu": "Это маленькая деревня.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-19",
+        "en": "thirty",
+        "ru": "тридцать",
+        "transcription": "",
+        "exampleEn": "Thirty is 30.",
+        "exampleRu": "Тридцать — это 30.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-20",
+        "en": "tired",
+        "ru": "уставший",
+        "transcription": "",
+        "exampleEn": "We are tired at night.",
+        "exampleRu": "Мы устаём к вечеру.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-21",
+        "en": "twenty",
+        "ru": "двадцать",
+        "transcription": "",
+        "exampleEn": "Twenty is 20.",
+        "exampleRu": "Двадцать — это 20.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-22",
+        "en": "village",
+        "ru": "деревня",
+        "transcription": "",
+        "exampleEn": "Gimmelwald is a small village.",
+        "exampleRu": "Гиммельвальд — маленькая деревня.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-23",
+        "en": "winter",
+        "ru": "зима",
+        "transcription": "",
+        "exampleEn": "It is cold in the winter.",
+        "exampleRu": "Зимой холодно.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2a-word-24",
+        "en": "young",
+        "ru": "молодой",
+        "transcription": "",
+        "exampleEn": "He is young.",
+        "exampleRu": "Он молодой.",
+        "audio": ""
+      }
+    ]
   }
 ];
