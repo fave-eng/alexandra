@@ -575,5 +575,302 @@ window.GRAMMAR_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "was-were-born-a1",
+    "linkedLessonId": "lesson-4",
+    "order": 4,
+    "title": "Past simple be: was / were (born)",
+    "level": "A1+",
+    "status": "available",
+    "page": "grammar-topic.html?id=was-were-born-a1",
+    "passScore": 100,
+    "overview": {
+      "lead": "Use was and were to talk about the past. We use was born or were born for a person’s birth.",
+      "keyRule": "I / he / she / it → was     ·     you / we / they → were",
+      "example": "I was born in 2002. Were you born in Russia?",
+      "subjects": [
+        "I, he, she, it → was",
+        "you, we, they → were"
+      ]
+    },
+    "uses": [
+      {
+        "icon": "1",
+        "title": "Past events",
+        "text": "Use was / were for a past situation.",
+        "example": "We were at the wedding last week."
+      },
+      {
+        "icon": "2",
+        "title": "Birth",
+        "text": "Use was born / were born to say when or where someone was born.",
+        "example": "Leo was born in 2021."
+      },
+      {
+        "icon": "3",
+        "title": "Past questions",
+        "text": "Put was / were before the subject in yes/no questions.",
+        "example": "Were you born in London?"
+      }
+    ],
+    "forms": [
+      {
+        "id": "positive",
+        "icon": "+",
+        "title": "Affirmative",
+        "formula": "subject + was / were (+ born)",
+        "example": "She was born in May. / They were at home.",
+        "translation": "Она родилась в мае. / Они были дома.",
+        "note": "Born follows was or were: was born, not just born."
+      },
+      {
+        "id": "negative",
+        "icon": "−",
+        "title": "Negative",
+        "formula": "subject + wasn’t / weren’t",
+        "example": "I wasn’t born in 1990. / They weren’t at the wedding.",
+        "translation": "Я не родился в 1990 году. / Их не было на свадьбе.",
+        "note": "was not = wasn’t; were not = weren’t."
+      },
+      {
+        "id": "question",
+        "icon": "?",
+        "title": "Questions",
+        "formula": "Was / Were + subject (+ born) ...?",
+        "example": "Where were you born? / Was she born in June?",
+        "translation": "Где ты родился? / Она родилась в июне?",
+        "note": "For questions, move was or were before the subject."
+      },
+      {
+        "id": "short",
+        "icon": "✓",
+        "title": "Short answers",
+        "formula": "Yes, I was. / No, I wasn’t. / Yes, they were. / No, they weren’t.",
+        "example": "Were you born in 2004? Yes, I was.",
+        "translation": "Ты родился в 2004 году? Да.",
+        "note": "Do not say “Yes, I was born” as a short answer to a yes/no question."
+      }
+    ],
+    "questionBuilder": {
+      "title": "Word order for birth questions",
+      "note": "Question word + was/were + person + born + place/time?",
+      "pattern": [
+        "Where",
+        "were",
+        "you",
+        "born?"
+      ],
+      "example": "Where were you born?",
+      "translation": "Где ты родился / родилась?"
+    },
+    "commonMistakes": [
+      {
+        "wrong": "She born in 2002.",
+        "right": "She was born in 2002.",
+        "reason": "Use was or were with born."
+      },
+      {
+        "wrong": "They was born in 2000.",
+        "right": "They were born in 2000.",
+        "reason": "Use were with they."
+      },
+      {
+        "wrong": "I was born on 2005.",
+        "right": "I was born in 2005.",
+        "reason": "Use in for a year or month; on for a date or day."
+      },
+      {
+        "wrong": "Where you were born?",
+        "right": "Where were you born?",
+        "reason": "Use question word order: Where + were + you."
+      }
+    ],
+    "quizExercises": [
+      {
+        "title": "Choose the past form",
+        "instructions": "Choose was or were.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "I ___ born in July.",
+            "options": [
+              "was",
+              "were",
+              "am"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "single",
+            "prompt": "My parents ___ born in different cities.",
+            "options": [
+              "was",
+              "were",
+              "is"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "He ___ at the wedding yesterday.",
+            "options": [
+              "were",
+              "is",
+              "was"
+            ],
+            "answer": 2
+          },
+          {
+            "type": "single",
+            "prompt": "___ you born in 2005?",
+            "options": [
+              "Are",
+              "Was",
+              "Were"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "title": "Write the correct form",
+        "instructions": "Write was, were, wasn’t or weren’t.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "My sister ___ born in 2010.",
+            "answer": "was"
+          },
+          {
+            "type": "text",
+            "prompt": "We ___ at home yesterday.",
+            "answer": "were"
+          },
+          {
+            "type": "text",
+            "prompt": "I ___ born in 1900. That is impossible!",
+            "answer": "wasn’t",
+            "acceptedAnswers": [
+              "wasn't",
+              "was not"
+            ]
+          },
+          {
+            "type": "text",
+            "prompt": "They ___ at the wedding. They were on holiday.",
+            "answer": "weren’t",
+            "acceptedAnswers": [
+              "weren't",
+              "were not"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Make correct questions",
+        "instructions": "Choose the question with correct word order.",
+        "items": [
+          {
+            "type": "select",
+            "prompt": "Ask about a year of birth.",
+            "options": [
+              "When you were born?",
+              "When were you born?",
+              "When did you born?"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "select",
+            "prompt": "Ask about a city of birth.",
+            "options": [
+              "Where was she born?",
+              "Where she was born?",
+              "Where is she born?"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "select",
+            "prompt": "Ask if they were at the wedding.",
+            "options": [
+              "Were they at the wedding?",
+              "Was they at the wedding?",
+              "They were at the wedding?"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "select",
+            "prompt": "Ask if your friend was born in 2004.",
+            "options": [
+              "Did you born in 2004?",
+              "Were you born in 2004?",
+              "Was you born in 2004?"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "title": "Build full sentences",
+        "instructions": "Use the words to write a full correct sentence or question.",
+        "items": [
+          {
+            "type": "reorder",
+            "prompt": "she / born / 2002 / in / was",
+            "tokens": [
+              "she",
+              "born",
+              "2002",
+              "in",
+              "was"
+            ],
+            "answer": "She was born in 2002."
+          },
+          {
+            "type": "reorder",
+            "prompt": "were / you / born / where / ?",
+            "tokens": [
+              "were",
+              "you",
+              "born",
+              "where",
+              "?"
+            ],
+            "answer": "Where were you born?"
+          },
+          {
+            "type": "reorder",
+            "prompt": "not / at / we / were / the wedding",
+            "tokens": [
+              "not",
+              "at",
+              "we",
+              "were",
+              "the wedding"
+            ],
+            "answer": "We were not at the wedding.",
+            "acceptedAnswers": [
+              "We were not at the wedding.",
+              "We weren't at the wedding."
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "was / he / on / born / 7 May",
+            "tokens": [
+              "was",
+              "he",
+              "on",
+              "born",
+              "7 May"
+            ],
+            "answer": "He was born on 7 May."
+          }
+        ]
+      }
+    ]
   }
 ];

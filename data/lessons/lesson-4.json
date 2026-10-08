@@ -1,0 +1,402 @@
+{
+  "id": "lesson-4",
+  "number": 4,
+  "title": "Homework 4 · Life events revision",
+  "subtitle": "English Vocabulary in Use Elementary · Unit 2 · Birth, marriage and death",
+  "status": "available",
+  "page": "lesson.html?id=lesson-4",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-life-events-review",
+  "grammarIds": [
+    "was-were-born-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 22,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "life-revision-intro",
+      "title": "Birth, marriage and death",
+      "eyebrow": "Revision · Life events",
+      "text": "5 new exercises · real-life English · vocabulary and grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "life-revision-grammar-link",
+      "title": "Past simple: was / were (born)",
+      "text": "Review how to talk about when and where someone was born.",
+      "grammarId": "was-were-born-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "exercise",
+      "id": "life-review-1",
+      "title": "1 · News in your messages",
+      "instructions": "Read each message. Choose what the message is about.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "We had a baby girl yesterday! Her name is Mia.",
+          "input": "select",
+          "options": [
+            "a birthday",
+            "a wedding",
+            "a new baby",
+            "a divorce",
+            "a funeral",
+            "a wedding anniversary"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "My brother and his partner got married last Saturday.",
+          "input": "select",
+          "options": [
+            "a birthday",
+            "a wedding",
+            "a new baby",
+            "a divorce",
+            "a funeral",
+            "a wedding anniversary"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Today is Grandma’s 80th birthday.",
+          "input": "select",
+          "options": [
+            "a birthday",
+            "a wedding",
+            "a new baby",
+            "a divorce",
+            "a funeral",
+            "a wedding anniversary"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "My parents got divorced two years ago.",
+          "input": "select",
+          "options": [
+            "a birthday",
+            "a wedding",
+            "a new baby",
+            "a divorce",
+            "a funeral",
+            "a wedding anniversary"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Our uncle died last month. His funeral is on Friday.",
+          "input": "select",
+          "options": [
+            "a birthday",
+            "a wedding",
+            "a new baby",
+            "a divorce",
+            "a funeral",
+            "a wedding anniversary"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Mum and Dad got married 20 years ago today!",
+          "input": "select",
+          "options": [
+            "a birthday",
+            "a wedding",
+            "a new baby",
+            "a divorce",
+            "a funeral",
+            "a wedding anniversary"
+          ],
+          "answer": 5
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "life-review-2",
+      "title": "2 · Olivia’s family timeline",
+      "instructions": "Read the story. Put the five life events in the correct order (1–5).",
+      "contentTitle": "A short family story",
+      "contentCards": [
+        {
+          "headline": "Olivia and Ana",
+          "text": "Olivia and Ana live in Manchester with their son, Leo. Leo was born in 2021. Olivia and Ana got married in 2017 and went to Italy on their honeymoon a week later. They first met in 2013. Olivia was born in 1990."
+        }
+      ],
+      "readingAside": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Leo was born.",
+          "input": "select",
+          "options": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth",
+            "Fifth"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Olivia and Ana got married.",
+          "input": "select",
+          "options": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth",
+            "Fifth"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Olivia was born.",
+          "input": "select",
+          "options": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth",
+            "Fifth"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "They went to Italy on their honeymoon.",
+          "input": "select",
+          "options": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth",
+            "Fifth"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Olivia and Ana met.",
+          "input": "select",
+          "options": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth",
+            "Fifth"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "life-review-3",
+      "title": "3 · Life updates in 2026",
+      "instructions": "Read the four posts. Are the sentences True or False?",
+      "contentTitle": "Community updates · 2026",
+      "contentCards": [
+        {
+          "headline": "Nadia · 24 September 2026",
+          "text": "My parents got married on 24 September 2001. Today is their 25th wedding anniversary!"
+        },
+        {
+          "headline": "Sam · 18 July 2026",
+          "text": "Our daughter Aria was born this morning. She weighed 3.2 kilos. We are all happy."
+        },
+        {
+          "headline": "Mira · 26 August 2026",
+          "text": "I was married before, but we got divorced in 2024. Now I’m single."
+        },
+        {
+          "headline": "Elliot · 10 June 2026",
+          "text": "My grandfather died in 2025. I miss him. My family remembers him today."
+        }
+      ],
+      "readingAside": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Nadia’s parents got married in 2001.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Nadia’s parents are celebrating 20 years of marriage.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Sam’s daughter was born in July.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Aria weighed 4.2 kilos.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Mira got divorced in 2024.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Elliot’s grandfather died in 2026.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "life-review-4",
+      "title": "4 · Fix the message",
+      "instructions": "Each sentence has one mistake. Write the complete sentence correctly.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "My sister born in 2003.",
+          "input": "text",
+          "answer": "My sister was born in 2003."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "My parents got married on 2010.",
+          "input": "text",
+          "answer": "My parents got married in 2010."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Their wedding is in Saturday.",
+          "input": "text",
+          "answer": "Their wedding is on Saturday."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Lena is married with Tom.",
+          "input": "text",
+          "answer": "Lena is married to Tom."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "My uncle is died.",
+          "input": "text",
+          "answer": "My uncle is dead."
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "life-review-5",
+      "title": "5 · Reply to the news",
+      "instructions": "Write short replies to the four messages. Your teacher will read your answers. There is no automatic score for this exercise.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Your friend texts: “We had a baby girl yesterday!” Write a friendly reply (1–2 sentences).",
+          "input": "textarea",
+          "placeholder": "Write your message here...",
+          "scored": false
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Your friend texts: “We’re getting married next month!” Write a reply and ask one question.",
+          "input": "textarea",
+          "placeholder": "Write your message here...",
+          "scored": false
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Your colleague texts: “My grandfather died last week.” Write a kind, short reply.",
+          "input": "textarea",
+          "placeholder": "Write your message here...",
+          "scored": false
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Your neighbour texts: “Today is our 30th wedding anniversary!” Write a short reply.",
+          "input": "textarea",
+          "placeholder": "Write your message here...",
+          "scored": false
+        }
+      ],
+      "autosaveDraft": true
+    }
+  ]
+}

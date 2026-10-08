@@ -634,5 +634,151 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-life-events-review",
+    "title": "Life events · Birth, marriage and death",
+    "label": "Revision · Homework 4",
+    "icon": "📅",
+    "type": "lesson",
+    "linkedLessonId": "lesson-4",
+    "page": "vocabulary.html?id=vocab-life-events-review",
+    "words": [
+      {
+        "id": "life-events-word-01",
+        "en": "anniversary",
+        "ru": "годовщина",
+        "transcription": "",
+        "exampleEn": "Today is their wedding anniversary.",
+        "exampleRu": "Сегодня годовщина их свадьбы.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-02",
+        "en": "be born",
+        "ru": "родиться",
+        "transcription": "",
+        "exampleEn": "She was born in 2003.",
+        "exampleRu": "Она родилась в 2003 году.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-03",
+        "en": "death",
+        "ru": "смерть",
+        "transcription": "",
+        "exampleEn": "We are sad about his death.",
+        "exampleRu": "Нам грустно из-за его смерти.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-04",
+        "en": "die",
+        "ru": "умереть",
+        "transcription": "",
+        "exampleEn": "His grandfather died last year.",
+        "exampleRu": "Его дедушка умер в прошлом году.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-05",
+        "en": "divorced",
+        "ru": "разведённый",
+        "transcription": "",
+        "exampleEn": "My aunt is divorced.",
+        "exampleRu": "Моя тётя разведена.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-06",
+        "en": "funeral",
+        "ru": "похороны",
+        "transcription": "",
+        "exampleEn": "The funeral is on Friday.",
+        "exampleRu": "Похороны в пятницу.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-07",
+        "en": "get divorced",
+        "ru": "развестись",
+        "transcription": "",
+        "exampleEn": "They got divorced in 2024.",
+        "exampleRu": "Они развелись в 2024 году.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-08",
+        "en": "get married",
+        "ru": "пожениться, выйти замуж, жениться",
+        "transcription": "",
+        "exampleEn": "They got married in 2017.",
+        "exampleRu": "Они поженились в 2017 году.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-09",
+        "en": "have a baby",
+        "ru": "родить ребёнка; у кого-то родился ребёнок",
+        "transcription": "",
+        "exampleEn": "They had a baby yesterday.",
+        "exampleRu": "Вчера у них родился ребёнок.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-10",
+        "en": "honeymoon",
+        "ru": "медовый месяц",
+        "transcription": "",
+        "exampleEn": "They went to Italy on their honeymoon.",
+        "exampleRu": "Они поехали в Италию в свадебное путешествие.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-11",
+        "en": "married",
+        "ru": "женатый, замужняя",
+        "transcription": "",
+        "exampleEn": "My sister is married.",
+        "exampleRu": "Моя сестра замужем.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-12",
+        "en": "partner",
+        "ru": "партнёр в отношениях",
+        "transcription": "",
+        "exampleEn": "Her partner is from London.",
+        "exampleRu": "Её партнёр из Лондона.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-13",
+        "en": "single",
+        "ru": "не состоящий в отношениях; холостой",
+        "transcription": "",
+        "exampleEn": "I’m single.",
+        "exampleRu": "Я не состою в отношениях.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-14",
+        "en": "wedding",
+        "ru": "свадьба",
+        "transcription": "",
+        "exampleEn": "Their wedding is on Saturday.",
+        "exampleRu": "Их свадьба в субботу.",
+        "audio": ""
+      },
+      {
+        "id": "life-events-word-15",
+        "en": "weigh",
+        "ru": "весить",
+        "transcription": "",
+        "exampleEn": "The baby weighed 3.2 kilos.",
+        "exampleRu": "Ребёнок весил 3,2 килограмма.",
+        "audio": ""
+      }
+    ]
   }
 ];
