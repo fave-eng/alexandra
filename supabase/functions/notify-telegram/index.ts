@@ -133,14 +133,50 @@ function buildMotivation(seed: string): string {
   return variants[stableChoice(seed, variants.length)]
 }
 
+// Homework notifications for Alexandra use short, accessible A1 English.
+// Rotate by lesson number so consecutive lessons have different greetings and endings.
+// Fallback hashing preserves a stable choice for unexpected lesson IDs or retries.
+function a1NotificationVariant(seed: string, count: number, salt: string): number {
+  const match = /^lesson-(\d+)(?::|$)/.exec(seed)
+  return match ? (Number(match[1]) - 1) % count : stableChoice(`${salt}:${seed}`, count)
+}
+
+function buildA1Greeting(seed: string): string {
+  const variants = [
+    'Hi! 👋',
+    'Hello! 👋',
+    'Hi there! 👋',
+    'Hey! 👋',
+    'Hello again! 👋',
+    'Hi again! 👋',
+  ]
+  return variants[a1NotificationVariant(seed, variants.length, 'greeting')]
+}
+
+function buildA1Motivation(seed: string): string {
+  const variants = [
+    'Good luck! ⭐',
+    'You can do it! 💪',
+    'Have fun! 🌟',
+    'Do your best! ✨',
+    'Keep going! 🚀',
+    'Enjoy your homework! 📚',
+    'Have a nice day! ☀️',
+  ]
+  return variants[a1NotificationVariant(seed, variants.length, 'motivation')]
+}
+
 function buildMessage(
   hasVocabulary: boolean,
   hasGrammar: boolean,
   homeworkTitle: unknown,
   seed: string,
+  studentId: string,
 ): string {
   const title = escapeTelegramHtml(homeworkTitle || 'English homework')
-  const motivation = buildMotivation(seed)
+  const isAlexandra = studentId.trim().toLowerCase() === 'alexandra'
+  const greeting = isAlexandra ? buildA1Greeting(seed) : 'Hi there! 👋'
+  const motivation = isAlexandra ? buildA1Motivation(seed) : buildMotivation(seed)
 
   const steps: string[] = []
   if (hasVocabulary) steps.push('First, learn the new words.')
@@ -149,7 +185,7 @@ function buildMessage(
   else steps.push('Open the homework and complete the tasks.')
 
   return [
-    'Hi there! 👋',
+    greeting,
     '',
     'Your new English homework is ready.',
     '',
@@ -887,6 +923,7 @@ export default {
           grammar.length > 0,
           homework.title,
           `${materialId}:${notificationVersion}`,
+          studentId,
         ),
         keyboard,
       )
