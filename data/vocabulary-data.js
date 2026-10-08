@@ -917,5 +917,106 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-unit-1-review",
+    "title": "Unit 1 · Review vocabulary",
+    "label": "Unit 1 · Final check",
+    "icon": "📘",
+    "type": "lesson",
+    "linkedLessonId": "lesson-6",
+    "page": "vocabulary.html?id=vocab-unit-1-review",
+    "words": [
+      {
+        "id": "unit1-review-01",
+        "en": "chef",
+        "ru": "повар",
+        "transcription": "",
+        "exampleEn": "He is a chef.",
+        "exampleRu": "Он повар.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-02",
+        "en": "classmate",
+        "ru": "одногруппник; одноклассник",
+        "transcription": "",
+        "exampleEn": "Maya is my new classmate.",
+        "exampleRu": "Майя — моя новая одногруппница.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-03",
+        "en": "group chat",
+        "ru": "групповой чат",
+        "transcription": "",
+        "exampleEn": "Say hello in the group chat.",
+        "exampleRu": "Поздоровайся в групповом чате.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-04",
+        "en": "introduce",
+        "ru": "представлять, знакомить",
+        "transcription": "",
+        "exampleEn": "Introduce your friend.",
+        "exampleRu": "Представь своего друга.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-05",
+        "en": "lost and found",
+        "ru": "бюро находок",
+        "transcription": "",
+        "exampleEn": "Ask at lost and found.",
+        "exampleRu": "Спроси в бюро находок.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-06",
+        "en": "notebook",
+        "ru": "тетрадь, блокнот",
+        "transcription": "",
+        "exampleEn": "I have two notebooks.",
+        "exampleRu": "У меня две тетради.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-07",
+        "en": "receptionist",
+        "ru": "сотрудник стойки регистрации",
+        "transcription": "",
+        "exampleEn": "Ask the receptionist a question.",
+        "exampleRu": "Задай вопрос сотруднику стойки регистрации.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-08",
+        "en": "study group",
+        "ru": "учебная группа",
+        "transcription": "",
+        "exampleEn": "Welcome to our study group!",
+        "exampleRu": "Добро пожаловать в нашу учебную группу!",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-09",
+        "en": "watch",
+        "ru": "наручные часы",
+        "transcription": "",
+        "exampleEn": "My friend has two watches.",
+        "exampleRu": "У моего друга двое часов.",
+        "audio": ""
+      },
+      {
+        "id": "unit1-review-10",
+        "en": "welcome",
+        "ru": "добро пожаловать",
+        "transcription": "",
+        "exampleEn": "Welcome to our English class!",
+        "exampleRu": "Добро пожаловать на урок английского!",
+        "audio": ""
+      }
+    ]
   }
 ];

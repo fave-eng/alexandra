@@ -3462,3 +3462,24 @@ body[data-view="lesson"] {
 @media (max-width: 900px) {
  .exercise-card[data-task="wb-1d-4a"] .exercise-sticky-media {position:static; max-height:none; overflow:visible;}
 }
+
+/* Lesson 1D exercise 2: rearrange existing word groups, no typed answers. */
+.exercise-card[data-task="wb-1d-2"] .exercise-item { overflow: visible; }
+.exercise-card[data-task="wb-1d-2"] .exercise-item-header { margin-bottom: 2px; }
+.exercise-card[data-task="wb-1d-2"] .exercise-control { padding-left: 0; }
+.word-order-widget { min-width: 0; display: grid; gap: 7px; }
+.word-order-zone-label { font-size: .75rem; font-weight: 700; color: #526579; }
+.word-order-bank, .word-order-answer { display: flex; flex-wrap: wrap; align-items: center; align-content: center; gap: 9px; padding: 12px; min-height: 58px; border: 1px solid #c8d6e5; border-radius: 12px; background: #f7faff; min-width: 0; }
+.word-order-answer { border: 2px dashed #7b9ab7; background: #fff; }
+.word-order-answer:has(> .word-order-punctuation:first-child)::before { content: "Move words here"; color: #8393a6; font-size: .84rem; margin-right: auto; }
+.word-order-chip { font: inherit; font-size: .95rem; line-height: 1.25; background: #e7f0fc; color: #1d4167; border: 1px solid #a6bfda; border-radius: 9px; padding: 10px 12px; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; white-space: normal; text-align: center; box-shadow: 0 2px 0 rgba(31,70,106,.09); }
+.word-order-chip:focus-visible { outline: 3px solid #267cbd; outline-offset: 2px; }
+.word-order-answer .word-order-chip { background: #dff3e7; border-color: #94c3a5; color: #185736; }
+.word-order-chip.is-dragging { opacity: .35; }
+.word-order-ghost { position: fixed; z-index: 9999; transform: translate(-50%,-50%); pointer-events: none; opacity: .88; box-shadow: 0 8px 24px #1114; }
+.word-order-punctuation { color: #1d4167; font-weight: 700; }
+.lesson-is-locked .word-order-chip { cursor: default; }
+@media (max-width: 520px) {
+ .word-order-bank,.word-order-answer { gap: 7px; padding: 9px; }
+ .word-order-chip { padding: 10px 11px; font-size: .9rem; }
+}

@@ -1203,6 +1203,10 @@
       control = `<select id="${escapeHtml(inputId)}"><option value="">Choose an answer</option>${(item.options || []).map((option, optionIndex) => `<option value="${optionIndex}">${escapeHtml(option)}</option>`).join('')}</select>`;
     } else if (item.input === 'textarea') {
       control = `<textarea id="${escapeHtml(inputId)}" placeholder="${escapeHtml(item.placeholder || '')}"></textarea>`;
+    } else if (item.input === 'word-order') {
+      const tokens = Array.isArray(item.tokens) ? item.tokens : [];
+      const chips = tokens.map((word, tokenIndex) => `<button class="word-order-chip" type="button" data-word-order-token="${tokenIndex}" aria-label="Move ${escapeHtml(word)}">${escapeHtml(word)}</button>`).join('');
+      control = `<div class="word-order-widget" data-word-order-widget aria-label="Put the words in the correct order"><div class="word-order-zone-label">Words</div><div class="word-order-bank" data-word-order-area="bank">${chips}</div><div class="word-order-zone-label">Your sentence</div><div class="word-order-answer" data-word-order-area="answer" aria-label="Your sentence"><span class="word-order-punctuation" aria-hidden="true">.</span></div></div>`;
     } else if (item.input === 'inline-single') {
       const choices = Array.isArray(item.choices) ? item.choices : [];
       const segments = Array.isArray(item.segments) ? item.segments : [];
@@ -1241,7 +1245,7 @@
     }
 
     return `<div class="exercise-item" data-exercise-item="${escapeHtml(itemId)}" data-input-type="${escapeHtml(item.input || 'text')}">
-      <div class="exercise-item-header">${numberMarkup}<label class="exercise-prompt" for="${escapeHtml(inputId)}">${prompt}</label></div>
+      <div class="exercise-item-header">${numberMarkup}${item.input === 'word-order' ? '' : `<label class="exercise-prompt" for="${escapeHtml(inputId)}">${prompt}</label>`}</div>
       <div class="exercise-control">${control}</div>
       <div class="feedback" aria-live="polite"></div>
     </div>`;
@@ -1929,6 +1933,13 @@
       const gapResults = expected.map((answer, index) => actual[index] !== '' && Number(actual[index]) === Number(answer));
       correct = expected.length > 0 && gapResults.every(Boolean);
       return { actual, correct, scoreCorrect: gapResults.filter(Boolean).length, scoreTotal: expected.length };
+    } else if (inputType === 'word-order') {
+      const answerArea = itemNode.querySelector('[data-word-order-area="answer"]');
+      const used = [...(answerArea?.querySelectorAll('[data-word-order-token]') || [])];
+      const available = Array.isArray(item.tokens) ? item.tokens : [];
+      actual = used.map((chip) => available[Number(chip.dataset.wordOrderToken)] || '').join(' ').trim();
+      if (actual && used.length === available.length) actual += '.';
+      correct = used.length === available.length && textAnswerMatches(item, actual);
     } else if (inputType === 'mark') {
       actual = [...itemNode.querySelectorAll('[data-mark-index].is-selected')].map((button) => Number(button.dataset.markIndex)).sort((a, b) => a - b);
       const expected = [...(item.answer || [])].map(Number).sort((a, b) => a - b);
@@ -2073,6 +2084,109 @@
     return { correctCount: correct ? 1 : 0, total: 1, actual };
   }
 
+  // Read/write the actual student's order; never use the answer key for restoration.
+  function restoreWordOrderItem(itemNode, item, saved) {
+    const widget = itemNode.querySelector('[data-word-order-widget]');
+    if (!widget || typeof saved !== 'string') return;
+    const bank = widget.querySelector('[data-word-order-area="bank"]');
+    const answer = widget.querySelector('[data-word-order-area="answer"]');
+    if (!bank || !answer) return;
+    const punctuation = answer.querySelector('.word-order-punctuation');
+    let remainder = saved.trim().replace(/[.!?]+$/, '').trim().toLocaleLowerCase('en');
+    // Use only the words/chunks which existed in this item, so wrong orders still survive reload.
+    const available = [...bank.querySelectorAll('[data-word-order-token]')];
+    while (remainder) {
+      const next = available.filter((button) => {
+        const word = button.textContent.trim().toLocaleLowerCase('en');
+        return remainder === word || remainder.startsWith(word + ' ');
+      }).sort((a,b)=>b.textContent.length - a.textContent.length)[0];
+      if (!next) break;
+      const word = next.textContent.trim().toLocaleLowerCase('en');
+      answer.insertBefore(next, punctuation);
+      available.splice(available.indexOf(next),1);
+      remainder = remainder.slice(word.length).trim();
+    }
+  }
+
+  function setupWordOrderInteractions(root) {
+    root.querySelectorAll('[data-word-order-widget]').forEach((widget) => {
+      const bank = widget.querySelector('[data-word-order-area="bank"]');
+      const answer = widget.querySelector('[data-word-order-area="answer"]');
+      if (!bank || !answer) return;
+      const announceChange = () => widget.dispatchEvent(new Event('input', {bubbles:true}));
+      const place = (chip, target, before = null) => {
+        if (!chip || chip.disabled || !target) return;
+        if (target === answer && !before) before = answer.querySelector('.word-order-punctuation');
+        target.insertBefore(chip, before);
+        announceChange();
+      };
+      // Keyboard: Enter/Space moves a token to the opposite area, in the student's chosen order.
+      widget.addEventListener('click', (event) => {
+        const chip = event.target.closest('[data-word-order-token]');
+        if (!chip || event.detail !== 0 || chip.disabled) return;
+        const destination = chip.parentElement === bank ? answer : bank;
+        place(chip, destination);
+        chip.focus();
+      });
+      widget.querySelectorAll('[data-word-order-token]').forEach((chip) => {
+        chip.addEventListener('pointerdown', (event) => {
+          if (chip.disabled || (event.pointerType === 'mouse' && event.button !== 0)) return;
+          event.preventDefault();
+          const startX = event.clientX, startY = event.clientY;
+          let active = false, ghost = null;
+          const move = (e) => {
+            if (e.pointerId !== event.pointerId) return;
+            if (!active && Math.hypot(e.clientX - startX, e.clientY - startY) > 7) {
+              active = true;
+              ghost = chip.cloneNode(true);
+              ghost.classList.add('word-order-ghost');
+              ghost.setAttribute('aria-hidden','true');
+              document.body.appendChild(ghost);
+              chip.classList.add('is-dragging');
+            }
+            if (active && ghost) {
+              ghost.style.left = `${e.clientX}px`;
+              ghost.style.top = `${e.clientY}px`;
+            }
+          };
+          const finish = (e) => {
+            if (e.pointerId !== event.pointerId) return;
+            window.removeEventListener('pointermove', move);
+            window.removeEventListener('pointerup', finish);
+            window.removeEventListener('pointercancel', cancel);
+            ghost?.remove();
+            chip.classList.remove('is-dragging');
+            if (!active) {
+              // Quick tap/click: append to the opposite area.
+              place(chip, chip.parentElement === bank ? answer : bank);
+              return;
+            }
+            const hit = document.elementFromPoint(e.clientX,e.clientY);
+            const area = hit?.closest('[data-word-order-area]');
+            if (!area || !widget.contains(area)) return;
+            const sibling = hit?.closest('[data-word-order-token]');
+            if (sibling && sibling !== chip && sibling.parentElement === area) {
+              const rect = sibling.getBoundingClientRect();
+              const insertBefore = e.clientY < rect.top + rect.height / 2 || (Math.abs(e.clientY - (rect.top + rect.height/2)) < rect.height / 2 && e.clientX < rect.left + rect.width/2);
+              place(chip, area, insertBefore ? sibling : sibling.nextSibling);
+            } else place(chip, area);
+          };
+          const cancel = (e) => {
+            if (e.pointerId !== event.pointerId) return;
+            window.removeEventListener('pointermove',move);
+            window.removeEventListener('pointerup',finish);
+            window.removeEventListener('pointercancel',cancel);
+            ghost?.remove();
+            chip.classList.remove('is-dragging');
+          };
+          window.addEventListener('pointermove', move, {passive:false});
+          window.addEventListener('pointerup', finish);
+          window.addEventListener('pointercancel', cancel);
+        });
+      });
+    });
+  }
+
   function restoreExerciseAnswers(block, node, saved) {
     if (!saved || typeof saved !== 'object') return;
     (Array.isArray(block.items) ? block.items : []).forEach((item, index) => {
@@ -2101,6 +2215,8 @@
       } else if (inputType === 'gaps' || inputType === 'select-gaps') {
         const values = Array.isArray(value) ? value : [];
         itemNode.querySelectorAll('[data-gap-index]').forEach((input, gapIndex) => { input.value = safeText(values[gapIndex]); });
+      } else if (inputType === 'word-order') {
+        restoreWordOrderItem(itemNode, item, value);
       } else if (inputType === 'mark') {
         const selected = new Set(Array.isArray(value) ? value.map(Number) : []);
         itemNode.querySelectorAll('[data-mark-index]').forEach((button) => {
@@ -2287,6 +2403,7 @@
       savedResult?.answers
     );
     restoreLessonAnswers(root, blocks, restoredAnswers);
+    setupWordOrderInteractions(root);
     setupReadingQuizBlocks(root, blocks);
     setupExerciseDependencies(root, blocks);
     setupManualLessonWidgets(root);

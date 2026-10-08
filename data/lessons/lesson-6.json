@@ -1,0 +1,418 @@
+{
+  "id": "lesson-6",
+  "number": 6,
+  "title": "Homework 6 · Unit 1 Review",
+  "subtitle": "Speakout A1 (3rd edition) · Unit 1 · Lessons 1A–1D · Final knowledge check",
+  "status": "available",
+  "page": "lesson.html?id=lesson-6",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-unit-1-review",
+  "grammarIds": [
+    "be-i-you-a1",
+    "be-he-she-it-a1",
+    "articles-a-an-a1",
+    "plural-nouns-a1",
+    "have-has-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 30,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "u1-check-intro",
+      "title": "Unit 1 · Final check",
+      "eyebrow": "Speakout A1 · Lessons 1A–1D",
+      "text": "Five new real-life activities · greetings, people, questions, and things"
+    },
+    {
+      "type": "exercise",
+      "id": "unit1-check-1",
+      "title": "1 · Real English · What do you say?",
+      "instructions": "Read each situation. Choose the best thing to say.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "It is 9:00 a.m. You meet your new classmate.",
+          "input": "single",
+          "options": [
+            "Good morning!",
+            "Good night!",
+            "See you!"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "A person says: “Hi, I’m Daniel.”",
+          "input": "single",
+          "options": [
+            "I’m not a student.",
+            "Nice to meet you, Daniel!",
+            "I have a bag."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Your teacher asks: “Where are you from?”",
+          "input": "single",
+          "options": [
+            "He’s a doctor.",
+            "My name is Tom.",
+            "I’m from Brazil."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "You leave your English class and want to say goodbye.",
+          "input": "single",
+          "options": [
+            "See you next time!",
+            "How do you spell it?",
+            "Where is your bag?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "You did not hear a new student’s name.",
+          "input": "single",
+          "options": [
+            "Is she Italian?",
+            "Sorry, can you repeat that, please?",
+            "I’m Brazilian."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Someone asks: “How do you spell your first name?” Your name is Mia.",
+          "input": "single",
+          "options": [
+            "I am a singer.",
+            "Yes, I am.",
+            "M-I-A."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "You write your first message to a new study group.",
+          "input": "single",
+          "options": [
+            "Hi, everyone!",
+            "Good night, everyone!",
+            "I have two phones."
+          ],
+          "answer": 0
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "unit1-check-2",
+      "title": "2 · New classmates · Who are they?",
+      "instructions": "Read the information about each new classmate. Complete the sentences with the correct words.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Maya · Japan · teacher",
+          "input": "gaps",
+          "segments": [
+            "Maya is from Japan. She is ",
+            ". She ",
+            " a teacher."
+          ],
+          "answers": [
+            "Japanese",
+            "is"
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Mateo · Brazil · bus driver",
+          "input": "gaps",
+          "segments": [
+            "Mateo is from Brazil. He is ",
+            ". He ",
+            " a bus driver."
+          ],
+          "answers": [
+            "Brazilian",
+            "is"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Lin · China · digital designer",
+          "input": "gaps",
+          "segments": [
+            "Lin is from China. She ",
+            " Chinese. She is a digital ",
+            "."
+          ],
+          "answers": [
+            "is",
+            "designer"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Inês · Portugal · artist",
+          "input": "gaps",
+          "segments": [
+            "Inês is from Portugal. She is ",
+            ". She is ",
+            " artist."
+          ],
+          "answers": [
+            "Portuguese",
+            "an"
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "unit1-check-3",
+      "title": "3 · The welcome desk · Ask the questions",
+      "instructions": "A new student is talking to a receptionist. Write the missing questions.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Receptionist: __________?\nStudent: My first name is Leo.",
+          "input": "text",
+          "answer": "What's your first name?",
+          "acceptedAnswers": [
+            "What's your first name?",
+            "What is your first name?",
+            "What's your name?",
+            "What is your name?"
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Receptionist: __________?\nStudent: B-R-O-W-N.",
+          "input": "text",
+          "answer": "How do you spell your surname?",
+          "acceptedAnswers": [
+            "How do you spell your surname?",
+            "How do you spell your last name?",
+            "How do you spell it?"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Receptionist: __________?\nStudent: I’m from Canada.",
+          "input": "text",
+          "answer": "Where are you from?"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Receptionist: __________?\nStudent: I’m a chef.",
+          "input": "text",
+          "answer": "What's your job?",
+          "acceptedAnswers": [
+            "What's your job?",
+            "What is your job?",
+            "What do you do?"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Receptionist: __________?\nStudent: It’s 07700 900 123.",
+          "input": "text",
+          "answer": "What's your phone number?",
+          "acceptedAnswers": [
+            "What's your phone number?",
+            "What is your phone number?"
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "unit1-check-4",
+      "title": "4 · Lost and found · What is in the bags?",
+      "instructions": "Complete the messages. Write a / an, have / has or the correct plural form.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "This is ___ umbrella.",
+          "input": "text",
+          "answer": "an"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Maya ___ a laptop.",
+          "input": "text",
+          "answer": "has"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "I ___ two notebooks.",
+          "input": "text",
+          "answer": "have"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "There are three ___ (box) on the desk.",
+          "input": "text",
+          "answer": "boxes"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "My friend has two ___ (watch).",
+          "input": "text",
+          "answer": "watches"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "I have ___ old wallet.",
+          "input": "text",
+          "answer": "an"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Sam ___ two mobile phones.",
+          "input": "text",
+          "answer": "has"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "There are four ___ (key) in the bag.",
+          "input": "text",
+          "answer": "keys"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "It is ___ orange notebook.",
+          "input": "text",
+          "answer": "an"
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "prompt": "He has three ___ (sandwich).",
+          "input": "text",
+          "answer": "sandwiches"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "unit1-check-5",
+      "title": "5 · Your English · Write your own messages",
+      "instructions": "Write your own answers. Your teacher will read them. These answers are not automatically graded.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Write a greeting. Introduce yourself: give your name, country and nationality.",
+          "input": "textarea",
+          "placeholder": "Hi! My name is ...",
+          "scored": false
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Introduce a friend (real or imaginary). Say their name, country and job.",
+          "input": "textarea",
+          "placeholder": "My friend is ...",
+          "scored": false
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Write three questions you can ask a new student.",
+          "input": "textarea",
+          "placeholder": "1. ...\n2. ...\n3. ...",
+          "scored": false
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Describe what you have in your bag today. Use a/an and numbers with plural nouns.",
+          "input": "textarea",
+          "placeholder": "I have ...",
+          "scored": false
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "grammar-link",
+      "id": "unit1-review-be-i-you-a1",
+      "title": "be: I, you",
+      "text": "Need more practice? Review this Unit 1 rule.",
+      "grammarId": "be-i-you-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "unit1-review-be-he-she-it-a1",
+      "title": "be: he, she, it",
+      "text": "Need more practice? Review this Unit 1 rule.",
+      "grammarId": "be-he-she-it-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "unit1-review-articles-a-an-a1",
+      "title": "a / an",
+      "text": "Need more practice? Review this Unit 1 rule.",
+      "grammarId": "articles-a-an-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "unit1-review-plural-nouns-a1",
+      "title": "Singular and plural nouns",
+      "text": "Need more practice? Review this Unit 1 rule.",
+      "grammarId": "plural-nouns-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "unit1-review-have-has-a1",
+      "title": "have / has",
+      "text": "Need more practice? Review this Unit 1 rule.",
+      "grammarId": "have-has-a1",
+      "buttonLabel": "Review grammar"
+    }
+  ]
+}

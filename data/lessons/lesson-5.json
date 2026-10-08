@@ -198,43 +198,85 @@
           "id": "1",
           "number": 1,
           "prompt": "have / I / mobile phones / two .",
-          "input": "text",
-          "answer": "I have two mobile phones."
+          "input": "word-order",
+          "answer": "I have two mobile phones.",
+          "tokens": [
+            "have",
+            "I",
+            "mobile phones",
+            "two"
+          ]
         },
         {
           "id": "2",
           "number": 2,
           "prompt": "We / umbrella / have / an .",
-          "input": "text",
-          "answer": "We have an umbrella."
+          "input": "word-order",
+          "answer": "We have an umbrella.",
+          "tokens": [
+            "We",
+            "umbrella",
+            "have",
+            "an"
+          ]
         },
         {
           "id": "3",
           "number": 3,
           "prompt": "has / Teri / bottle of water / a .",
-          "input": "text",
-          "answer": "Teri has a bottle of water."
+          "input": "word-order",
+          "answer": "Teri has a bottle of water.",
+          "tokens": [
+            "has",
+            "Teri",
+            "bottle of water",
+            "a"
+          ]
         },
         {
           "id": "4",
           "number": 4,
           "prompt": "apple / I / in / bag / have / my / an .",
-          "input": "text",
-          "answer": "I have an apple in my bag."
+          "input": "word-order",
+          "answer": "I have an apple in my bag.",
+          "tokens": [
+            "apple",
+            "I",
+            "in",
+            "bag",
+            "have",
+            "my",
+            "an"
+          ]
         },
         {
           "id": "5",
           "number": 5,
           "prompt": "has / three / My / supermarkets / city .",
-          "input": "text",
-          "answer": "My city has three supermarkets."
+          "input": "word-order",
+          "answer": "My city has three supermarkets.",
+          "tokens": [
+            "has",
+            "three",
+            "My",
+            "supermarkets",
+            "city"
+          ]
         },
         {
           "id": "6",
           "number": 6,
           "prompt": "have / I / keys / my / in / bag .",
-          "input": "text",
-          "answer": "I have keys in my bag."
+          "input": "word-order",
+          "answer": "I have keys in my bag.",
+          "tokens": [
+            "have",
+            "I",
+            "keys",
+            "my",
+            "in",
+            "bag"
+          ]
         }
       ],
       "autosaveDraft": true
@@ -336,8 +378,8 @@
       "autosaveDraft": true,
       "audio": "audio/SO3_A1_WB_1D_Audio_1_12.mp3",
       "stickyImage": {
-        "src": "images/lesson-5/wb-1d-four-bags.svg",
-        "alt": "Four labelled illustrations: A phone, sandwich and water; B laptop, phone and wallet; C handbag, notebook and two phones; D laptop, passport and notebook.",
+        "src": "images/lesson-5/wb-1d-four-bags-original.png",
+        "alt": "Original workbook pictures A–D: objects including phones, sandwiches, bags, a laptop, notebook and passport.",
         "caption": "Pictures A–D"
       }
     },
