@@ -3343,3 +3343,51 @@ body[data-view="lesson"] #lesson-root {
   .is-workbook-blog .social-reading-card img {width:95px;max-width:36%;margin-left:10px;}
   .workbook-chat-quiz .exercise-item {padding:11px;}
 }
+
+/* Lesson 1B: let the job photographs and reading text follow page scrolling.
+   The original exercise-card overflow:hidden was trapping both sticky panels. */
+.exercise-card[data-task="wb-1b-1"],
+.exercise-card[data-task="wb-1b-8c"] {
+  overflow: visible;
+}
+
+@media (min-width: 901px) {
+  .exercise-card[data-task="wb-1b-1"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-1b-8c"] .exercise-reading-reference {
+    position: sticky;
+    top: 92px;
+    align-self: start;
+    max-height: calc(100vh - 112px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .exercise-card[data-task="wb-1b-1"] .exercise-sticky-media img {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 136px);
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 900px) {
+  .exercise-card[data-task="wb-1b-8c"] .exercise-reading-reference {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 860px) {
+  .exercise-card[data-task="wb-1b-1"] .exercise-sticky-media {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* overflow-x:hidden on <body> made it a non-scrolling sticky ancestor.
+   clip prevents horizontal spill without creating that scroll container. */
+body[data-view="lesson"] {
+  overflow-x: clip;
+}
