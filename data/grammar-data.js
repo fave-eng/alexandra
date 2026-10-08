@@ -872,5 +872,847 @@ window.GRAMMAR_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "articles-a-an-a1",
+    "linkedLessonId": "lesson-5",
+    "order": 5,
+    "title": "Articles: a / an",
+    "level": "A1",
+    "status": "available",
+    "page": "grammar-topic.html?id=articles-a-an-a1",
+    "passScore": 100,
+    "overview": {
+      "lead": "Use a or an before one singular countable noun when you do not mean a specific item. Choose by sound, not by spelling. There is no a/an before plural nouns.",
+      "keyRule": "a + consonant sound · an + vowel sound",
+      "example": "a laptop · an umbrella · a university · an hour",
+      "subjects": [
+        "a phone",
+        "an apple",
+        "plural: phones (no article)"
+      ]
+    },
+    "uses": [
+      {
+        "icon": "1",
+        "title": "One thing",
+        "text": "Use a/an with one countable thing.",
+        "example": "I have a purse."
+      },
+      {
+        "icon": "2",
+        "title": "Vowel sounds",
+        "text": "Use an before a vowel sound.",
+        "example": "She has an umbrella."
+      },
+      {
+        "icon": "3",
+        "title": "Listen to the first sound",
+        "text": "a university starts with /j/; an hour has a silent h.",
+        "example": "a university · an hour"
+      }
+    ],
+    "forms": [
+      {
+        "id": "positive",
+        "icon": "+",
+        "title": "Affirmative",
+        "formula": "subject + verb + a/an + singular noun",
+        "example": "I have a bag.",
+        "translation": "У меня есть сумка.",
+        "note": "a before consonant sounds; an before vowel sounds."
+      },
+      {
+        "id": "negative",
+        "icon": "−",
+        "title": "Negative",
+        "formula": "subject + do/does not + have + a/an + singular noun",
+        "example": "I don’t have an umbrella.",
+        "translation": "У меня нет зонта.",
+        "note": "The article stays with the singular noun."
+      },
+      {
+        "id": "question",
+        "icon": "?",
+        "title": "Questions",
+        "formula": "Do/Does + subject + have + a/an + noun?",
+        "example": "Do you have a passport?",
+        "translation": "У тебя есть паспорт?",
+        "note": "The article does not move to the start of the question."
+      },
+      {
+        "id": "short",
+        "icon": "✓",
+        "title": "Short answers",
+        "formula": "Yes, I do. / No, I don’t.",
+        "example": "Do you have a bag? Yes, I do.",
+        "translation": "Есть ли у тебя сумка? Да.",
+        "note": "Do/does answers do not repeat a/an."
+      }
+    ],
+    "questionBuilder": {
+      "title": "A / an in questions",
+      "note": "Choose a/an according to the next spoken sound, including in questions.",
+      "pattern": [
+        "Do you have",
+        "an",
+        "umbrella?"
+      ],
+      "example": "Do you have an umbrella?",
+      "translation": "У тебя есть зонт?"
+    },
+    "commonMistakes": [
+      {
+        "wrong": "an phone",
+        "right": "a phone",
+        "reason": "phone begins with a consonant sound."
+      },
+      {
+        "wrong": "a apple",
+        "right": "an apple",
+        "reason": "apple begins with a vowel sound."
+      },
+      {
+        "wrong": "an university",
+        "right": "a university",
+        "reason": "university begins with the consonant /j/ sound."
+      },
+      {
+        "wrong": "a phones",
+        "right": "phones",
+        "reason": "Do not use a/an with plural nouns."
+      }
+    ],
+    "quizExercises": [
+      {
+        "title": "Choose the correct form",
+        "instructions": "Choose the correct answer.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "I have ___ umbrella.",
+            "answer": 1,
+            "options": [
+              "a",
+              "an"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "She has ___ laptop.",
+            "answer": 0,
+            "options": [
+              "a",
+              "an"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "He has ___ American passport.",
+            "answer": 1,
+            "options": [
+              "a",
+              "an"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "We have ___ wallet.",
+            "answer": 0,
+            "options": [
+              "a",
+              "an"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Write the missing word",
+        "instructions": "Write the correct word.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "It is ___ apple.",
+            "answer": "an"
+          },
+          {
+            "type": "text",
+            "prompt": "This is ___ country.",
+            "answer": "a"
+          },
+          {
+            "type": "text",
+            "prompt": "She is ___ actor.",
+            "answer": "an"
+          },
+          {
+            "type": "text",
+            "prompt": "I have ___ mobile phone.",
+            "answer": "a"
+          }
+        ]
+      },
+      {
+        "title": "Use the rule in context",
+        "instructions": "Choose the correct sentence or phrase.",
+        "items": [
+          {
+            "type": "select",
+            "prompt": "Which is correct?",
+            "answer": 1,
+            "options": [
+              "an university",
+              "a university",
+              "an phones"
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Choose the correct noun phrase.",
+            "answer": 0,
+            "options": [
+              "an hour",
+              "a hour",
+              "a hours"
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Which sentence is correct?",
+            "answer": 2,
+            "options": [
+              "I have a apples.",
+              "I have an apples.",
+              "I have apples."
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Which is correct?",
+            "answer": 1,
+            "options": [
+              "a office worker",
+              "an office worker",
+              "an bag"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Build sentences and questions",
+        "instructions": "Put the words in the correct order.",
+        "items": [
+          {
+            "type": "reorder",
+            "prompt": "have / an / I / umbrella",
+            "answer": "I have an umbrella.",
+            "tokens": [
+              "have",
+              "an",
+              "I",
+              "umbrella"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "a / she / has / laptop",
+            "answer": "She has a laptop.",
+            "tokens": [
+              "a",
+              "she",
+              "has",
+              "laptop"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "you / have / an / do / apple / ?",
+            "answer": "Do you have an apple?",
+            "tokens": [
+              "you",
+              "have",
+              "an",
+              "do",
+              "apple",
+              "?"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "passport / a / have / they",
+            "answer": "They have a passport.",
+            "tokens": [
+              "passport",
+              "a",
+              "have",
+              "they"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plural-nouns-a1",
+    "linkedLessonId": "lesson-5",
+    "order": 6,
+    "title": "Singular and plural nouns",
+    "level": "A1",
+    "status": "available",
+    "page": "grammar-topic.html?id=plural-nouns-a1",
+    "passScore": 100,
+    "overview": {
+      "lead": "Use the singular form for one object and the plural form for two or more. Most nouns add -s, but some change their spelling.",
+      "keyRule": "1 bag → 2 bags · 1 sandwich → 2 sandwiches · 1 country → 2 countries",
+      "example": "I have one purse. We have two purses.",
+      "subjects": [
+        "one phone",
+        "two phones",
+        "two countries"
+      ]
+    },
+    "uses": [
+      {
+        "icon": "1",
+        "title": "Add -s",
+        "text": "Most plural nouns add -s.",
+        "example": "bag → bags"
+      },
+      {
+        "icon": "2",
+        "title": "Add -es",
+        "text": "After s, sh, ch, x, add -es.",
+        "example": "sandwich → sandwiches"
+      },
+      {
+        "icon": "3",
+        "title": "Change y to ies",
+        "text": "Consonant + y changes to -ies; vowel + y adds -s.",
+        "example": "country → countries; key → keys"
+      }
+    ],
+    "forms": [
+      {
+        "id": "positive",
+        "icon": "+",
+        "title": "Affirmative",
+        "formula": "number + plural noun",
+        "example": "I have three wallets.",
+        "translation": "У меня три кошелька.",
+        "note": "No a/an with a plural noun."
+      },
+      {
+        "id": "negative",
+        "icon": "−",
+        "title": "Negative",
+        "formula": "do/does not + have + plural noun",
+        "example": "I don’t have laptops.",
+        "translation": "У меня нет ноутбуков.",
+        "note": "Nouns are plural when more than one is meant."
+      },
+      {
+        "id": "question",
+        "icon": "?",
+        "title": "Questions",
+        "formula": "How many + plural noun + ... ?",
+        "example": "How many phones do you have?",
+        "translation": "Сколько у тебя телефонов?",
+        "note": "Use the plural after how many."
+      },
+      {
+        "id": "short",
+        "icon": "✓",
+        "title": "Short answers",
+        "formula": "number + plural noun",
+        "example": "Two phones.",
+        "translation": "Два телефона.",
+        "note": "Singular after one, plural after two or more."
+      }
+    ],
+    "questionBuilder": {
+      "title": "How many ...?",
+      "note": "After how many, use the plural noun.",
+      "pattern": [
+        "How many",
+        "mobile phones",
+        "do you have?"
+      ],
+      "example": "How many mobile phones do you have?",
+      "translation": "Сколько у тебя мобильных телефонов?"
+    },
+    "commonMistakes": [
+      {
+        "wrong": "two country",
+        "right": "two countries",
+        "reason": "Consonant + y changes to -ies."
+      },
+      {
+        "wrong": "three sandwichs",
+        "right": "three sandwiches",
+        "reason": "After ch, add -es."
+      },
+      {
+        "wrong": "two keyes",
+        "right": "two keys",
+        "reason": "After vowel + y, add -s."
+      },
+      {
+        "wrong": "two childs",
+        "right": "two children",
+        "reason": "Child → children is irregular."
+      }
+    ],
+    "quizExercises": [
+      {
+        "title": "Choose the correct form",
+        "instructions": "Choose the correct answer.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "two ___",
+            "answer": 1,
+            "options": [
+              "purse",
+              "purses"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "three ___",
+            "answer": 0,
+            "options": [
+              "laptops",
+              "laptop"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "two ___",
+            "answer": 1,
+            "options": [
+              "country",
+              "countries"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "four ___",
+            "answer": 0,
+            "options": [
+              "sandwiches",
+              "sandwichs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Write the missing word",
+        "instructions": "Write the correct word.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "One wallet → two ___.",
+            "answer": "wallets"
+          },
+          {
+            "type": "text",
+            "prompt": "One phone → three ___.",
+            "answer": "phones"
+          },
+          {
+            "type": "text",
+            "prompt": "One country → two ___.",
+            "answer": "countries"
+          },
+          {
+            "type": "text",
+            "prompt": "One box → two ___.",
+            "answer": "boxes"
+          }
+        ]
+      },
+      {
+        "title": "Use the rule in context",
+        "instructions": "Choose the correct sentence or phrase.",
+        "items": [
+          {
+            "type": "select",
+            "prompt": "Choose the correct sentence.",
+            "answer": 0,
+            "options": [
+              "I have two bags.",
+              "I have two bag.",
+              "I have a two bags."
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Choose the correct phrase.",
+            "answer": 1,
+            "options": [
+              "three babys",
+              "three babies",
+              "three babyes"
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Choose the correct phrase.",
+            "answer": 2,
+            "options": [
+              "two childs",
+              "two childrens",
+              "two children"
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Choose the correct question.",
+            "answer": 1,
+            "options": [
+              "How many phone do you have?",
+              "How many phones do you have?",
+              "How much phones do you have?"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Build sentences and questions",
+        "instructions": "Put the words in the correct order.",
+        "items": [
+          {
+            "type": "reorder",
+            "prompt": "two / have / I / wallets",
+            "answer": "I have two wallets.",
+            "tokens": [
+              "two",
+              "have",
+              "I",
+              "wallets"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "has / she / three / keys",
+            "answer": "She has three keys.",
+            "tokens": [
+              "has",
+              "she",
+              "three",
+              "keys"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "many / have / how / phones / you / do / ?",
+            "answer": "How many phones do you have?",
+            "tokens": [
+              "many",
+              "have",
+              "how",
+              "phones",
+              "you",
+              "do",
+              "?"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "in / there / are / my / two / sandwiches / bag",
+            "answer": "There are two sandwiches in my bag.",
+            "tokens": [
+              "in",
+              "there",
+              "are",
+              "my",
+              "two",
+              "sandwiches",
+              "bag"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "have-has-a1",
+    "linkedLessonId": "lesson-5",
+    "order": 7,
+    "title": "Have / has",
+    "level": "A1",
+    "status": "available",
+    "page": "grammar-topic.html?id=have-has-a1",
+    "passScore": 100,
+    "overview": {
+      "lead": "Use have and has to talk about what people own or carry. Have is used with I, you, we and they; has with he, she and it.",
+      "keyRule": "I / you / we / they → have · he / she / it → has",
+      "example": "I have a mobile phone. She has a laptop.",
+      "subjects": [
+        "I have",
+        "you have",
+        "he / she / it has"
+      ]
+    },
+    "uses": [
+      {
+        "icon": "1",
+        "title": "Talk about your things",
+        "text": "Say what is in your bag or what you own.",
+        "example": "I have two keys."
+      },
+      {
+        "icon": "2",
+        "title": "Talk about one person",
+        "text": "Use has with he/she/it or a person’s name.",
+        "example": "Ralph has a wallet."
+      },
+      {
+        "icon": "3",
+        "title": "Ask about possessions",
+        "text": "Use do/does in questions and do not use has after does.",
+        "example": "Does she have a laptop?"
+      }
+    ],
+    "forms": [
+      {
+        "id": "positive",
+        "icon": "+",
+        "title": "Affirmative",
+        "formula": "subject + have / has + object",
+        "example": "I have a bag. She has a phone.",
+        "translation": "У меня есть сумка. У неё есть телефон.",
+        "note": "Use has with he/she/it."
+      },
+      {
+        "id": "negative",
+        "icon": "−",
+        "title": "Negative",
+        "formula": "subject + don’t/doesn’t + have + object",
+        "example": "I don’t have a laptop. He doesn’t have a wallet.",
+        "translation": "У меня нет ноутбука. У него нет кошелька.",
+        "note": "After doesn’t, use have, not has."
+      },
+      {
+        "id": "question",
+        "icon": "?",
+        "title": "Questions",
+        "formula": "Do/Does + subject + have + object?",
+        "example": "Do you have a phone? Does she have a bag?",
+        "translation": "У тебя есть телефон? У неё есть сумка?",
+        "note": "Use have after do and does."
+      },
+      {
+        "id": "short",
+        "icon": "✓",
+        "title": "Short answers",
+        "formula": "Yes, I do. / No, she doesn’t.",
+        "example": "Does he have keys? Yes, he does.",
+        "translation": "Есть ли у него ключи? Да.",
+        "note": "Avoid Yes, he has as a short answer to Does he have ...?"
+      }
+    ],
+    "questionBuilder": {
+      "title": "Question order",
+      "note": "Start with Do or Does, then the subject, then have.",
+      "pattern": [
+        "Does",
+        "Yolanda",
+        "have",
+        "two phones?"
+      ],
+      "example": "Does Yolanda have two phones?",
+      "translation": "У Иоланды два телефона?"
+    },
+    "commonMistakes": [
+      {
+        "wrong": "She have a purse.",
+        "right": "She has a purse.",
+        "reason": "Use has with she."
+      },
+      {
+        "wrong": "He doesn’t has a wallet.",
+        "right": "He doesn’t have a wallet.",
+        "reason": "Use have after doesn’t."
+      },
+      {
+        "wrong": "Does he has a laptop?",
+        "right": "Does he have a laptop?",
+        "reason": "After does, use have."
+      },
+      {
+        "wrong": "We has two bags.",
+        "right": "We have two bags.",
+        "reason": "Use have with we."
+      }
+    ],
+    "quizExercises": [
+      {
+        "title": "Choose the correct form",
+        "instructions": "Choose the correct answer.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "Ralph ___ a wallet.",
+            "answer": 1,
+            "options": [
+              "have",
+              "has"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "I ___ two mobile phones.",
+            "answer": 0,
+            "options": [
+              "have",
+              "has"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "They ___ an umbrella.",
+            "answer": 0,
+            "options": [
+              "have",
+              "has"
+            ]
+          },
+          {
+            "type": "single",
+            "prompt": "She ___ a laptop.",
+            "answer": 1,
+            "options": [
+              "have",
+              "has"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Write the missing word",
+        "instructions": "Write the correct word.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "We ___ a bottle of water.",
+            "answer": "have"
+          },
+          {
+            "type": "text",
+            "prompt": "Teri ___ a phone.",
+            "answer": "has"
+          },
+          {
+            "type": "text",
+            "prompt": "___ your brother have keys?",
+            "answer": "Does"
+          },
+          {
+            "type": "text",
+            "prompt": "He doesn’t ___ a passport.",
+            "answer": "have"
+          }
+        ]
+      },
+      {
+        "title": "Use the rule in context",
+        "instructions": "Choose the correct sentence or phrase.",
+        "items": [
+          {
+            "type": "select",
+            "prompt": "Choose the correct sentence.",
+            "answer": 1,
+            "options": [
+              "She have a phone.",
+              "She has a phone.",
+              "She haves a phone."
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Which is correct?",
+            "answer": 0,
+            "options": [
+              "Does he have a wallet?",
+              "Does he has a wallet?",
+              "Do he have a wallet?"
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Which is correct?",
+            "answer": 2,
+            "options": [
+              "He doesn’t has a laptop.",
+              "He don’t have a laptop.",
+              "He doesn’t have a laptop."
+            ]
+          },
+          {
+            "type": "select",
+            "prompt": "Choose the correct short answer to “Does she have keys?”",
+            "answer": 1,
+            "options": [
+              "Yes, she have.",
+              "Yes, she does.",
+              "Yes, she has."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Build sentences and questions",
+        "instructions": "Put the words in the correct order.",
+        "items": [
+          {
+            "type": "reorder",
+            "prompt": "a / has / she / bag",
+            "answer": "She has a bag.",
+            "tokens": [
+              "a",
+              "has",
+              "she",
+              "bag"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "we / two / have / phones",
+            "answer": "We have two phones.",
+            "tokens": [
+              "we",
+              "two",
+              "have",
+              "phones"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "has / Ralph / two / cards",
+            "answer": "Ralph has two cards.",
+            "tokens": [
+              "has",
+              "Ralph",
+              "two",
+              "cards"
+            ]
+          },
+          {
+            "type": "reorder",
+            "prompt": "does / she / a / have / wallet / ?",
+            "answer": "Does she have a wallet?",
+            "tokens": [
+              "does",
+              "she",
+              "a",
+              "have",
+              "wallet",
+              "?"
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];

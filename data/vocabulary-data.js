@@ -780,5 +780,142 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-1d",
+    "title": "Lesson 1D · Everyday things",
+    "label": "Unit 1 · Lesson 1D",
+    "icon": "👜",
+    "type": "lesson",
+    "linkedLessonId": "lesson-5",
+    "page": "vocabulary.html?id=vocab-lesson-1d",
+    "words": [
+      {
+        "id": "wb-1d-word-01",
+        "en": "bag",
+        "ru": "сумка",
+        "transcription": "",
+        "exampleEn": "My keys are in my bag.",
+        "exampleRu": "Мои ключи в сумке.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-02",
+        "en": "bottle of water",
+        "ru": "бутылка воды",
+        "transcription": "",
+        "exampleEn": "Teri has a bottle of water.",
+        "exampleRu": "У Тери есть бутылка воды.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-03",
+        "en": "country",
+        "ru": "страна",
+        "transcription": "",
+        "exampleEn": "Which country are you from?",
+        "exampleRu": "Из какой ты страны?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-04",
+        "en": "credit card",
+        "ru": "кредитная карта",
+        "transcription": "",
+        "exampleEn": "He has two credit cards.",
+        "exampleRu": "У него две кредитные карты.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-05",
+        "en": "keys",
+        "ru": "ключи",
+        "transcription": "",
+        "exampleEn": "I have keys in my bag.",
+        "exampleRu": "У меня в сумке ключи.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-06",
+        "en": "laptop",
+        "ru": "ноутбук",
+        "transcription": "",
+        "exampleEn": "I have a laptop.",
+        "exampleRu": "У меня есть ноутбук.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-07",
+        "en": "mobile phone",
+        "ru": "мобильный телефон",
+        "transcription": "",
+        "exampleEn": "She has two mobile phones.",
+        "exampleRu": "У неё два мобильных телефона.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-08",
+        "en": "passport",
+        "ru": "паспорт",
+        "transcription": "",
+        "exampleEn": "He has an American passport.",
+        "exampleRu": "У него американский паспорт.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-09",
+        "en": "photo",
+        "ru": "фотография",
+        "transcription": "",
+        "exampleEn": "She has a photo in her bag.",
+        "exampleRu": "У неё в сумке есть фотография.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-10",
+        "en": "purse",
+        "ru": "кошелёк / небольшая женская сумка (BrE)",
+        "transcription": "",
+        "exampleEn": "I have £5 in my purse.",
+        "exampleRu": "У меня в кошельке пять фунтов.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-11",
+        "en": "sandwich",
+        "ru": "сэндвич",
+        "transcription": "",
+        "exampleEn": "There are two sandwiches in the bag.",
+        "exampleRu": "В сумке два сэндвича.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-12",
+        "en": "supermarket",
+        "ru": "супермаркет",
+        "transcription": "",
+        "exampleEn": "My city has three supermarkets.",
+        "exampleRu": "В моём городе три супермаркета.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-13",
+        "en": "umbrella",
+        "ru": "зонт",
+        "transcription": "",
+        "exampleEn": "We have an umbrella.",
+        "exampleRu": "У нас есть зонт.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1d-word-14",
+        "en": "wallet",
+        "ru": "кошелёк",
+        "transcription": "",
+        "exampleEn": "Ralph has a wallet.",
+        "exampleRu": "У Ральфа есть кошелёк.",
+        "audio": ""
+      }
+    ]
   }
 ];

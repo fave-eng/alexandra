@@ -3450,3 +3450,15 @@ body[data-view="lesson"] {
     overflow: visible;
   }
 }
+
+/* Workbook 1D: keep the four illustrated item groups visible beside listening 4A. */
+.exercise-card[data-task="wb-1d-4a"] { overflow: visible; }
+.exercise-card[data-task="wb-1d-4a"] .exercise-sticky-media img { object-fit: contain; }
+.exercise-card[data-task="wb-1d-4b"] .workbook-table-gap select { width: 100%; min-width: 115px; font-size: .90rem; }
+.exercise-card[data-task="wb-1d-1b"] .exercise-item .text-field { max-width: 320px; }
+@media (min-width: 901px) {
+ .exercise-card[data-task="wb-1d-4a"] .exercise-sticky-media {position: sticky; top:92px; align-self:start; max-height:calc(100vh - 112px); overflow-y:auto; scrollbar-width:thin;}
+}
+@media (max-width: 900px) {
+ .exercise-card[data-task="wb-1d-4a"] .exercise-sticky-media {position:static; max-height:none; overflow:visible;}
+}

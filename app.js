@@ -1164,7 +1164,12 @@
         const found = lookup.get(safeText(cell.itemId));
         if (!found) return '<td></td>';
         const {item} = found;
-        return `<td><div class="workbook-table-gap exercise-item" data-exercise-item="${escapeHtml(item.id)}" data-input-type="text"><label for="workbook-${escapeHtml(id)}-${escapeHtml(item.id)}" class="sr-only">${escapeHtml(item.prompt || '')}</label><span class="workbook-table-number">${escapeHtml(item.number || '')}</span><input id="workbook-${escapeHtml(id)}-${escapeHtml(item.id)}" class="text-field" type="text" autocomplete="off" aria-label="${escapeHtml(item.prompt || '')}"><div class="feedback" aria-live="polite"></div></div></td>`;
+        const isSelect = item.input === 'select';
+        const fieldId = `workbook-${escapeHtml(id)}-${escapeHtml(item.id)}`;
+        const field = isSelect
+          ? `<select id="${fieldId}" aria-label="${escapeHtml(item.prompt || '')}"><option value="">Choose</option>${(item.options || []).map((option, optionIndex) => `<option value="${optionIndex}">${escapeHtml(option)}</option>`).join('')}</select>`
+          : `<input id="${fieldId}" class="text-field" type="text" autocomplete="off" aria-label="${escapeHtml(item.prompt || '')}">`;
+        return `<td><div class="workbook-table-gap exercise-item" data-exercise-item="${escapeHtml(item.id)}" data-input-type="${isSelect ? 'select' : 'text'}"><label for="${fieldId}" class="sr-only">${escapeHtml(item.prompt || '')}</label><span class="workbook-table-number">${escapeHtml(item.number || '')}</span>${field}<div class="feedback" aria-live="polite"></div></div></td>`;
       }).join('')}</tr>`).join('')}</tbody></table></div>`;
     }
     return `<div class="exercise-items">${items.map((item, index) => renderExerciseItem(item, id, index)).join('')}</div>`;
@@ -1173,7 +1178,13 @@
   function renderExerciseItem(item, blockId, index) {
     const itemId = safeText(item.id, `${index + 1}`);
     const number = item.number === undefined ? index + 1 : item.number;
-    const prompt = escapeHtml(item.prompt || '').replaceAll('\n', '<br>');
+    const originalPrompt = safeText(item.prompt);
+    const markedPhrase = safeText(item.markedPhrase);
+    const markAt = markedPhrase ? originalPrompt.indexOf(markedPhrase) : -1;
+    const prompt = (markAt < 0
+      ? escapeHtml(originalPrompt)
+      : escapeHtml(originalPrompt.slice(0, markAt)) + '<u>' + escapeHtml(markedPhrase) + '</u>' + escapeHtml(originalPrompt.slice(markAt + markedPhrase.length)))
+      .replaceAll('\n', '<br>');
     const inputId = `exercise-${blockId}-${itemId}`.replace(/[^a-zA-Z0-9_-]/g, '-');
     const numberMarkup = number === '' || number === null ? '' : `<span class="exercise-number">${escapeHtml(number)}</span>`;
 

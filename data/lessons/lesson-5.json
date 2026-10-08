@@ -1,0 +1,644 @@
+{
+  "id": "lesson-5",
+  "number": 5,
+  "title": "Homework 5 · Lesson 1D",
+  "subtitle": "Speakout A1 (3rd edition) · Singular and plural nouns · a / an · have / has · Listening",
+  "status": "available",
+  "page": "lesson.html?id=lesson-5",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-lesson-1d",
+  "grammarIds": [
+    "articles-a-an-a1",
+    "plural-nouns-a1",
+    "have-has-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 42,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "wb-1d-heading",
+      "title": "Lesson 1D",
+      "eyebrow": "Speakout 3rd edition · Workbook",
+      "text": "Grammar · Singular and plural nouns · a / an · have / has · Listening"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-1a",
+      "title": "1A · GRAMMAR · a / an",
+      "instructions": "Choose the correct alternative.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "purse",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "wallet",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "umbrella",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "laptop",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "apple",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "American passport",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "mobile phone",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "country",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-1b",
+      "title": "1B · GRAMMAR · plural nouns",
+      "instructions": "Write the plurals of the words in Ex 1A.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "purse",
+          "input": "text",
+          "answer": "purses"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "wallet",
+          "input": "text",
+          "answer": "wallets"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "umbrella",
+          "input": "text",
+          "answer": "umbrellas"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "laptop",
+          "input": "text",
+          "answer": "laptops"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "apple",
+          "input": "text",
+          "answer": "apples"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "American passport",
+          "input": "text",
+          "answer": "American passports"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "mobile phone",
+          "input": "text",
+          "answer": "mobile phones"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "country",
+          "input": "text",
+          "answer": "countries"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-2",
+      "title": "2 · GRAMMAR · have / has",
+      "instructions": "Put the words in the correct order to make sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "have / I / mobile phones / two .",
+          "input": "text",
+          "answer": "I have two mobile phones."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "We / umbrella / have / an .",
+          "input": "text",
+          "answer": "We have an umbrella."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "has / Teri / bottle of water / a .",
+          "input": "text",
+          "answer": "Teri has a bottle of water."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "apple / I / in / bag / have / my / an .",
+          "input": "text",
+          "answer": "I have an apple in my bag."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "has / three / My / supermarkets / city .",
+          "input": "text",
+          "answer": "My city has three supermarkets."
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "have / I / keys / my / in / bag .",
+          "input": "text",
+          "answer": "I have keys in my bag."
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-3",
+      "title": "3 · GRAMMAR · Correct the mistakes",
+      "instructions": "The sentences below have a mistake. Choose the best option to correct the mistake.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "I’m have £5 in my purse.",
+          "input": "single",
+          "options": [
+            "I’m",
+            "I has",
+            "I have"
+          ],
+          "answer": 2,
+          "markedPhrase": "I’m have"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "I have two sandwichs in my bag.",
+          "input": "single",
+          "options": [
+            "two sandwich",
+            "two sandwiches",
+            "a sandwiches"
+          ],
+          "answer": 1,
+          "markedPhrase": "two sandwichs"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Iggy have a phone and a wallet.",
+          "input": "single",
+          "options": [
+            "Iggy is",
+            "Iggy has",
+            "Iggy’s"
+          ],
+          "answer": 1,
+          "markedPhrase": "Iggy have"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Didier and Carlos are offices workers.",
+          "input": "single",
+          "options": [
+            "office workers",
+            "office worker",
+            "offices worker"
+          ],
+          "answer": 0,
+          "markedPhrase": "offices workers"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-4a",
+      "title": "4A · LISTENING · My “top three” things",
+      "instructions": "1.12 | Listen to a podcast. Match the speakers (1–2) with one of the pictures below (A–D).",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Ralph",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Yolanda",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_1D_Audio_1_12.mp3",
+      "stickyImage": {
+        "src": "images/lesson-5/wb-1d-four-bags.svg",
+        "alt": "Four labelled illustrations: A phone, sandwich and water; B laptop, phone and wallet; C handbag, notebook and two phones; D laptop, passport and notebook.",
+        "caption": "Pictures A–D"
+      }
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-4b",
+      "title": "4B · LISTENING · Ralph and Yolanda",
+      "instructions": "1.12 | Listen again. Complete the table with the words in the box.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Ralph · nationality",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Ralph · from",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Ralph · now in",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Ralph · job",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Yolanda · nationality",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Yolanda · from",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Yolanda · now in",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 7
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "Yolanda · job",
+          "input": "select",
+          "options": [
+            "British",
+            "digital designer",
+            "Manaus",
+            "London",
+            "police officer",
+            "Sheffield",
+            "Brazilian",
+            "Washington"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_1D_Audio_1_12.mp3",
+      "wordBank": [
+        "British",
+        "digital designer",
+        "Manaus",
+        "London",
+        "police officer",
+        "Sheffield",
+        "Brazilian",
+        "Washington"
+      ],
+      "tableHeaders": [
+        "",
+        "Ralph",
+        "Yolanda"
+      ],
+      "tableRows": [
+        [
+          "nationality",
+          {
+            "itemId": "1"
+          },
+          {
+            "itemId": "5"
+          }
+        ],
+        [
+          "from",
+          {
+            "itemId": "2"
+          },
+          {
+            "itemId": "6"
+          }
+        ],
+        [
+          "now in",
+          {
+            "itemId": "3"
+          },
+          {
+            "itemId": "7"
+          }
+        ],
+        [
+          "job",
+          {
+            "itemId": "4"
+          },
+          {
+            "itemId": "8"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1d-4c",
+      "title": "4C · LISTENING · True or False",
+      "instructions": "1.12 | Listen again. Are the statements True (T) or False (F)?",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Ralph has two credit cards in his wallet.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Ralph has photos of his friends in his wallet.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "He always has his laptop with him.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Yolanda always has a bottle of water in her bag.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Yolanda has two mobile phones.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Her bag is from Mexico.",
+          "input": "single",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_1D_Audio_1_12.mp3"
+    },
+    {
+      "type": "grammar-link",
+      "id": "wb-1d-grammar-articles-a-an-a1",
+      "title": "a / an: singular nouns",
+      "text": "Review the rule and complete the four practice exercises.",
+      "grammarId": "articles-a-an-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "wb-1d-grammar-plural-nouns-a1",
+      "title": "Singular and plural nouns",
+      "text": "Review the rule and complete the four practice exercises.",
+      "grammarId": "plural-nouns-a1",
+      "buttonLabel": "Review grammar"
+    },
+    {
+      "type": "grammar-link",
+      "id": "wb-1d-grammar-have-has-a1",
+      "title": "have / has",
+      "text": "Review the rule and complete the four practice exercises.",
+      "grammarId": "have-has-a1",
+      "buttonLabel": "Review grammar"
+    }
+  ]
+}
