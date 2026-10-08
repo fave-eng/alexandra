@@ -1,0 +1,702 @@
+{
+  "id": "lesson-2",
+  "number": 2,
+  "title": "Homework 2 · Lesson 1B",
+  "subtitle": "Speakout A1 (3rd edition) · Jobs · Present simple be: he, she, it · Reading",
+  "status": "available",
+  "page": "lesson.html?id=lesson-2",
+  "publishedAt": "2026-10-08",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-lesson-1b",
+  "grammarIds": [
+    "be-he-she-it-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 49,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "wb-1b-section",
+      "title": "Lesson 1B",
+      "eyebrow": "Speakout 3rd edition · Workbook",
+      "text": "Vocabulary · Grammar · Reading"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-1",
+      "title": "1 · VOCABULARY · jobs",
+      "instructions": "Match the jobs (1–6) with the photos (A–F).",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "doctor",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "nurse",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "singer",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "taxi driver",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "teacher",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "waiter",
+          "input": "select",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 3
+        }
+      ],
+      "autosaveDraft": true,
+      "stickyImage": {
+        "src": "images/lesson-2/wb-1b-jobs.jpg",
+        "alt": "Original job photographs A: singer, B: doctor, C: teacher, D: waiter, E: taxi driver, F: nurse"
+      }
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-2",
+      "title": "2 · VOCABULARY · jobs",
+      "instructions": "Choose the correct alternative.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Iulia is a bus ______.",
+          "input": "single",
+          "options": [
+            "officer",
+            "driver",
+            "assistant"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Yusuf is an office ______.",
+          "input": "single",
+          "options": [
+            "driver",
+            "worker",
+            "player"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Anouk is a police ______.",
+          "input": "single",
+          "options": [
+            "officer",
+            "player",
+            "driver"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Paula is a football ______.",
+          "input": "single",
+          "options": [
+            "assistant",
+            "worker",
+            "player"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "John is a digital ______.",
+          "input": "single",
+          "options": [
+            "driver",
+            "designer",
+            "player"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "João is a shop ______.",
+          "input": "single",
+          "options": [
+            "officer",
+            "player",
+            "assistant"
+          ],
+          "answer": 2
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-3",
+      "title": "3 · VOCABULARY · jobs",
+      "instructions": "Choose the correct word to complete the messages.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Hi! I’m Sylvie. I’m ___ artist.",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "Hi, I’m Carol. I’m ___ businessperson.",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "Hello everyone. I’m Miko. I’m ___ office worker.",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Hello, I’m Roberto. I’m ___ nurse.",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Hello, I’m Seo. I’m ___ police officer.",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Hi, I’m Maddi. I’m ___ taxi driver.",
+          "input": "single",
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        }
+      ],
+      "autosaveDraft": true,
+      "chatChoices": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-4",
+      "title": "4 · GRAMMAR · present simple be: he, she, it",
+      "instructions": "Choose the correct word to complete the sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Elsa ______ French. She’s from Italy.",
+          "input": "single",
+          "options": [
+            "is",
+            "isn’t",
+            "aren’t"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "The Taj Mahal ______ in India.",
+          "input": "single",
+          "options": [
+            "are",
+            "am",
+            "is"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "David isn’t an actor. ______ an artist.",
+          "input": "single",
+          "options": [
+            "It’s",
+            "He’s",
+            "Is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "______ Shola an office worker?",
+          "input": "single",
+          "options": [
+            "Is",
+            "Are",
+            "What"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "______ livre in English?",
+          "input": "single",
+          "options": [
+            "Where",
+            "What",
+            "What’s"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "Machu Picchu isn’t in Argentina. ______ in Peru.",
+          "input": "single",
+          "options": [
+            "He’s",
+            "It’s",
+            "She’s"
+          ],
+          "answer": 1
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-5",
+      "title": "5 · GRAMMAR · present simple be: he, she, it",
+      "instructions": "Correct the mistakes.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Elena isn’t a police officer. She a businesswoman.",
+          "input": "text",
+          "answer": "Elena isn’t a police officer. She’s a businesswoman."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "A: Is Anya a nurse?\nB: Yes, she’s.",
+          "input": "textarea",
+          "answer": "A: Is Anya a nurse? B: Yes, she is.",
+          "acceptedAnswers": [
+            "A: Is Anya a nurse? B: Yes, she is.",
+            "Yes, she is."
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "The Eiffel Tower isn’t in Rome. She’s in Paris.",
+          "input": "text",
+          "answer": "The Eiffel Tower isn’t in Rome. It’s in Paris."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "He is a taxi driver?",
+          "input": "text",
+          "answer": "Is he a taxi driver?"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "Where Diego is from?",
+          "input": "text",
+          "answer": "Where is Diego from?"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "He are from South Korea.",
+          "input": "text",
+          "answer": "He’s from South Korea.",
+          "acceptedAnswers": [
+            "He’s from South Korea.",
+            "He is from South Korea."
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "A: Is Laura a digital designer?\nB: Yes, she are.",
+          "input": "textarea",
+          "answer": "A: Is Laura a digital designer? B: Yes, she is.",
+          "acceptedAnswers": [
+            "A: Is Laura a digital designer? B: Yes, she is.",
+            "Yes, she is."
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "What lapiz in English?",
+          "input": "text",
+          "answer": "What’s lapiz in English?"
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-6",
+      "title": "6 · GRAMMAR · present simple be: he, she, it",
+      "instructions": "Use the prompts and be to write sentences. Use contractions where possible.",
+      "items": [
+        {
+          "id": "example-1",
+          "number": 1,
+          "prompt": "she / from / Beijing.",
+          "example": true,
+          "exampleAnswer": "She’s from Beijing."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "he / a businessperson.",
+          "input": "text",
+          "answer": "He’s a businessperson.",
+          "acceptedAnswers": [
+            "He’s a businessperson.",
+            "He is a businessperson."
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "it / not / in London.",
+          "input": "text",
+          "answer": "It isn’t in London.",
+          "acceptedAnswers": [
+            "It isn’t in London.",
+            "It’s not in London.",
+            "It is not in London."
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "where / Sophie / from?",
+          "input": "text",
+          "answer": "Where’s Sophie from?",
+          "acceptedAnswers": [
+            "Where’s Sophie from?",
+            "Where is Sophie from?"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "he / a teacher?",
+          "input": "text",
+          "answer": "Is he a teacher?"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "what / Jack’s job?",
+          "input": "text",
+          "answer": "What’s Jack’s job?",
+          "acceptedAnswers": [
+            "What’s Jack’s job?",
+            "What is Jack’s job?"
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "she / not / an office worker. She / a shop assistant.",
+          "input": "textarea",
+          "answer": "She isn’t an office worker. She’s a shop assistant.",
+          "acceptedAnswers": [
+            "She isn’t an office worker. She’s a shop assistant.",
+            "She’s not an office worker. She’s a shop assistant.",
+            "She is not an office worker. She is a shop assistant."
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "the Colosseum / not / in Milan. It / in Rome.",
+          "input": "textarea",
+          "answer": "The Colosseum isn’t in Milan. It’s in Rome.",
+          "acceptedAnswers": [
+            "The Colosseum isn’t in Milan. It’s in Rome.",
+            "The Colosseum is not in Milan. It is in Rome.",
+            "The Colosseum’s not in Milan. It’s in Rome."
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-1b-8c",
+      "title": "8C · READING",
+      "instructions": "Read the blog again. Are the statements True (T) or False (F)?",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "prompt": "Sandra is Argentinian.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "prompt": "She’s a student at Cambridge University.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "prompt": "She isn’t happy in Cambridge.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "prompt": "Rob is British.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "prompt": "He’s an office worker at the weekend.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "prompt": "His job is difficult.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "prompt": "Kasia is a nurse at a big hospital.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "prompt": "Her job isn’t very difficult.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "prompt": "Charlie is Italian.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "prompt": "He is happy with his jobs.",
+          "input": "single",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        }
+      ],
+      "autosaveDraft": true,
+      "contentTitle": "The question of the day: What’s your job?",
+      "contentByline": "Sarah Taylor | Oxford Street, London",
+      "contentCards": [
+        {
+          "headline": "Sandra Martínez is from Bogotá in Colombia.",
+          "text": "‘I’m a student at Cambridge University. It’s a great university. At the weekend, I’m a waiter in a French restaurant. I’m very happy in Cambridge.’",
+          "image": {
+            "src": "images/lesson-2/wb-1b-blog-1.jpg",
+            "alt": "Sandra Martínez"
+          }
+        },
+        {
+          "headline": "Rob Marshall is from Birmingham in the UK.",
+          "text": "‘From Monday to Friday, I’m an office worker. It’s not difficult, but the money isn’t very good.’",
+          "image": {
+            "src": "images/lesson-2/wb-1b-blog-2.jpg",
+            "alt": "Rob Marshall"
+          }
+        },
+        {
+          "headline": "Kasia Wójcik is from Kraków in Poland.",
+          "text": "‘I’m a doctor at a big hospital here in London. My job is very difficult, but it’s great!’",
+          "image": {
+            "src": "images/lesson-2/wb-1b-blog-3.jpg",
+            "alt": "Kasia Wójcik"
+          }
+        },
+        {
+          "headline": "Charlie Cox is from New York in the USA.",
+          "text": "‘I’m a digital designer for an Italian company and I’m also an artist. London is a great city and I’m very happy with my jobs!’",
+          "image": {
+            "src": "images/lesson-2/wb-1b-blog-4.jpg",
+            "alt": "Charlie Cox"
+          }
+        }
+      ],
+      "readingAside": true
+    },
+    {
+      "type": "grammar-link",
+      "id": "be-he-she-it-link",
+      "title": "Present simple be: he, she, it",
+      "grammarId": "be-he-she-it-a1",
+      "buttonLabel": "Review grammar",
+      "text": "Review positive, negative and question forms before your homework."
+    }
+  ]
+}

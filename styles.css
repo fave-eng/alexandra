@@ -3315,3 +3315,31 @@ body[data-view="lesson"] #lesson-root {
   padding: 8px 6px;
   overflow-wrap: anywhere;
 }
+
+/* Lesson 1B: source-preserving job picture matching, chat choices and reading */
+.workbook-chat-quiz {margin:0;max-width:none;}
+.workbook-chat-quiz-body {padding:12px;display:grid;gap:12px;}
+.workbook-chat-quiz .exercise-item {margin:0;background:#fff;border-color:#d7e0eb;box-shadow:none;padding:14px;}
+.workbook-chat-quiz .exercise-prompt {font-weight:600;}
+.workbook-chat-quiz .exercise-control {padding-left:0;}
+.exercise-reading-layout {display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:18px;align-items:start;padding:0 18px 20px;}
+.exercise-reading-reference {position:sticky;top:14px;min-width:0;max-height:calc(100vh - 28px);overflow-y:auto;border-radius:14px;scrollbar-width:thin;}
+.exercise-reading-questions {min-width:0;}
+.exercise-reading-questions .exercise-items {padding:0;}
+.social-reading.is-workbook-blog {padding:14px 12px;background:#e8ebf0;margin:0;max-width:none;}
+.is-workbook-blog > h4 {background:#446588;color:#fff;padding:12px;border-radius:6px;line-height:1.28;margin:0;font-size:1rem;}
+.is-workbook-blog .social-reading-byline {padding:6px 4px;font-style:italic;color:#3c4b5e;font-size:.83rem;margin:0;}
+.is-workbook-blog .social-reading-list {display:grid;gap:12px;}
+.is-workbook-blog .social-reading-card {display:flow-root;background:white;border:1px solid #e2e5ec;border-radius:7px;padding:11px;margin:0;min-width:0;}
+.is-workbook-blog .social-reading-card h5 {font-size:.92rem;color:#1f5279;line-height:1.38;margin:0 0 8px;font-weight:800;}
+.is-workbook-blog .social-reading-card img {float:right;margin:0 0 8px 12px;max-width:38%;width:104px;aspect-ratio:4/5;object-fit:cover;border-radius:5px;}
+.is-workbook-blog .social-reading-card p {padding:0;margin:0;font-size:.9rem;line-height:1.5;color:#263246;overflow-wrap:break-word;}
+@media(max-width:900px){
+  .exercise-reading-layout {display:block;padding:0 12px 16px;}
+  .exercise-reading-reference {position:static;max-height:none;overflow:visible;margin-bottom:16px;}
+  .exercise-reading-questions .exercise-items {padding:0;}
+}
+@media(max-width:420px){
+  .is-workbook-blog .social-reading-card img {width:95px;max-width:36%;margin-left:10px;}
+  .workbook-chat-quiz .exercise-item {padding:11px;}
+}

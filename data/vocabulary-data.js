@@ -216,5 +216,232 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-1b",
+    "title": "Lesson 1B · Jobs and work",
+    "label": "Unit 1 · Lesson 1B",
+    "icon": "💼",
+    "type": "lesson",
+    "linkedLessonId": "lesson-2",
+    "page": "vocabulary.html?id=vocab-lesson-1b",
+    "words": [
+      {
+        "id": "wb-1b-word-01",
+        "en": "actor",
+        "ru": "актёр",
+        "transcription": "",
+        "exampleEn": "He’s an actor.",
+        "exampleRu": "Он актёр.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-02",
+        "en": "artist",
+        "ru": "художник, творческий человек",
+        "transcription": "",
+        "exampleEn": "He’s also an artist.",
+        "exampleRu": "Он также художник.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-03",
+        "en": "businessperson",
+        "ru": "бизнесмен, предприниматель",
+        "transcription": "",
+        "exampleEn": "She is a businessperson.",
+        "exampleRu": "Она предприниматель.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-04",
+        "en": "businesswoman",
+        "ru": "бизнесвумен",
+        "transcription": "",
+        "exampleEn": "She’s a businesswoman.",
+        "exampleRu": "Она бизнесвумен.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-05",
+        "en": "bus driver",
+        "ru": "водитель автобуса",
+        "transcription": "",
+        "exampleEn": "Iulia is a bus driver.",
+        "exampleRu": "Юлия — водитель автобуса.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-06",
+        "en": "doctor",
+        "ru": "врач",
+        "transcription": "",
+        "exampleEn": "Kasia is a doctor.",
+        "exampleRu": "Кася — врач.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-07",
+        "en": "nurse",
+        "ru": "медсестра, медбрат",
+        "transcription": "",
+        "exampleEn": "Is Anya a nurse?",
+        "exampleRu": "Аня медсестра?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-08",
+        "en": "singer",
+        "ru": "певец, певица",
+        "transcription": "",
+        "exampleEn": "He is a singer.",
+        "exampleRu": "Он певец.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-09",
+        "en": "taxi driver",
+        "ru": "водитель такси",
+        "transcription": "",
+        "exampleEn": "He’s a taxi driver.",
+        "exampleRu": "Он водитель такси.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-10",
+        "en": "waiter",
+        "ru": "официант",
+        "transcription": "",
+        "exampleEn": "I’m a waiter.",
+        "exampleRu": "Я официант.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-11",
+        "en": "office worker",
+        "ru": "офисный работник",
+        "transcription": "",
+        "exampleEn": "Rob is an office worker.",
+        "exampleRu": "Роб — офисный работник.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-12",
+        "en": "police officer",
+        "ru": "полицейский",
+        "transcription": "",
+        "exampleEn": "She isn’t a police officer.",
+        "exampleRu": "Она не полицейский.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-13",
+        "en": "football player",
+        "ru": "футболист",
+        "transcription": "",
+        "exampleEn": "Paula is a football player.",
+        "exampleRu": "Паула — футболистка.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-14",
+        "en": "digital designer",
+        "ru": "цифровой дизайнер",
+        "transcription": "",
+        "exampleEn": "Charlie is a digital designer.",
+        "exampleRu": "Чарли — цифровой дизайнер.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-15",
+        "en": "shop assistant",
+        "ru": "продавец-консультант",
+        "transcription": "",
+        "exampleEn": "She’s a shop assistant.",
+        "exampleRu": "Она продавец-консультант.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-16",
+        "en": "job",
+        "ru": "работа, профессия",
+        "transcription": "",
+        "exampleEn": "What’s your job?",
+        "exampleRu": "Кем ты работаешь?",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-17",
+        "en": "company",
+        "ru": "компания",
+        "transcription": "",
+        "exampleEn": "I work for an Italian company.",
+        "exampleRu": "Я работаю в итальянской компании.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-18",
+        "en": "hospital",
+        "ru": "больница",
+        "transcription": "",
+        "exampleEn": "Kasia works at a hospital.",
+        "exampleRu": "Кася работает в больнице.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-19",
+        "en": "difficult",
+        "ru": "трудный, сложный",
+        "transcription": "",
+        "exampleEn": "My job is very difficult.",
+        "exampleRu": "Моя работа очень сложная.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-20",
+        "en": "great",
+        "ru": "отличный, замечательный",
+        "transcription": "",
+        "exampleEn": "It’s a great university.",
+        "exampleRu": "Это отличный университет.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-21",
+        "en": "happy",
+        "ru": "счастливый, довольный",
+        "transcription": "",
+        "exampleEn": "I’m very happy in Cambridge.",
+        "exampleRu": "Я очень счастлив в Кембридже.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-22",
+        "en": "money",
+        "ru": "деньги",
+        "transcription": "",
+        "exampleEn": "The money isn’t very good.",
+        "exampleRu": "Зарплата не очень хорошая.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-23",
+        "en": "at the weekend",
+        "ru": "на выходных",
+        "transcription": "",
+        "exampleEn": "At the weekend, I’m a waiter.",
+        "exampleRu": "На выходных я работаю официантом.",
+        "audio": ""
+      },
+      {
+        "id": "wb-1b-word-24",
+        "en": "from Monday to Friday",
+        "ru": "с понедельника по пятницу",
+        "transcription": "",
+        "exampleEn": "From Monday to Friday, I’m an office worker.",
+        "exampleRu": "С понедельника по пятницу я офисный работник.",
+        "audio": ""
+      }
+    ]
   }
 ];

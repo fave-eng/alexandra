@@ -1104,13 +1104,15 @@
   function renderExerciseContentCards(block) {
     const cards = Array.isArray(block.contentCards) ? block.contentCards : [];
     if (!cards.length) return '';
-    return `<section class="social-reading" aria-label="${escapeHtml(block.contentTitle || 'Reading text')}">
+    return `<section class="social-reading${block.readingAside ? ' is-workbook-blog' : ''}" aria-label="${escapeHtml(block.contentTitle || 'Reading text')}">
       ${block.contentTitle ? `<h4>${escapeHtml(block.contentTitle)}</h4>` : ''}
+      ${block.contentByline ? `<p class="social-reading-byline">${escapeHtml(block.contentByline)}</p>` : ''}
       <div class="social-reading-list">${cards.map((card) => {
         const image = card?.image || {};
         const source = typeof image === 'string' ? image : image.src;
         const alt = typeof image === 'string' ? '' : image.alt;
         return `<article class="social-reading-card">
+          ${card.headline ? `<h5>${escapeHtml(card.headline)}</h5>` : ''}
           ${source ? `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt || '')}" loading="lazy">` : ''}
           <p>${escapeHtml(card.text || '')}</p>
           ${card.author ? `<strong>${escapeHtml(card.author)}</strong>` : ''}
@@ -1131,6 +1133,9 @@
       const found = lookup.get(safeText(itemId));
       return found ? renderExerciseItem(found.item, id, found.index) : '';
     };
+    if (block.chatChoices === true) {
+      return `<div class="workbook-chat workbook-chat-quiz"><div class="workbook-chat-top">Chat</div><div class="workbook-chat-quiz-body">${items.map((item, index) => renderExerciseItem(item, id, index)).join('')}</div></div>`;
+    }
     if (Array.isArray(block.scenes) && block.scenes.length) {
       return `<div class="workbook-scenes">${block.scenes.map((scene, index) => `<section class="workbook-scene"><h4>${index + 1}</h4><div class="workbook-scene-inner"><div class="workbook-scene-answer">${renderById(scene.left)}</div><img loading="lazy" src="${escapeHtml(scene.image || '')}" alt="${escapeHtml(scene.alt || '')}"><div class="workbook-scene-answer">${renderById(scene.right)}</div></div></section>`).join('')}</div>`;
     }
@@ -1808,8 +1813,8 @@
       const exerciseItems = renderWorkbookExerciseItems(block, id, items);
       const dependency = block.dependsOn ? `<p class="exercise-dependency" data-exercise-dependency></p>` : '';
       return `<article class="card lesson-block exercise-card${stickyImage ? ' has-sticky-media' : ''}" data-task="${escapeHtml(id)}" data-type="exercise">
-        <div class="exercise-heading"><span class="eyebrow">Exercise</span><h3>${title}</h3>${block.instructions ? `<p class="muted exercise-instructions">${escapeHtml(block.instructions)}</p>` : ''}${player}${wordBank}${media}${dialogue}${renderExerciseChat(block)}${contentCards}</div>
-        ${dependency}${stickyImage ? `<div class="exercise-sticky-layout">${stickyImage}${exerciseItems}</div>` : exerciseItems}${block.audioAfter ? `<div class="workbook-after-audio"><strong>${escapeHtml(block.audioAfterCaption || 'Listen and check.')}</strong>${renderLessonAudio({audio:block.audioAfter})}</div>` : ''}
+        <div class="exercise-heading"><span class="eyebrow">Exercise</span><h3>${title}</h3>${block.instructions ? `<p class="muted exercise-instructions">${escapeHtml(block.instructions)}</p>` : ''}${player}${wordBank}${media}${dialogue}${renderExerciseChat(block)}${block.readingAside ? '' : contentCards}</div>
+        ${dependency}${block.readingAside ? `<div class="exercise-reading-layout"><aside class="exercise-reading-reference">${contentCards}</aside><div class="exercise-reading-questions">${exerciseItems}</div></div>` : stickyImage ? `<div class="exercise-sticky-layout">${stickyImage}${exerciseItems}</div>` : exerciseItems}${block.audioAfter ? `<div class="workbook-after-audio"><strong>${escapeHtml(block.audioAfterCaption || 'Listen and check.')}</strong>${renderLessonAudio({audio:block.audioAfter})}</div>` : ''}
       </article>`;
     }
     if (block.type === 'family-tree') return renderFamilyTreeBlock(block, id, title);
