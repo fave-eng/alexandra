@@ -2627,6 +2627,40 @@
     </div>`;
   }
 
+  // Each grammar guide has its own editorial chapters, comparison tables and
+  // structural diagrams. All text is escaped; quiz IDs and progress stay unchanged.
+  function renderGrammarGuide(chapters) {
+    if (!Array.isArray(chapters) || !chapters.length) return '';
+    const e = (value) => escapeHtml(value == null ? '' : String(value));
+    const renderBlock = (block) => {
+      if (!block || !block.kind) return '';
+      if (block.kind === 'prose') {
+        return `<div class="grammar-guide-prose">${(block.paragraphs || []).map((paragraph) => `<p>${e(paragraph)}</p>`).join('')}</div>`;
+      }
+      if (block.kind === 'examples') {
+        return `<div class="grammar-guide-examples"><h4>${e(block.title || 'Examples')}</h4><div class="grammar-example-pairs">${(block.rows || []).map((item) => `<div class="grammar-example-pair"><strong lang="en">${e(item.sentence)}</strong><span>${e(item.detail)}</span></div>`).join('')}</div></div>`;
+      }
+      if (block.kind === 'table') {
+        return `<div class="grammar-guide-table-wrap" role="region" aria-label="${e(block.title || 'Grammar forms table')}" tabindex="0">${block.title ? `<h4>${e(block.title)}</h4>` : ''}<table class="grammar-guide-table"><thead><tr>${(block.headers || []).map((cell) => `<th scope="col">${e(cell)}</th>`).join('')}</tr></thead><tbody>${(block.rows || []).map((row) => `<tr>${row.map((cell) => `<td>${e(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+      }
+      if (block.kind === 'compare') {
+        return `<div class="grammar-guide-compare"><div class="grammar-compare-side"><h4>${e(block.leftTitle)}</h4><p>${e(block.left)}</p></div><div class="grammar-compare-side"><h4>${e(block.rightTitle)}</h4><p>${e(block.right)}</p></div>${block.conclusion ? `<p class="grammar-compare-conclusion">${e(block.conclusion)}</p>` : ''}</div>`;
+      }
+      if (block.kind === 'pattern') {
+        return `<figure class="grammar-guide-pattern"><div class="grammar-pattern-steps">${(block.steps || []).map((step, index) => `<span class="grammar-pattern-step grammar-pattern-step-${index%3}">${e(step)}</span>`).join('')}</div>${block.caption ? `<figcaption>${e(block.caption)}</figcaption>` : ''}</figure>`;
+      }
+      if (block.kind === 'rule') {
+        return `<aside class="grammar-guide-rule grammar-guide-rule-${block.tone === 'warning' ? 'warning' : 'note'}"><strong>${e(block.title || 'Important')}</strong><p>${e(block.text)}</p></aside>`;
+      }
+      if (block.kind === 'list') {
+        return `<div class="grammar-guide-checklist"><h4>${e(block.title || 'Check yourself')}</h4><ol>${(block.items || []).map((item) => `<li>${e(item)}</li>`).join('')}</ol></div>`;
+      }
+      return '';
+    };
+    return `<nav class="grammar-guide-index" aria-label="Topic contents"><strong>In this guide</strong><div>${chapters.map((chapter, index) => `<a href="#grammar-guide-ch-${index+1}"><span>${index+1}</span>${e(chapter.title)}</a>`).join('')}</div></nav>
+      <div class="grammar-guide-chapters">${chapters.map((chapter, index) => `<section id="grammar-guide-ch-${index+1}" class="grammar-guide-chapter" aria-labelledby="grammar-guide-h-${index+1}"><header class="grammar-guide-chapter-head"><span class="grammar-guide-chapter-num">${String(index+1).padStart(2,'0')}</span><div><h2 id="grammar-guide-h-${index+1}">${e(chapter.title)}</h2><p>${e(chapter.lead || '')}</p></div></header><div class="grammar-guide-blocks">${(chapter.blocks || []).map(renderBlock).join('')}</div></section>`).join('')}</div>`;
+  }
+
   function renderGrammarTopic() {
     const id = queryParam('id');
     const topic = GRAMMAR_DATA.find((item) => item.id === id && item.status !== 'draft');
@@ -2667,123 +2701,7 @@
 
     root.innerHTML = `<div class="grammar-topic-shell">
       ${grammarStatusMarkup(topic, state)}
-
-      <article class="card grammar-lead-card">
-        <div class="grammar-lead-head">
-          <div>
-            <span class="eyebrow">Main idea</span>
-            <h2>${escapeHtml(topic.title)}</h2>
-          </div>
-          <span class="grammar-level-badge">${escapeHtml(topic.level || student.level)}</span>
-        </div>
-        <p class="grammar-lead-text">${escapeHtml(overview.lead || '')}</p>
-        <div class="grammar-core-rule">
-          <div class="grammar-core-rule-icon" aria-hidden="true">!</div>
-          <div>
-            <strong>${escapeHtml(overview.keyRule || '')}</strong>
-            ${overview.example ? `<span>${escapeHtml(overview.example)}</span>` : ''}
-          </div>
-        </div>
-        ${subjects.length ? `<div class="grammar-subject-row" aria-label="Subjects">${subjects.map((subject) => `<span>${escapeHtml(subject)}</span>`).join('')}</div>` : ''}
-      </article>
-
-      ${uses.length ? `<section class="grammar-content-section" aria-labelledby="grammar-use-title">
-        <div class="grammar-section-heading">
-          <span class="grammar-section-number">1</span>
-          <div><h2 id="grammar-use-title">When we use it</h2><p>Main uses for A1</p></div>
-        </div>
-        <div class="grammar-use-grid">${uses.map((item) => `<article class="grammar-use-card">
-          <span class="grammar-use-icon" aria-hidden="true">${escapeHtml(item.icon || '•')}</span>
-          <h3>${escapeHtml(item.title || '')}</h3>
-          <p>${escapeHtml(item.text || '')}</p>
-          <code>${escapeHtml(item.example || '')}</code>
-        </article>`).join('')}</div>
-      </section>` : ''}
-
-      ${forms.length ? `<section class="grammar-content-section" aria-labelledby="grammar-forms-title">
-        <div class="grammar-section-heading">
-          <span class="grammar-section-number">2</span>
-          <div><h2 id="grammar-forms-title">Four forms</h2><p>First learn the structure, then look at the example</p></div>
-        </div>
-        <div class="grammar-form-grid">${forms.map((form) => `<article class="grammar-form-card grammar-form-${escapeHtml(form.id || 'default')}">
-          <div class="grammar-form-head">
-            <span class="grammar-form-icon" aria-hidden="true">${escapeHtml(form.icon || '•')}</span>
-            <h3>${escapeHtml(form.title || '')}</h3>
-          </div>
-          <div class="grammar-formula">${escapeHtml(form.formula || '')}</div>
-          <div class="grammar-example">
-            <strong>${escapeHtml(form.example || '')}</strong>
-            <span>${escapeHtml(form.translation || '')}</span>
-          </div>
-          <p>${escapeHtml(form.note || '')}</p>
-        </article>`).join('')}</div>
-      </section>` : ''}
-
-      ${contrast.ordinary && contrast.be ? `<section class="grammar-content-section" aria-labelledby="grammar-contrast-title">
-        <div class="grammar-section-heading">
-          <span class="grammar-section-number">3</span>
-          <div><h2 id="grammar-contrast-title">${escapeHtml(contrast.title || 'Ordinary verb or be?')}</h2><p>${escapeHtml(contrast.intro || '')}</p></div>
-        </div>
-        <div class="grammar-contrast-grid">
-          <article class="grammar-contrast-card ordinary">
-            <span class="grammar-contrast-label">A</span>
-            <h3>${escapeHtml(contrast.ordinary.label || '')}</h3>
-            <p class="grammar-verb-list">${escapeHtml(contrast.ordinary.verbs || '')}</p>
-            <div class="grammar-pattern-list">
-              <span><b>+</b> ${escapeHtml(contrast.ordinary.affirmative || '')}</span>
-              <span><b>−</b> ${escapeHtml(contrast.ordinary.negative || '')}</span>
-              <span><b>?</b> ${escapeHtml(contrast.ordinary.question || '')}</span>
-            </div>
-            <p class="grammar-contrast-rule">${escapeHtml(contrast.ordinary.rule || '')}</p>
-          </article>
-          <article class="grammar-contrast-card be">
-            <span class="grammar-contrast-label">B</span>
-            <h3>${escapeHtml(contrast.be.label || '')}</h3>
-            <p class="grammar-verb-list">${escapeHtml(contrast.be.verbs || '')}</p>
-            <div class="grammar-pattern-list">
-              <span><b>+</b> ${escapeHtml(contrast.be.affirmative || '')}</span>
-              <span><b>−</b> ${escapeHtml(contrast.be.negative || '')}</span>
-              <span><b>?</b> ${escapeHtml(contrast.be.question || '')}</span>
-            </div>
-            <p class="grammar-contrast-rule">${escapeHtml(contrast.be.rule || '')}</p>
-          </article>
-        </div>
-      </section>` : ''}
-
-      ${pattern.length ? `<section class="grammar-content-section" aria-labelledby="grammar-question-title">
-        <div class="grammar-section-heading">
-          <span class="grammar-section-number">4</span>
-          <div><h2 id="grammar-question-title">${escapeHtml(builder.title || 'Word order')}</h2><p>${escapeHtml(builder.note || '')}</p></div>
-        </div>
-        <article class="card grammar-builder-card">
-          <div class="grammar-token-row">${pattern.map((token, index) => `<span class="grammar-token grammar-token-${index + 1}">${escapeHtml(token)}</span>${index < pattern.length - 1 ? '<span class="grammar-token-arrow" aria-hidden="true">→</span>' : ''}`).join('')}</div>
-          <div class="grammar-builder-example">
-            <strong>${escapeHtml(builder.example || '')}</strong>
-            <span>${escapeHtml(builder.translation || '')}</span>
-          </div>
-        </article>
-      </section>` : ''}
-
-      ${memorySteps.length ? `<article class="card grammar-memory-card">
-        <div class="grammar-memory-icon" aria-hidden="true">⚡</div>
-        <div>
-          <span class="eyebrow">Algorithm</span>
-          <h2>${escapeHtml(memoryRule.title || 'Quick check')}</h2>
-          <ol>${memorySteps.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}</ol>
-        </div>
-      </article>` : ''}
-
-      ${mistakes.length ? `<section class="grammar-content-section" aria-labelledby="grammar-mistakes-title">
-        <div class="grammar-section-heading">
-          <span class="grammar-section-number">5</span>
-          <div><h2 id="grammar-mistakes-title">Common mistakes</h2><p>Compare the wrong and correct versions</p></div>
-        </div>
-        <div class="grammar-mistake-list">${mistakes.map((mistake) => `<article class="grammar-mistake-row">
-          <div class="grammar-mistake-wrong"><span>✕</span><s>${escapeHtml(mistake.wrong || '')}</s></div>
-          <div class="grammar-mistake-right"><span>✓</span><strong>${escapeHtml(mistake.right || '')}</strong></div>
-          <p>${escapeHtml(mistake.reason || '')}</p>
-        </article>`).join('')}</div>
-      </section>` : ''}
+      ${renderGrammarGuide(topic.guide)}
 
       <section class="grammar-content-section grammar-test-section" aria-labelledby="mini-test-title">
         <div class="grammar-test-intro">
