@@ -1,8 +1,7 @@
 (() => {
   'use strict';
 
-  const EXPECTED_DIAGNOSTIC_VERSION = 'multi-student-diagnostics-v1';
-  const CURRENT_LESSON_ID = '';
+  const SUPPORTED_DIAGNOSTIC_VERSIONS = new Set(['multi-student-diagnostics-v1', 'multi-student-diagnostics-v2']);
   const config = window.APP_CONFIG || {};
   const student = config.student || {};
   const studentId = String(student.id || 'alexandra').trim().toLowerCase();
@@ -17,7 +16,7 @@
   const dbWriteBtn = document.getElementById('test-db-write');
   const sendBtn = document.getElementById('send-test-report');
   let supabaseClient = null;
-  let lastReport = { startedAt: null, checks: [], health: null, directRows: [], errors: [] };
+  let lastReport = { startedAt: null, checks: [], health: null, directRows: [], progress: null, errors: [] };
 
   const esc = (value) => String(value ?? '')
     .replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
@@ -40,7 +39,9 @@
 
   function resetChecks() {
     checksEl.innerHTML = '';
-    lastReport = { startedAt: new Date().toISOString(), checks: [], health: null, directRows: [], errors: [] };
+    lastReport = { startedAt: new Date().toISOString(), checks: [], health: null, directRows: [], progress: null, errors: [] };
+    const progressEl = document.getElementById('saved-progress');
+    if (progressEl) progressEl.textContent = 'Reading saved progress from Supabase…';
   }
 
   function addCheck(name, status, detail) {
@@ -119,6 +120,115 @@
     return `${code}${message}`;
   }
 
+  function nonEmptyAnswerCount(value) {
+    if (Array.isArray(value)) return value.reduce((total, item) => total + nonEmptyAnswerCount(item), 0);
+    if (value && typeof value === 'object') return Object.values(value).reduce((total, item) => total + nonEmptyAnswerCount(item), 0);
+    if (value == null) return 0;
+    if (typeof value === 'string') return value.trim() ? 1 : 0;
+    return 1;
+  }
+
+  async function readPublishedHomework() {
+    const result = { published: [], note: '' };
+    try {
+      const response = await fetch('data/lessons/index.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error(`index.json HTTP ${response.status}`);
+      const index = await response.json();
+      const ids = (Array.isArray(index.lessons) ? index.lessons : [])
+        .map((entry) => typeof entry === 'string' ? entry : entry?.id)
+        .filter((id) => /^lesson-\d+$/.test(String(id || '')));
+      const uniqueIds = [...new Set(ids)];
+      const lessons = await Promise.all(uniqueIds.map(async (id) => {
+        try {
+          const file = await fetch(`data/lessons/${id}.json`, { cache: 'no-store' });
+          if (!file.ok) return null;
+          const lesson = await file.json();
+          return lesson && lesson.id === id ? lesson : null;
+        } catch { return null; }
+      }));
+      result.published = lessons.filter((lesson) => lesson && ['available', 'completed', 'locked'].includes(lesson.status))
+        .map(({ id, title, status }) => ({ id, title, status }));
+      const missing = uniqueIds.length - lessons.filter(Boolean).length;
+      if (missing) result.note = `${missing} lesson file(s) listed in the catalogue could not be loaded.`;
+      return result;
+    } catch (error) {
+      result.note = `The published lesson list could not be read: ${error.message || error}`;
+      return result;
+    }
+  }
+
+  async function readSavedProgress(client, homeworkRows) {
+    const [vocab, vocabTopics, grammar, catalog] = await Promise.all([
+      client.from(config.supabase?.tables?.vocabulary || 'vocabulary_progress')
+        .select('word_key,status,source_topic_id').eq('student_id', studentId).limit(2000),
+      client.from(config.supabase?.tables?.vocabularyTopics || 'vocabulary_topic_progress')
+        .select('topic_id,tests').eq('student_id', studentId).limit(200),
+      client.from(config.supabase?.tables?.grammar || 'grammar_progress')
+        .select('topic_id,passed,attempts,best_score').eq('student_id', studentId).limit(200),
+      readPublishedHomework()
+    ]);
+    const errors = [
+      ['Vocabulary', vocab.error],
+      ['Vocabulary tests', vocabTopics.error],
+      ['Grammar', grammar.error]
+    ].filter(([, error]) => error).map(([name, error]) => `${name}: ${formatError(error)}`);
+    const rows = Array.isArray(homeworkRows) ? homeworkRows.filter((row) => !String(row.lesson_id || '').startsWith('__diagnostic_probe__')) : [];
+    const submitted = rows.filter((row) => ['submitted', 'submitted_pending_report'].includes(row.status));
+    const drafts = rows.filter((row) => row.status === 'draft');
+    const known = vocab.error ? null : (vocab.data || []).filter((row) => row.status === 'known').length;
+    const difficult = vocab.error ? null : (vocab.data || []).filter((row) => row.status === 'difficult').length;
+    const passed = grammar.error ? null : (grammar.data || []).filter((row) => row.passed === true).length;
+    const tested = grammar.error ? null : (grammar.data || []).filter((row) => Number(row.attempts || 0) > 0).length;
+    const progress = {
+      homework: { saved: rows.length, drafts: drafts.length, submitted: submitted.length, published: catalog.published.length },
+      vocabulary: { known, difficult, topicTestRecords: vocabTopics.error ? null : (vocabTopics.data || []).length },
+      grammar: { passed, attemptedTopics: tested },
+      publishedLessons: catalog.published,
+      catalogWarning: catalog.note,
+      readErrors: errors,
+      savedLessons: rows.map((row) => ({
+        id: row.lesson_id,
+        title: row.lesson_title || row.lesson_id,
+        status: row.status || 'unknown',
+        filledAnswers: nonEmptyAnswerCount(row.answers),
+        scoreCorrect: row.score_correct,
+        scoreTotal: row.score_total,
+        checkedAt: row.checked_at,
+        submittedAt: row.submitted_at
+      }))
+    };
+    return progress;
+  }
+
+  function renderSavedProgress(progress) {
+    const target = document.getElementById('saved-progress');
+    if (!target) return;
+    if (!progress) {
+      target.textContent = 'Cloud progress could not be read. See the connection errors above.';
+      return;
+    }
+    const metric = (label, value) => `<div class="progress-metric"><strong>${esc(value == null ? '—' : value)}</strong><span>${esc(label)}</span></div>`;
+    const statusText = { draft: 'Draft (not submitted)', submitted: 'Submitted', submitted_pending_report: 'Submitted, report pending' };
+    const lessons = progress.savedLessons.length ? progress.savedLessons.map((lesson) => `
+      <div class="progress-lesson">
+        <div><strong>${esc(lesson.title)}</strong><div class="progress-muted">${esc(lesson.id)} · ${esc(statusText[lesson.status] || lesson.status)}</div></div>
+        <div class="progress-lesson-info"><strong>${esc(lesson.filledAnswers)} saved answer field(s)</strong><span>${lesson.scoreTotal == null ? 'No grade saved' : `${esc(lesson.scoreCorrect)} / ${esc(lesson.scoreTotal)} correct`}</span></div>
+      </div>`).join('') : '<p class="progress-muted">No homework rows saved in Supabase for this student.</p>';
+    target.innerHTML = `
+      <div class="progress-metrics">
+        ${metric('Published homework (files on this site)', progress.homework.published)}
+        ${metric('Submitted homework (Supabase)', progress.homework.submitted)}
+        ${metric('Saved drafts (Supabase)', progress.homework.drafts)}
+        ${metric('Words learned (Supabase)', progress.vocabulary.known)}
+        ${metric('Grammar topics passed (Supabase)', progress.grammar.passed)}
+      </div>
+      <h3 class="progress-subheading">Homework saved in Supabase</h3>
+      <div class="progress-lessons">${lessons}</div>
+      <p class="note">This is <strong>cloud progress only</strong>. Work saved solely in another browser's local storage is not visible here. Drafts are not completed homework. A blank draft does not prove that the student never worked on the lesson.</p>
+      ${progress.catalogWarning ? `<p class="progress-alert">${esc(progress.catalogWarning)}</p>` : ''}
+      ${progress.readErrors.length ? `<p class="progress-alert">Some progress tables could not be read: ${esc(progress.readErrors.join('; '))}</p>` : ''}`;
+  }
+
   async function runAll() {
     runAllBtn.disabled = true;
     resetChecks();
@@ -144,6 +254,7 @@
         .limit(50);
 
       if (readResponse.error) {
+        renderSavedProgress(null);
         const detail = formatError(readResponse.error);
         addCheck('3. Supabase Database / read homework_progress', 'bad', detail);
         lastReport.errors.push({ stage: 'database_read', error: detail });
@@ -151,17 +262,22 @@
         lastReport.directRows = readResponse.data || [];
         addCheck('3. Supabase Database / read homework_progress', 'ok', `Access works. Rows received: ${(readResponse.data || []).length}.`);
 
-        if (CURRENT_LESSON_ID) {
-          const currentLessonRow = (readResponse.data || []).find((row) => row.lesson_id === CURRENT_LESSON_ID);
-          if (currentLessonRow?.migrated_from_legacy) {
-            addCheck(`4. Current homework / ${CURRENT_LESSON_ID}`, 'bad', `${CURRENT_LESSON_ID} has a legacy flag. Do not overwrite the row; check it in Supabase first.`);
-          } else if (currentLessonRow) {
-            addCheck(`4. Current homework / ${CURRENT_LESSON_ID}`, 'ok', `${CURRENT_LESSON_ID} found (${currentLessonRow.status || 'without status'}), no legacy flag.`);
-          } else {
-            addCheck(`4. Current homework / ${CURRENT_LESSON_ID}`, 'ok', `Progress for ${CURRENT_LESSON_ID} is not in Supabase yet. This check only reads existing rows.`);
+        try {
+          lastReport.progress = await readSavedProgress(client, readResponse.data || []);
+          renderSavedProgress(lastReport.progress);
+          const pub = lastReport.progress.homework.published;
+          const saved = lastReport.progress.homework.saved;
+          addCheck('4. Published lessons and saved progress', 'ok',
+            `Published lesson files found: ${pub}. Supabase homework rows: ${saved}; submitted: ${lastReport.progress.homework.submitted}; drafts: ${lastReport.progress.homework.drafts}.`);
+          if (lastReport.progress.catalogWarning) {
+            addCheck('4a. Lesson catalogue', 'warn', lastReport.progress.catalogWarning);
           }
-        } else {
-          addCheck('4. Current homework', 'ok', 'No active homework is published yet.');
+          if (lastReport.progress.readErrors.length) {
+            addCheck('4b. Other progress tables', 'warn', lastReport.progress.readErrors.join('; '));
+          }
+        } catch (error) {
+          renderSavedProgress(null);
+          addCheck('4. Progress overview', 'warn', `The overview could not be built: ${formatError(error)}`);
         }
       }
 
@@ -172,9 +288,9 @@
         edgeResult = { ok: false, status: 0, data: { error: error.message || String(error) } };
       }
 
-      if (!edgeResult.ok || edgeResult.data?.diagnosticVersion !== EXPECTED_DIAGNOSTIC_VERSION) {
+      if (!edgeResult.ok || !SUPPORTED_DIAGNOSTIC_VERSIONS.has(edgeResult.data?.diagnosticVersion)) {
         const detail = edgeResult.ok
-          ? `The function responds, but the diagnostics version is different: ${edgeResult.data?.diagnosticVersion || 'not specified'}. A new deploy is required.`
+          ? `The function responds with an unrecognized diagnostics version: ${edgeResult.data?.diagnosticVersion || 'not specified'}. Verify server compatibility before redeploying.`
           : explainFunctionFailure(edgeResult);
         addCheck('5. Supabase Edge Function notify-telegram', 'bad', detail);
         lastReport.errors.push({ stage: 'edge_function', error: detail, response: edgeResult });

@@ -16,11 +16,13 @@
     .summary{border-radius:16px;padding:14px 16px;margin-top:14px;background:#eef2ff;color:#3730a3;font-weight:700}.summary.ok{background:var(--okbg);color:var(--ok)}.summary.bad{background:var(--badbg);color:var(--bad)}.summary.warn{background:var(--warnbg);color:var(--warn)}
     .kv{display:grid;grid-template-columns:minmax(150px,.7fr) 1.3fr;gap:8px 12px;padding:8px 0;border-bottom:1px solid #edf1f6;font-size:14px}.kv:last-child{border-bottom:0}.kv span:first-child{color:var(--muted)}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;overflow-wrap:anywhere}
     pre{margin:12px 0 0;padding:14px;background:#0b1220;color:#d0d5dd;border-radius:14px;white-space:pre-wrap;overflow:auto;font-size:12px;max-height:390px}.note{padding:12px 14px;border-radius:14px;background:#f8fafc;border:1px solid var(--line);font-size:13px;color:#475467}.test-result{margin-top:12px}
+    .progress-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:15px 0 20px}.progress-metric{padding:14px;border:1px solid var(--line);border-radius:14px;background:#f8fafc;display:flex;flex-direction:column;gap:6px}.progress-metric strong{font-size:26px;line-height:1.2}.progress-metric span,.progress-muted{color:var(--muted);font-size:13px}.progress-subheading{font-size:17px;margin:20px 0 10px}.progress-lessons{display:grid;gap:8px;margin:10px 0 18px}.progress-lesson{border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;justify-content:space-between;gap:14px;align-items:center}.progress-lesson-info{text-align:right;display:flex;flex-direction:column;gap:4px;font-size:13px}.progress-lesson-info span{color:var(--muted)}.progress-alert{padding:10px 12px;background:var(--warnbg);color:var(--warn);border-radius:12px;font-size:13px}
+    @media(max-width:760px){.progress-lesson{align-items:flex-start;flex-direction:column}.progress-lesson-info{text-align:left}}
     @media(max-width:760px){.wrap{margin-top:18px}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}.kv{grid-template-columns:1fr}.hero{padding:22px}.btn{width:100%}}
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="config.js" defer></script>
-  <script src="diagnostics.js?v=20260812-2" defer></script>
+  <script src="diagnostics.js?v=20261013-progress-v3" defer></script>
 </head>
 <body>
   <main class="wrap">
@@ -55,6 +57,12 @@
         <p class="sub">The recipient and topic come from the server setup. If no topic is used, thread_id will be NULL.</p>
         <div id="telegram-info"></div>
         <div class="note" style="margin-top:12px">The regular status check does not send messages. A message is sent only with the separate button below.</div>
+      </article>
+
+      <article class="card wide">
+        <h2>Student progress · Supabase</h2>
+        <p class="sub">Read-only view of saved homework, vocabulary and grammar. Press “Run all checks” to refresh.</p>
+        <div id="saved-progress" aria-live="polite">Click “Run all checks” to load the current progress.</div>
       </article>
 
       <article class="card wide">
