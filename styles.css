@@ -3499,3 +3499,28 @@ body[data-view="lesson"] {
 .exercise-card[data-task="wb-2a-4b"] .dialogue-answer-select { min-width:100px; max-width:140px; }
 .exercise-card[data-task="wb-2a-4b"] .sentence-gaps.is-dialogue { white-space:pre-line; line-height:2.45; }
 .exercise-card[data-task="wb-2a-5cd"] .exercise-instructions { white-space:pre-line; }
+
+/* Lesson 2B: stress segments appear as one word; workbook reference stays alongside questions. */
+[data-task="wb-2b-4a"] .mark-text p {display:inline-flex;align-items:baseline;gap:0;}
+[data-task="wb-2b-4a"] .mark-word {padding:2px 0;border-radius:1px;}
+[data-task="wb-2b-7a"] .mark-text p {line-height:2;}
+[data-task="wb-2b-7d"] .exercise-dependency.is-ready {white-space:normal;line-height:1.65;}
+@media (max-width: 760px) {[data-task="wb-2b-7d"] .exercise-dependency.is-ready {max-height:none;}}
+
+/* Lesson 2B: keep original workbook photos alongside answers on desktop. */
+.exercise-card[data-task="wb-2b-1"],
+.exercise-card[data-task="wb-2b-7a"],
+.exercise-card[data-task="wb-2b-7c"],
+.exercise-card[data-task="wb-2b-7d"] { overflow: visible; }
+@media (min-width: 901px) {
+  .exercise-card[data-task="wb-2b-1"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7a"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7c"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7d"] .exercise-sticky-media { position: sticky; top: 92px; align-self: start; max-height: calc(100vh - 112px); overflow-y:auto; }
+}
+@media (max-width: 900px) {
+  .exercise-card[data-task="wb-2b-1"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7a"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7c"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7d"] .exercise-sticky-media { position: static; max-height:none; overflow:visible; }
+}

@@ -1232,6 +1232,7 @@
       control = `<div class="mark-text">${paragraphs.map((paragraph) => {
         const segments = Array.isArray(paragraph) ? paragraph : [paragraph];
         return `<p>${segments.map((segment) => {
+          if (segment && typeof segment === 'object' && segment.underline) return `<u>${escapeHtml(segment.underline)}</u>`;
           if (segment && typeof segment === 'object' && segment.word) {
             const currentIndex = markIndex;
             markIndex += 1;
@@ -1791,7 +1792,9 @@
         const sourceOptions = sourceItems.flatMap((item) => Array.isArray(item.options) ? item.options : []);
         const chosen = new Set(sourceItems.map((item, itemIndex) => item.options?.[Number(selected[itemIndex])]).filter(Boolean));
         const remaining = unique(sourceOptions.filter((option) => !chosen.has(option)));
-        status.textContent = `${safeText(block.dependencyReadyText, 'Use these answers from the previous exercise:')} ${remaining.join(' · ')}`;
+        status.textContent = block.dependencyShowAnswers
+          ? `${safeText(block.dependencyReadyText, 'Use these answers from the previous exercise:')} ${selected.join(' · ')}`
+          : `${safeText(block.dependencyReadyText, 'Use these answers from the previous exercise:')} ${remaining.join(' · ')}`;
         status.classList.add('is-ready');
       };
       sourceNode.addEventListener('input', update);
@@ -1945,7 +1948,7 @@
       const expected = [...(item.answer || [])].map(Number).sort((a, b) => a - b);
       const expectedSet = new Set(expected);
       const selectedSet = new Set(actual);
-      const scoreCorrect = expected.filter((value) => selectedSet.has(value)).length;
+      const scoreCorrect = actual.length > expected.length ? 0 : expected.filter((value) => selectedSet.has(value)).length;
       correct = actual.length === expected.length && actual.every((value) => expectedSet.has(value));
       return { actual, correct, scoreCorrect, scoreTotal: expected.length };
     } else {
@@ -2413,6 +2416,7 @@
         const active = !button.classList.contains('is-selected');
         button.classList.toggle('is-selected', active);
         button.setAttribute('aria-pressed', active ? 'true' : 'false');
+        button.dispatchEvent(new Event('input', { bubbles: true }));
       });
     });
     if (savedResult && Number(savedResult.total) > 0) {

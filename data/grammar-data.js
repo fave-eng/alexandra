@@ -1994,5 +1994,278 @@ window.GRAMMAR_DATA = [
         ]
       }
     ]
+  },
+  {
+    "id": "possessive-adjectives-a1",
+    "linkedLessonId": "lesson-8",
+    "order": 9,
+    "title": "Possessive adjectives: my, your, his, her, its, our, their",
+    "level": "A1",
+    "status": "available",
+    "page": "grammar-topic.html?id=possessive-adjectives-a1",
+    "overview": {
+      "lead": "A possessive adjective shows who a person or thing belongs to. It goes before a noun: my mother, their house.",
+      "keyRule": "I → my · you → your · he → his · she → her · it → its · we → our · they → their",
+      "example": "This is my brother. His name is Leo.",
+      "subjects": [
+        "I → my",
+        "you → your",
+        "he → his",
+        "she → her",
+        "it → its",
+        "we → our",
+        "they → their"
+      ]
+    },
+    "uses": [
+      {
+        "icon": "1",
+        "title": "Talk about your family",
+        "text": "Use my, his and her to describe relatives.",
+        "example": "My sister is a student. Her husband is a teacher."
+      },
+      {
+        "icon": "2",
+        "title": "Talk about what belongs to someone",
+        "text": "Put the possessive adjective directly before the noun.",
+        "example": "This is our house. Their car is outside."
+      },
+      {
+        "icon": "3",
+        "title": "Avoid repeating names",
+        "text": "After naming the person, use his, her or their.",
+        "example": "Will is a father. His children are Theo and Elise."
+      }
+    ],
+    "forms": [
+      {
+        "id": "positive",
+        "icon": "+",
+        "title": "Before a noun",
+        "formula": "possessive adjective + noun",
+        "example": "my mother · your phone · his name · her brother",
+        "translation": "моя мама · твой телефон · его имя · её брат",
+        "note": "A possessive adjective is followed by a noun: her name, not simply her when it replaces a whole noun phrase."
+      },
+      {
+        "id": "negative",
+        "icon": "!",
+        "title": "Not a verb",
+        "formula": "its ≠ it’s · their ≠ they’re",
+        "example": "Its name is Mac. / It’s a cat. · Their son is five. / They’re parents.",
+        "translation": "Его/её имя Мак. / Это кошка. · Их сыну пять. / Они родители.",
+        "note": "Its and their show possession. It’s = it is; they’re = they are."
+      },
+      {
+        "id": "question",
+        "icon": "?",
+        "title": "In questions",
+        "formula": "question word + be + possessive adjective + noun?",
+        "example": "What is your name? · Where are their parents?",
+        "translation": "Как тебя зовут? · Где их родители?",
+        "note": "The possessive adjective stays with its noun, even in a question."
+      },
+      {
+        "id": "short",
+        "icon": "✓",
+        "title": "Same form in all sentence types",
+        "formula": "my / your / his / her / its / our / their + noun",
+        "example": "Is this your phone? No, it isn’t my phone.",
+        "translation": "Это твой телефон? Нет, это не мой телефон.",
+        "note": "Possessive adjectives do not change for plurals: her daughter / her daughters."
+      }
+    ],
+    "questionBuilder": {
+      "title": "Whose? and whose name?",
+      "note": "Choose the possessive adjective by the owner, not by the thing.",
+      "pattern": [
+        "What",
+        "is",
+        "her",
+        "name?"
+      ],
+      "example": "What is her name?",
+      "translation": "Как её зовут?"
+    },
+    "commonMistakes": [
+      {
+        "wrong": "She is my friend. She name is Sara.",
+        "right": "She is my friend. Her name is Sara.",
+        "reason": "Use her before the noun name."
+      },
+      {
+        "wrong": "Its a dog. Its name is Bruno.",
+        "right": "It’s a dog. Its name is Bruno.",
+        "reason": "It’s means it is; its is possessive."
+      },
+      {
+        "wrong": "They’re house is in Rome.",
+        "right": "Their house is in Rome.",
+        "reason": "Their shows possession; they’re means they are."
+      },
+      {
+        "wrong": "My parents are teachers. His school is big.",
+        "right": "My parents are teachers. Their school is big.",
+        "reason": "Use their for two or more owners."
+      }
+    ],
+    "quizExercises": [
+      {
+        "title": "1 · Choose the correct word",
+        "instructions": "Choose the possessive adjective.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "I am a student. ___ name is Amira.",
+            "options": [
+              "My",
+              "Your",
+              "His"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "single",
+            "prompt": "He is my friend. ___ name is Ben.",
+            "options": [
+              "Her",
+              "His",
+              "Their"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "They are sisters. ___ house is big.",
+            "options": [
+              "Its",
+              "Their",
+              "Our"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "This is my dog. ___ name is Lucky.",
+            "options": [
+              "It’s",
+              "Its",
+              "Her"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "title": "2 · Complete the sentences",
+        "instructions": "Write the correct possessive adjective.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "She is British. ___ mother is French.",
+            "answer": "Her"
+          },
+          {
+            "type": "text",
+            "prompt": "We are students. ___ teacher is Helen.",
+            "answer": "Our"
+          },
+          {
+            "type": "text",
+            "prompt": "You have a new bike. Is this ___ bike?",
+            "answer": "your"
+          },
+          {
+            "type": "text",
+            "prompt": "My father has a brother. ___ name is Sam.",
+            "answer": "His"
+          }
+        ]
+      },
+      {
+        "title": "3 · Choose in context",
+        "instructions": "Choose the correct form in each sentence.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "This is Anna and ___ husband, Max.",
+            "options": [
+              "she",
+              "her",
+              "his"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "My friends are here with ___ parents.",
+            "options": [
+              "they’re",
+              "their",
+              "there"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "This is a school. ___ name is Greenhill.",
+            "options": [
+              "It’s",
+              "Its",
+              "Their"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "We have a baby. ___ name is Kate.",
+            "options": [
+              "Our",
+              "Her",
+              "His"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "title": "4 · Write complete sentences",
+        "instructions": "Write a complete sentence. Use a possessive adjective.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "she / brother / teacher",
+            "answer": "Her brother is a teacher.",
+            "acceptedAnswers": [
+              "Her brother is a teacher."
+            ]
+          },
+          {
+            "type": "text",
+            "prompt": "we / house / old",
+            "answer": "Our house is old.",
+            "acceptedAnswers": [
+              "Our house is old."
+            ]
+          },
+          {
+            "type": "text",
+            "prompt": "they / daughter / doctor",
+            "answer": "Their daughter is a doctor.",
+            "acceptedAnswers": [
+              "Their daughter is a doctor."
+            ]
+          },
+          {
+            "type": "text",
+            "prompt": "he / wife / British",
+            "answer": "His wife is British.",
+            "acceptedAnswers": [
+              "His wife is British."
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
