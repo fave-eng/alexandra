@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="A1 English study library: quick rules, grammar explanations and vocabulary practice">
+  <title>Knowledge Base · English Space</title>
+  <link rel="stylesheet" href="styles.css?v=20261013-grammar-handbook-1">
+  <link rel="stylesheet" href="styles/knowledge-base.css?v=20261013-kb-1">
+  <script src="data/grammar-data.js?v=20261013-grammar-handbook-1" defer></script>
+  <script src="data/vocabulary-data.js?v=20261013b" defer></script>
+  <script src="data/knowledge-base-data.js?v=20261013-kb-1" defer></script>
+  <script src="scripts/knowledge-base.js?v=20261013-kb-1" defer></script>
+</head>
+<body class="has-bottom-nav" data-page="knowledge-base" data-view="knowledge-base">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="hero hero-compact kb-hero">
+    <span class="star one">✦</span><span class="star two">✦</span>
+    <div class="container hero-content">
+      <span class="hero-badge">A1 English · Study library</span>
+      <h1>Knowledge Base</h1>
+      <p>Find a rule, check an example, and practise what you've learned.</p>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path fill="#f8fafc" d="M0,66 C220,102 410,10 696,52 C963,91 1115,99 1440,35 L1440,100 L0,100 Z"></path></svg>
+  </header>
+  <main id="main" class="main-content container kb-main">
+    <nav class="kb-breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">›</span><span>Knowledge Base</span></nav>
+    <div class="kb-lead card">
+      <span class="eyebrow">YOUR STUDY NOTES</span>
+      <h2>Everything in one place</h2>
+      <p>Quick notes help you remember a rule. Full grammar guides explain it in detail. Vocabulary pages help you practise the words.</p>
+      <div class="kb-counts" aria-label="Library contents">
+        <span><strong id="kb-count-notes">0</strong> quick notes</span>
+        <span><strong id="kb-count-grammar">0</strong> grammar guides</span>
+        <span><strong id="kb-count-vocabulary">0</strong> word lists</span>
+      </div>
+    </div>
+    <section class="section kb-tools" aria-label="Find study material">
+      <label class="field-label" for="kb-search">Find a topic or a word</label>
+      <div class="kb-search-wrap"><span aria-hidden="true">⌕</span><input id="kb-search" class="text-field" type="search" placeholder="e.g. plural, family, a / an, sister" autocomplete="off"></div>
+      <div class="kb-filters" role="group" aria-label="Material type">
+        <button type="button" data-kb-filter="all" class="is-active" aria-pressed="true">All</button>
+        <button type="button" data-kb-filter="reference" aria-pressed="false">Quick notes</button>
+        <button type="button" data-kb-filter="grammar" aria-pressed="false">Grammar</button>
+        <button type="button" data-kb-filter="vocabulary" aria-pressed="false">Vocabulary</button>
+      </div>
+      <div class="kb-search-status"><p id="kb-result-count" role="status" aria-live="polite"></p><button id="kb-reset" type="button" hidden>Clear filters</button></div>
+    </section>
+    <div id="kb-empty" class="card kb-empty" hidden><h2>No matching topics</h2><p>Try another word or open all the notes.</p><button type="button" id="kb-empty-reset" class="btn btn-secondary">Show all topics</button></div>
+    <section id="kb-reference-section" class="section" aria-labelledby="kb-reference-heading">
+      <div class="section-heading"><div><span class="eyebrow">Review</span><h2 id="kb-reference-heading">Quick reference</h2></div></div>
+      <p class="kb-section-help">Open a note for a short rule, a table and an example. These notes don't change your progress.</p>
+      <div id="kb-reference-list" class="kb-list kb-note-list"></div>
+    </section>
+    <section id="kb-grammar-section" class="section" aria-labelledby="kb-grammar-heading">
+      <div class="section-heading"><div><span class="eyebrow">Read and practise</span><h2 id="kb-grammar-heading">Grammar handbook</h2></div></div>
+      <p class="kb-section-help">Full explanations, comparisons and your existing grammar exercises.</p>
+      <div id="kb-grammar-list" class="kb-list"></div>
+    </section>
+    <section id="kb-vocabulary-section" class="section" aria-labelledby="kb-vocabulary-heading">
+      <div class="section-heading"><div><span class="eyebrow">Words by lesson</span><h2 id="kb-vocabulary-heading">Vocabulary notebook</h2></div></div>
+      <p class="kb-section-help">All published lesson word lists are linked here. Learn the words in Vocabulary Hub.</p>
+      <div id="kb-vocabulary-list" class="kb-list"></div>
+    </section>
+  </main>
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="nav-link" href="index.html"><span class="nav-icon">🏠</span><span>Home</span></a>
+    <a class="nav-link" href="homework.html"><span class="nav-icon">📝</span><span>HW</span></a>
+    <a class="nav-link" href="grammar.html"><span class="nav-icon">📐</span><span>Grammar</span></a>
+    <a class="nav-link" href="vocabulary-hub.html"><span class="nav-icon">💥</span><span>Vocab</span></a>
+  </nav>
+</body>
+</html>
