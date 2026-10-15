@@ -324,14 +324,16 @@
 
       const result = await this.invokePublicFunction({
         kind: 'homework_submit_report',
+        eventType: 'homework_report',
         studentId,
         lessonId: normalizedLessonId,
         lessonTitle: safeText(lesson.title, normalizedLessonId),
+        lessonUrl: homeworkUrl,
         homeworkUrl,
         resultUrl
       });
 
-      if (result.sent || result.reason === 'already_sent') {
+      if (result.sent || result.telegramMessageId || result.reason === 'already_sent') {
         const progress = window.ProgressService.loadHomeworkProgress();
         const submission = progress.submissions[normalizedLessonId];
         if (submission) {
