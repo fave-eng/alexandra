@@ -1,0 +1,1116 @@
+{
+  "id": "lesson-8",
+  "number": 8,
+  "title": "Homework 8 · Lesson 2B",
+  "subtitle": "Speakout A1 (3rd edition) · Unit 2 · Lesson 2B · Family · People · Possessive adjectives · Writing",
+  "status": "available",
+  "page": "lesson.html?id=lesson-8",
+  "publishedAt": "2026-10-13",
+  "notification": {
+    "enabled": true,
+    "version": 1
+  },
+  "vocabularyId": "vocab-lesson-2b",
+  "grammarIds": [
+    "possessive-adjectives-a1"
+  ],
+  "autosaveDraft": true,
+  "totalPoints": 79,
+  "blocks": [
+    {
+      "type": "section",
+      "id": "wb-2b-intro",
+      "title": "Lesson 2B",
+      "eyebrow": "Speakout A1 · Workbook",
+      "text": "Family · People · Possessive adjectives · Syllables · Listening · Writing"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-1",
+      "title": "1 · VOCABULARY · family",
+      "instructions": "Look at the photo. Complete the family words for each person.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "Chloe: m________",
+          "input": "text",
+          "answer": "mother",
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "Chloe: w________",
+          "input": "text",
+          "answer": "wife",
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "Will: f________",
+          "input": "text",
+          "answer": "father",
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "Will: h________",
+          "input": "text",
+          "answer": "husband",
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "Chloe and Will: p________",
+          "input": "text",
+          "answer": "parents",
+          "number": 5
+        },
+        {
+          "id": "6",
+          "prompt": "Theo: s________",
+          "input": "text",
+          "answer": "son",
+          "number": 6
+        },
+        {
+          "id": "7",
+          "prompt": "Theo: b________",
+          "input": "text",
+          "answer": "brother",
+          "number": 7
+        },
+        {
+          "id": "8",
+          "prompt": "Elise: s________",
+          "input": "text",
+          "answer": "sister",
+          "number": 8
+        },
+        {
+          "id": "9",
+          "prompt": "Elise: d________",
+          "input": "text",
+          "answer": "daughter",
+          "number": 9
+        },
+        {
+          "id": "10",
+          "prompt": "Theo and Elise: c________",
+          "input": "text",
+          "answer": "children",
+          "number": 10
+        }
+      ],
+      "autosaveDraft": true,
+      "stickyImage": {
+        "src": "images/lesson-8/family-will-chloe-theo-elise.png",
+        "alt": "Original workbook photograph: Theo, Will, Chloe and Elise with their names"
+      }
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-2a",
+      "title": "2A · VOCABULARY · family",
+      "instructions": "Choose the correct alternative.",
+      "items": [
+        {
+          "id": "dialogue",
+          "prompt": "",
+          "input": "inline-single",
+          "number": "",
+          "segments": [
+            "A: Who are they?\nB: They’re my ¹ ",
+            ", Maria and Richard.\nA: Where are they?\nB: They’re at our house in France. My ² ",
+            " is Colombian. She’s from Cali.\nA: Is your ³ ",
+            " Colombian, too?\nB: No, he’s American. He’s from Los Angeles.\nA: And who are they?\nB: That’s my ⁴ ",
+            " Helen and her ⁵ ",
+            " Kerem. He’s Turkish.\nA: Are they in Turkey now?\nB: Yes. They’re in Izmir. Their ⁶ ",
+            " are Isabel and Zeki. They’re five and three."
+          ],
+          "choices": [
+            {
+              "options": [
+                "sisters",
+                "parents",
+                "daughters"
+              ],
+              "answer": 1,
+              "number": "1"
+            },
+            {
+              "options": [
+                "sister",
+                "father",
+                "mother"
+              ],
+              "answer": 2,
+              "number": "2"
+            },
+            {
+              "options": [
+                "son",
+                "mother",
+                "father"
+              ],
+              "answer": 2,
+              "number": "3"
+            },
+            {
+              "options": [
+                "sister",
+                "brother",
+                "children"
+              ],
+              "answer": 0,
+              "number": "4"
+            },
+            {
+              "options": [
+                "father",
+                "husband",
+                "wife"
+              ],
+              "answer": 1,
+              "number": "5"
+            },
+            {
+              "options": [
+                "children",
+                "daughters",
+                "sons"
+              ],
+              "answer": 0,
+              "number": "6"
+            }
+          ]
+        }
+      ],
+      "autosaveDraft": true,
+      "audioAfter": "audio/SO3_A1_WB_2B_Audio_2_04.mp3",
+      "audioAfterCaption": "2B · 2.04 | Listen and check."
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-3a",
+      "title": "3A · VOCABULARY · people",
+      "instructions": "Correct the underlined mistake in each sentence.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "The mens in the photo are police officers.",
+          "input": "text",
+          "answer": "men",
+          "markedPhrase": "mens",
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "The girl are in the garden.",
+          "input": "text",
+          "answer": "girls",
+          "markedPhrase": "girl",
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "Spanish persons are very friendly.",
+          "input": "text",
+          "answer": "people",
+          "markedPhrase": "persons",
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "My babies is called Fred.",
+          "input": "text",
+          "answer": "baby",
+          "markedPhrase": "babies",
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "What’s that women’s name?",
+          "input": "text",
+          "answer": "woman’s",
+          "markedPhrase": "women’s",
+          "number": 5
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-3b",
+      "title": "3B · VOCABULARY · people",
+      "instructions": "Write a word to fill the gaps.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "Plural of baby",
+          "input": "text",
+          "answer": "babies",
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "Singular of children",
+          "input": "text",
+          "answer": "child",
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "Plural of man",
+          "input": "text",
+          "answer": "men",
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "Plural of person",
+          "input": "text",
+          "answer": "people",
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "Singular of women",
+          "input": "text",
+          "answer": "woman",
+          "number": 5
+        }
+      ],
+      "autosaveDraft": true,
+      "tableHeaders": [
+        "singular",
+        "plural"
+      ],
+      "tableRows": [
+        [
+          "baby",
+          {
+            "itemId": "1"
+          }
+        ],
+        [
+          {
+            "itemId": "2"
+          },
+          "children"
+        ],
+        [
+          "man",
+          {
+            "itemId": "3"
+          }
+        ],
+        [
+          "person",
+          {
+            "itemId": "4"
+          }
+        ],
+        [
+          {
+            "itemId": "5"
+          },
+          "women"
+        ]
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-4a",
+      "title": "4A · PRONUNCIATION · syllables",
+      "instructions": "Underline the stressed syllable.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "sister",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "sis"
+              },
+              {
+                "word": "ter"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "brother",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "bro"
+              },
+              {
+                "word": "ther"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "husband",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "hus"
+              },
+              {
+                "word": "band"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "parents",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "par"
+              },
+              {
+                "word": "ents"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "children",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "chil"
+              },
+              {
+                "word": "dren"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 5
+        },
+        {
+          "id": "6",
+          "prompt": "people",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "peo"
+              },
+              {
+                "word": "ple"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 6
+        },
+        {
+          "id": "7",
+          "prompt": "women",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "wo"
+              },
+              {
+                "word": "men"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 7
+        },
+        {
+          "id": "8",
+          "prompt": "daughter",
+          "input": "mark",
+          "paragraphs": [
+            [
+              {
+                "word": "daugh"
+              },
+              {
+                "word": "ter"
+              }
+            ]
+          ],
+          "answer": [
+            0
+          ],
+          "number": 8
+        }
+      ],
+      "autosaveDraft": true,
+      "audioAfter": "audio/SO3_A1_WB_2B_Audio_2_05.mp3",
+      "audioAfterCaption": "4B · 2.05 | Listen and check."
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-5a",
+      "title": "5A · GRAMMAR · possessive adjectives",
+      "instructions": "Choose the correct word to complete the sentences.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "Jane is an artist and ______ husband is an actor.",
+          "input": "single",
+          "options": [
+            "its",
+            "she",
+            "her"
+          ],
+          "answer": 2,
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "My wife is in Poland now with ______ children.",
+          "input": "single",
+          "options": [
+            "their",
+            "its",
+            "our"
+          ],
+          "answer": 2,
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "Where are ______ parents from?",
+          "input": "single",
+          "options": [
+            "your",
+            "you’re",
+            "you"
+          ],
+          "answer": 0,
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "This is my cat. ______ name is Mac.",
+          "input": "single",
+          "options": [
+            "It’s",
+            "Its",
+            "He"
+          ],
+          "answer": 1,
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "My father is Chinese. ______ name is Liu Wei.",
+          "input": "single",
+          "options": [
+            "He",
+            "Her",
+            "His"
+          ],
+          "answer": 2,
+          "number": 5
+        },
+        {
+          "id": "6",
+          "prompt": "My husband and I are teachers. ______ school is very big.",
+          "input": "single",
+          "options": [
+            "Our",
+            "We",
+            "Your"
+          ],
+          "answer": 0,
+          "number": 6
+        },
+        {
+          "id": "7",
+          "prompt": "Marta and Sara are Italian. ______ family is from Rome.",
+          "input": "single",
+          "options": [
+            "They’re",
+            "Their",
+            "They"
+          ],
+          "answer": 1,
+          "number": 7
+        },
+        {
+          "id": "8",
+          "prompt": "______ daughter is seven. Her name is Leila.",
+          "input": "single",
+          "options": [
+            "My",
+            "I",
+            "We"
+          ],
+          "answer": 0,
+          "number": 8
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-5b",
+      "title": "5B · GRAMMAR · possessive adjectives",
+      "instructions": "Complete the sentences with my, your, his, her, its, our or their.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "Excuse me! Is this ______ phone?",
+          "input": "text",
+          "answer": "your",
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "Is that your brother? What’s ______ name?",
+          "input": "text",
+          "answer": "his",
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "My sister and I are police officers and ______ parents are police officers, too!",
+          "input": "text",
+          "answer": "our",
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "My friend has a pizza restaurant. ______ name is ‘Perfect Pizza’.",
+          "input": "text",
+          "answer": "Its",
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "Kate and Kirsten are sisters. ______ brother is an actor.",
+          "input": "text",
+          "answer": "Their",
+          "number": 5
+        },
+        {
+          "id": "6",
+          "prompt": "My mother is American and ______ father is British.",
+          "input": "text",
+          "answer": "my",
+          "number": 6
+        },
+        {
+          "id": "7",
+          "prompt": "My daughter is married. ______ husband is Japanese.",
+          "input": "text",
+          "answer": "Her",
+          "number": 7
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-5c",
+      "title": "5C · GRAMMAR · About me…",
+      "instructions": "Choose the correct alternative.",
+      "items": [
+        {
+          "id": "blog",
+          "prompt": "",
+          "input": "inline-single",
+          "number": "",
+          "segments": [
+            "Hi, I’m Rani. I’m a teacher from Johannesburg in South Africa. I have a big family – three sisters and a brother! ¹ ",
+            " brother is a digital designer. ² ",
+            " married to an Australian woman and they’re in Melbourne now. ³ ",
+            " wife is a designer too. My sisters are students here in Johannesburg. ⁴ ",
+            " parents aren’t from South Africa, ⁵ ",
+            " from India. ⁶ ",
+            " mother is a businesswoman. ⁷ ",
+            " company is very big. Our father has an Indian restaurant. ⁸ ",
+            " name is the Park Grill. The food is very good!"
+          ],
+          "choices": [
+            {
+              "options": [
+                "My",
+                "I"
+              ],
+              "answer": 0,
+              "number": "1"
+            },
+            {
+              "options": [
+                "He’s",
+                "His"
+              ],
+              "answer": 0,
+              "number": "2"
+            },
+            {
+              "options": [
+                "He’s",
+                "His"
+              ],
+              "answer": 1,
+              "number": "3"
+            },
+            {
+              "options": [
+                "Your",
+                "Our"
+              ],
+              "answer": 1,
+              "number": "4"
+            },
+            {
+              "options": [
+                "their",
+                "they’re"
+              ],
+              "answer": 1,
+              "number": "5"
+            },
+            {
+              "options": [
+                "Her",
+                "Our"
+              ],
+              "answer": 1,
+              "number": "6"
+            },
+            {
+              "options": [
+                "She",
+                "Her"
+              ],
+              "answer": 1,
+              "number": "7"
+            },
+            {
+              "options": [
+                "Its",
+                "It’s"
+              ],
+              "answer": 0,
+              "number": "8"
+            }
+          ]
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-6a",
+      "title": "6A · LISTENING · A family conversation",
+      "instructions": "Listen to the conversation. How many children does Matt have?",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "How many children does Matt have?",
+          "input": "text",
+          "answer": "three",
+          "acceptedAnswers": [
+            "three",
+            "3",
+            "He has three children.",
+            "Matt has three children."
+          ],
+          "number": "1"
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_2B_Audio_2_06.mp3"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-6b",
+      "title": "6B · LISTENING · family tree",
+      "instructions": "Listen again. Complete the family tree with names in the box. You do not need all the names.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "1",
+          "input": "select",
+          "options": [
+            "Amanda",
+            "Giulia",
+            "Jennifer",
+            "Olivia",
+            "Sofia",
+            "Soraya"
+          ],
+          "answer": 1,
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "2",
+          "input": "select",
+          "options": [
+            "Amanda",
+            "Giulia",
+            "Jennifer",
+            "Olivia",
+            "Sofia",
+            "Soraya"
+          ],
+          "answer": 4,
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "3",
+          "input": "select",
+          "options": [
+            "Amanda",
+            "Giulia",
+            "Jennifer",
+            "Olivia",
+            "Sofia",
+            "Soraya"
+          ],
+          "answer": 3,
+          "number": 3
+        }
+      ],
+      "autosaveDraft": true,
+      "wordBank": [
+        "Amanda",
+        "Giulia",
+        "Jennifer",
+        "Olivia",
+        "Sofia",
+        "Soraya"
+      ],
+      "audio": "audio/SO3_A1_WB_2B_Audio_2_06.mp3",
+      "images": [
+        {
+          "src": "images/lesson-8/matt-family-tree.svg",
+          "alt": "Family tree showing Matt and blank 1 as parents, with Leo and blanks 2 and 3 as children."
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-6c",
+      "title": "6C · LISTENING · Choose the correct alternative",
+      "instructions": "Choose the correct alternative. Then listen again and check.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "The family are in their garden / a park in the photo.",
+          "input": "single",
+          "options": [
+            "their garden",
+            "a park"
+          ],
+          "answer": 0,
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "Sofia is 19 / 21.",
+          "input": "single",
+          "options": [
+            "19",
+            "21"
+          ],
+          "answer": 1,
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "Sofia and Olivia are students / teachers.",
+          "input": "single",
+          "options": [
+            "students",
+            "teachers"
+          ],
+          "answer": 0,
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "Sofia and Olivia are in Toronto / Vancouver now.",
+          "input": "single",
+          "options": [
+            "Toronto",
+            "Vancouver"
+          ],
+          "answer": 1,
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "Leo is / isn’t in the photo.",
+          "input": "single",
+          "options": [
+            "is",
+            "isn’t"
+          ],
+          "answer": 1,
+          "number": 5
+        },
+        {
+          "id": "6",
+          "prompt": "Leo is a student / teacher.",
+          "input": "single",
+          "options": [
+            "student",
+            "teacher"
+          ],
+          "answer": 1,
+          "number": 6
+        },
+        {
+          "id": "7",
+          "prompt": "Leo is in Italy / Canada.",
+          "input": "single",
+          "options": [
+            "Italy",
+            "Canada"
+          ],
+          "answer": 0,
+          "number": 7
+        },
+        {
+          "id": "8",
+          "prompt": "Giulia is Mexican / Italian.",
+          "input": "single",
+          "options": [
+            "Mexican",
+            "Italian"
+          ],
+          "answer": 1,
+          "number": 8
+        }
+      ],
+      "autosaveDraft": true,
+      "audio": "audio/SO3_A1_WB_2B_Audio_2_06.mp3"
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-7a",
+      "title": "7A · WRITING · a description of a photo; use and",
+      "instructions": "Read the caption. Find and underline four more examples of and.",
+      "items": [
+        {
+          "id": "caption",
+          "prompt": "",
+          "input": "mark",
+          "number": "",
+          "paragraphs": [
+            [
+              "This is a photo of my brother Dave ",
+              {
+                "underline": "and"
+              },
+              " his family on holiday in London. Dave’s wife Lisa is Australian ",
+              {
+                "word": "and"
+              },
+              " Dave’s from the USA. Dave’s a doctor ",
+              {
+                "word": "and"
+              },
+              " Lisa’s a businesswoman. They have two sons aged five ",
+              {
+                "word": "and"
+              },
+              " six. Their names are Otis ",
+              {
+                "word": "and"
+              },
+              " Ralph. They’re very happy children!"
+            ]
+          ],
+          "answer": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "autosaveDraft": true,
+      "stickyImage": {
+        "src": "images/lesson-8/london-family-dave.png",
+        "alt": "Original photo of Dave and his family in London with Big Ben in the background"
+      }
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-7b",
+      "title": "7B · WRITING · use and",
+      "instructions": "Put and in the correct place in the sentences.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "This is Amelia her son Louis.",
+          "input": "text",
+          "answer": "This is Amelia and her son Louis.",
+          "number": 1
+        },
+        {
+          "id": "2",
+          "prompt": "My mum is British my dad is German.",
+          "input": "text",
+          "answer": "My mum is British and my dad is German.",
+          "number": 2
+        },
+        {
+          "id": "3",
+          "prompt": "My bike is new it’s very good!",
+          "input": "text",
+          "answer": "My bike is new and it’s very good!",
+          "number": 3
+        },
+        {
+          "id": "4",
+          "prompt": "They have a son a daughter.",
+          "input": "text",
+          "answer": "They have a son and a daughter.",
+          "number": 4
+        },
+        {
+          "id": "5",
+          "prompt": "Jack is cold tired.",
+          "input": "text",
+          "answer": "Jack is cold and tired.",
+          "number": 5
+        },
+        {
+          "id": "6",
+          "prompt": "Their names are Clare Eddy.",
+          "input": "text",
+          "answer": "Their names are Clare and Eddy.",
+          "number": 6
+        }
+      ],
+      "autosaveDraft": true
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-7c",
+      "title": "7C · WRITING · notes about the photo",
+      "instructions": "Look at the photo below and make notes on your ideas.",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "Names:",
+          "input": "text",
+          "answer": null,
+          "number": 1,
+          "scored": false
+        },
+        {
+          "id": "2",
+          "prompt": "Where they are:",
+          "input": "text",
+          "answer": null,
+          "number": 2,
+          "scored": false
+        },
+        {
+          "id": "3",
+          "prompt": "Nationalities:",
+          "input": "text",
+          "answer": null,
+          "number": 3,
+          "scored": false
+        },
+        {
+          "id": "4",
+          "prompt": "Jobs:",
+          "input": "text",
+          "answer": null,
+          "number": 4,
+          "scored": false
+        },
+        {
+          "id": "5",
+          "prompt": "Family relationships and names:",
+          "input": "text",
+          "answer": null,
+          "number": 5,
+          "scored": false
+        }
+      ],
+      "autosaveDraft": true,
+      "stickyImage": {
+        "src": "images/lesson-8/family-writing.png",
+        "alt": "Original photograph of a family of four sitting together on a sofa"
+      }
+    },
+    {
+      "type": "exercise",
+      "id": "wb-2b-7d",
+      "title": "7D · WRITING · describe the photo",
+      "instructions": "Use your notes to write about the photo. Use and at least four times. Write 50–80 words.",
+      "items": [
+        {
+          "id": "description",
+          "prompt": "Your description:",
+          "input": "textarea",
+          "answer": null,
+          "number": "description",
+          "scored": false
+        }
+      ],
+      "autosaveDraft": true,
+      "stickyImage": {
+        "src": "images/lesson-8/family-writing.png",
+        "alt": "Same photograph of a family of four on a sofa"
+      },
+      "dependsOn": "wb-2b-7c",
+      "dependencyWaitingText": "Complete all five sets of notes in 7C first.",
+      "dependencyReadyText": "Your notes:",
+      "dependencyShowAnswers": true
+    },
+    {
+      "type": "grammar-link",
+      "id": "wb-2b-grammar-link",
+      "grammarId": "possessive-adjectives-a1",
+      "title": "Possessive adjectives",
+      "text": "my, your, his, her, its, our, their"
+    }
+  ]
+}

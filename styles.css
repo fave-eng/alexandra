@@ -3499,3 +3499,91 @@ body[data-view="lesson"] {
 .exercise-card[data-task="wb-2a-4b"] .dialogue-answer-select { min-width:100px; max-width:140px; }
 .exercise-card[data-task="wb-2a-4b"] .sentence-gaps.is-dialogue { white-space:pre-line; line-height:2.45; }
 .exercise-card[data-task="wb-2a-5cd"] .exercise-instructions { white-space:pre-line; }
+
+/* Lesson 2B: stress segments appear as one word; workbook reference stays alongside questions. */
+[data-task="wb-2b-4a"] .mark-text p {display:inline-flex;align-items:baseline;gap:0;}
+[data-task="wb-2b-4a"] .mark-word {padding:2px 0;border-radius:1px;}
+[data-task="wb-2b-7a"] .mark-text p {line-height:2;}
+[data-task="wb-2b-7d"] .exercise-dependency.is-ready {white-space:normal;line-height:1.65;}
+@media (max-width: 760px) {[data-task="wb-2b-7d"] .exercise-dependency.is-ready {max-height:none;}}
+
+/* Lesson 2B: keep original workbook photos alongside answers on desktop. */
+.exercise-card[data-task="wb-2b-1"],
+.exercise-card[data-task="wb-2b-7a"],
+.exercise-card[data-task="wb-2b-7c"],
+.exercise-card[data-task="wb-2b-7d"] { overflow: visible; }
+@media (min-width: 901px) {
+  .exercise-card[data-task="wb-2b-1"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7a"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7c"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7d"] .exercise-sticky-media { position: sticky; top: 92px; align-self: start; max-height: calc(100vh - 112px); overflow-y:auto; }
+}
+@media (max-width: 900px) {
+  .exercise-card[data-task="wb-2b-1"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7a"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7c"] .exercise-sticky-media,
+  .exercise-card[data-task="wb-2b-7d"] .exercise-sticky-media { position: static; max-height:none; overflow:visible; }
+}
+
+
+/* Alexandra — editorial grammar handbook, October 2026.
+   Lessons are chapter-specific instead of repeating generic template cards. */
+.grammar-guide-index { padding: 20px 22px; border: 1px solid #d9e6f3; border-radius: 18px; background: #f7fafc; }
+.grammar-guide-index > strong { color:#183f69; display:block; font-size:1rem; margin-bottom:12px; }
+.grammar-guide-index > div { display:flex; flex-wrap:wrap; gap:8px; }
+.grammar-guide-index a { display:inline-flex; align-items:center; gap:8px; border:1px solid #d3e1ee; background:#fff; color:#16466f; text-decoration:none; padding:8px 11px; border-radius:10px; font-size:0.86rem; line-height:1.35; }
+.grammar-guide-index a:hover, .grammar-guide-index a:focus-visible { border-color:#4c8bb4; background:#eef6ff; }
+.grammar-guide-index a > span { display:inline-grid; place-items:center; flex:none; background:#e4eff9; border-radius:50%; width:24px; height:24px; font-size:0.75rem; font-weight:800; }
+.grammar-guide-chapters { display:grid; gap:22px; }
+.grammar-guide-chapter { background:#fff; border:1px solid #e0e9f3; box-shadow:0 7px 25px rgba(18,54,84,.05); border-radius:19px; padding:clamp(17px,3vw,28px); scroll-margin-top:24px; }
+.grammar-guide-chapter-head { display:flex; align-items:flex-start; gap:14px; border-bottom:1px solid #e8eef4; padding-bottom:17px; margin-bottom:21px; }
+.grammar-guide-chapter-head h2 { margin:0 0 9px; color:#153d61; font-size:clamp(1.21rem,2.8vw,1.55rem); line-height:1.25; letter-spacing:-.015em; }
+.grammar-guide-chapter-head p { color:#42566a; font-size:0.98rem; margin:0; line-height:1.6; max-width:76ch; }
+.grammar-guide-chapter-num { display:grid; place-items:center; width:41px; height:41px; flex:none; border-radius:12px; background:#dceafa; color:#164e83; font-size:1rem; font-weight:850; font-variant-numeric:tabular-nums; }
+.grammar-guide-blocks { display:grid; gap:18px; }
+.grammar-guide-prose p { line-height:1.8; font-size:1rem; margin:0 0 11px; }
+.grammar-guide-examples { display:grid; gap:10px; }
+.grammar-guide-examples h4, .grammar-guide-checklist h4, .grammar-guide-table-wrap h4 { margin:0 0 8px; color:#24435f; font-size:0.95rem; }
+.grammar-example-pairs { display:grid; gap:0; background:#f7fafd; border:1px solid #e1eaf3; border-radius:13px; overflow:hidden; }
+.grammar-example-pair { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:15px; padding:13px 16px; border-top:1px solid #e2e9f0; line-height:1.5; align-items:start; }
+.grammar-example-pair:first-child { border-top:0; }
+.grammar-example-pair strong { color:#153a5b; overflow-wrap:anywhere; font-size:0.96rem; }
+.grammar-example-pair span { color:#516476; font-size:0.92rem; overflow-wrap:anywhere; }
+.grammar-guide-table-wrap { overflow-x:auto; width:100%; border:1px solid #d9e6ee; border-radius:12px; }
+.grammar-guide-table-wrap h4 { padding:12px 14px 0; }
+.grammar-guide-table { border-collapse:collapse; min-width:min(500px,100%); width:100%; font-size:0.94rem; line-height:1.48; }
+.grammar-guide-table th { text-align:left; font-weight:750; background:#e9f2fa; color:#173d62; padding:11px 13px; border-bottom:2px solid #bad2e7; vertical-align:top; }
+.grammar-guide-table td { padding:12px 13px; color:#2b4050; border-bottom:1px solid #e1e9ee; vertical-align:top; white-space:normal; overflow-wrap:anywhere; }
+.grammar-guide-table tr:last-child td { border-bottom:0; }
+.grammar-guide-table tbody tr:nth-child(even) { background:#f8fbfd; }
+.grammar-guide-compare { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.grammar-compare-side { background:#f5f9fc; border:1px solid #d9e7f1; padding:16px; border-radius:13px; }
+.grammar-compare-side:nth-child(2) { background:#f5fbf8; border-color:#d5e9dd; }
+.grammar-compare-side h4 { color:#134d78; font-size:0.94rem; margin:0 0 9px; }
+.grammar-compare-side:nth-child(2) h4 { color:#286a48; }
+.grammar-compare-side p { color:#2d4659; margin:0; line-height:1.65; font-size:0.97rem; overflow-wrap:anywhere; }
+.grammar-compare-conclusion { grid-column:1/-1; color:#47586a; border-left:3px solid #9abdd9; padding:8px 12px; margin:0; font-size:0.93rem; line-height:1.55; background:#fbfcfe; }
+.grammar-guide-pattern { margin:0; border:1px solid #dae8f0; background:#f8fbff; border-radius:14px; padding:19px 16px; }
+.grammar-pattern-steps { display:flex; flex-wrap:wrap; gap:9px; align-items:center; }
+.grammar-pattern-step { display:inline-flex; align-items:center; padding:9px 13px; font-weight:800; font-size:0.99rem; color:#224d70; border:1px solid #c5dcec; background:#e5f0fa; border-radius:10px; max-width:100%; overflow-wrap:anywhere; }
+.grammar-pattern-step-1 { color:#466336; background:#edf6e6; border-color:#d8e9d0; }
+.grammar-pattern-step-2 { color:#6c4c7d; background:#f4ecf9; border-color:#ead9f3; }
+.grammar-guide-pattern figcaption { color:#4f6679; font-size:0.87rem; margin-top:12px; line-height:1.55; }
+.grammar-guide-rule { padding:17px 18px; border:1px solid #e5d5b8; border-left:4px solid #bd8e4c; border-radius:12px; background:#fefbf5; }
+.grammar-guide-rule > strong { color:#78501a; font-size:0.96rem; display:block; margin-bottom:8px; }
+.grammar-guide-rule p { color:#5c4e38; margin:0; font-size:0.94rem; line-height:1.68; }
+.grammar-guide-checklist { padding:17px 19px; border-radius:13px; border:1px solid #d8e9d9; background:#f8fcf8; }
+.grammar-guide-checklist ol { margin:8px 0 0; padding-left:22px; }
+.grammar-guide-checklist li { color:#335143; line-height:1.6; padding:3px 0; }
+@media (max-width:650px) {
+ .grammar-guide-chapter { padding:16px 13px; }
+ .grammar-guide-chapter-head { gap:10px; }
+ .grammar-guide-chapter-num { width:35px; height:35px; border-radius:9px; }
+ .grammar-guide-compare { grid-template-columns:1fr; }
+ .grammar-example-pair { grid-template-columns:1fr; gap:5px; padding:12px 13px; }
+ .grammar-guide-table { font-size:0.88rem; }
+ .grammar-guide-table th,.grammar-guide-table td { padding:10px 9px; }
+ .grammar-guide-index { padding:14px; }
+ .grammar-guide-index > div { flex-direction:column; }
+ .grammar-guide-index a { width:100%; }
+}

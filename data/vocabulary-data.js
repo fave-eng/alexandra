@@ -1245,5 +1245,259 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-2b",
+    "title": "Lesson 2B · Family and possessive adjectives",
+    "label": "Unit 2 · Lesson 2B",
+    "icon": "👨‍👩‍👧‍👦",
+    "type": "lesson",
+    "linkedLessonId": "lesson-8",
+    "page": "vocabulary.html?id=vocab-lesson-2b",
+    "words": [
+      {
+        "id": "wb-2b-word-01",
+        "en": "mother",
+        "ru": "мать",
+        "transcription": "",
+        "exampleEn": "Chloe is Theo’s mother.",
+        "exampleRu": "Хлоя — мама Тео.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-02",
+        "en": "wife",
+        "ru": "жена",
+        "transcription": "",
+        "exampleEn": "Lisa is Dave’s wife.",
+        "exampleRu": "Лиза — жена Дейва.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-03",
+        "en": "father",
+        "ru": "отец",
+        "transcription": "",
+        "exampleEn": "Will is Theo’s father.",
+        "exampleRu": "Уилл — отец Тео.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-04",
+        "en": "husband",
+        "ru": "муж",
+        "transcription": "",
+        "exampleEn": "He is her husband.",
+        "exampleRu": "Он её муж.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-05",
+        "en": "parents",
+        "ru": "родители",
+        "transcription": "",
+        "exampleEn": "Their parents live in France.",
+        "exampleRu": "Их родители живут во Франции.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-06",
+        "en": "son",
+        "ru": "сын",
+        "transcription": "",
+        "exampleEn": "They have a son.",
+        "exampleRu": "У них есть сын.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-07",
+        "en": "brother",
+        "ru": "брат",
+        "transcription": "",
+        "exampleEn": "My brother is a designer.",
+        "exampleRu": "Мой брат — дизайнер.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-08",
+        "en": "sister",
+        "ru": "сестра",
+        "transcription": "",
+        "exampleEn": "My sister is a student.",
+        "exampleRu": "Моя сестра — студентка.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-09",
+        "en": "daughter",
+        "ru": "дочь",
+        "transcription": "",
+        "exampleEn": "Their daughter is seven.",
+        "exampleRu": "Их дочери семь лет.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-10",
+        "en": "children",
+        "ru": "дети",
+        "transcription": "",
+        "exampleEn": "They have three children.",
+        "exampleRu": "У них трое детей.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-11",
+        "en": "baby",
+        "ru": "младенец",
+        "transcription": "",
+        "exampleEn": "The baby is happy.",
+        "exampleRu": "Малыш счастлив.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-12",
+        "en": "people",
+        "ru": "люди",
+        "transcription": "",
+        "exampleEn": "The people are friendly.",
+        "exampleRu": "Люди дружелюбные.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-13",
+        "en": "men",
+        "ru": "мужчины",
+        "transcription": "",
+        "exampleEn": "The men are teachers.",
+        "exampleRu": "Мужчины — учителя.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-14",
+        "en": "women",
+        "ru": "женщины",
+        "transcription": "",
+        "exampleEn": "The women are here.",
+        "exampleRu": "Женщины здесь.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-15",
+        "en": "my",
+        "ru": "мой, моя",
+        "transcription": "",
+        "exampleEn": "My name is Mia.",
+        "exampleRu": "Меня зовут Мия.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-16",
+        "en": "your",
+        "ru": "твой, ваш",
+        "transcription": "",
+        "exampleEn": "What is your name?",
+        "exampleRu": "Как тебя зовут?",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-17",
+        "en": "his",
+        "ru": "его",
+        "transcription": "",
+        "exampleEn": "His brother is a teacher.",
+        "exampleRu": "Его брат — учитель.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-18",
+        "en": "her",
+        "ru": "её",
+        "transcription": "",
+        "exampleEn": "Her name is Chloe.",
+        "exampleRu": "Её зовут Хлоя.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-19",
+        "en": "its",
+        "ru": "его, её (о предмете/животном)",
+        "transcription": "",
+        "exampleEn": "Its name is Mac.",
+        "exampleRu": "Его зовут Мак.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-20",
+        "en": "our",
+        "ru": "наш",
+        "transcription": "",
+        "exampleEn": "Our family is big.",
+        "exampleRu": "Наша семья большая.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-21",
+        "en": "their",
+        "ru": "их",
+        "transcription": "",
+        "exampleEn": "Their house is in London.",
+        "exampleRu": "Их дом в Лондоне.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-22",
+        "en": "family",
+        "ru": "семья",
+        "transcription": "",
+        "exampleEn": "This is a photo of my family.",
+        "exampleRu": "Это фотография моей семьи.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-23",
+        "en": "garden",
+        "ru": "сад",
+        "transcription": "",
+        "exampleEn": "The family are in their garden.",
+        "exampleRu": "Семья находится в своём саду.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-24",
+        "en": "syllable",
+        "ru": "слог",
+        "transcription": "",
+        "exampleEn": "The word has two syllables.",
+        "exampleRu": "В слове два слога.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-25",
+        "en": "stressed",
+        "ru": "ударный",
+        "transcription": "",
+        "exampleEn": "Underline the stressed syllable.",
+        "exampleRu": "Подчеркни ударный слог.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-26",
+        "en": "caption",
+        "ru": "подпись к фотографии",
+        "transcription": "",
+        "exampleEn": "Read the caption.",
+        "exampleRu": "Прочитай подпись к фотографии.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b-word-27",
+        "en": "relationship",
+        "ru": "родственная связь",
+        "transcription": "",
+        "exampleEn": "Write family relationships and names.",
+        "exampleRu": "Запиши родственные связи и имена.",
+        "audio": ""
+      }
+    ]
   }
 ];
