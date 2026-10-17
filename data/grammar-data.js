@@ -3,20 +3,20 @@ window.GRAMMAR_DATA = [
     "id": "be-i-you-a1",
     "linkedLessonId": "lesson-1",
     "order": 1,
-    "title": "Present simple be: I, you",
+    "title": "Глагол be: I / you (am / are)",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=be-i-you-a1",
     "overview": {
-      "lead": "A full guide to present simple be: i, you. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Present simple be: I, you",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Глагол be: I / you (am / are)",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the form",
-        "instructions": "Choose the correct form of be.",
+        "title": "Выбери форму",
+        "instructions": "Выбери правильную форму глагола be.",
         "items": [
           {
             "type": "single",
@@ -26,7 +26,8 @@ window.GRAMMAR_DATA = [
               "are",
               "is"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Я из Индии."
           },
           {
             "type": "single",
@@ -36,7 +37,8 @@ window.GRAMMAR_DATA = [
               "are",
               "is"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Ты студент(ка)."
           },
           {
             "type": "single",
@@ -46,7 +48,8 @@ window.GRAMMAR_DATA = [
               "are",
               "is"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Я не из Польши."
           },
           {
             "type": "single",
@@ -56,39 +59,44 @@ window.GRAMMAR_DATA = [
               "Are",
               "Is"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Ты из Великобритании?"
           }
         ]
       },
       {
-        "title": "Complete the sentences",
-        "instructions": "Write am or are.",
+        "title": "Вставь нужную форму",
+        "instructions": "Впиши am или are.",
         "items": [
           {
             "type": "text",
             "prompt": "I ___ a teacher.",
-            "answer": "am"
+            "answer": "am",
+            "promptRu": "Я учитель."
           },
           {
             "type": "text",
             "prompt": "You ___ from Brazil.",
-            "answer": "are"
+            "answer": "are",
+            "promptRu": "Ты из Бразилии."
           },
           {
             "type": "text",
             "prompt": "___ I late?",
-            "answer": "Am"
+            "answer": "Am",
+            "promptRu": "Я опоздал(а)?"
           },
           {
             "type": "text",
             "prompt": "Where ___ you from?",
-            "answer": "are"
+            "answer": "are",
+            "promptRu": "Откуда ты?"
           }
         ]
       },
       {
-        "title": "Correct the mistake",
-        "instructions": "Choose the correct sentence.",
+        "title": "Найди правильное предложение",
+        "instructions": "Выбери грамматически правильное английское предложение.",
         "items": [
           {
             "type": "select",
@@ -98,7 +106,8 @@ window.GRAMMAR_DATA = [
               "I are not from France.",
               "I no from France."
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Найдите правильный вариант: «Я не из Франции»."
           },
           {
             "type": "select",
@@ -108,7 +117,8 @@ window.GRAMMAR_DATA = [
               "Are you from Korea?",
               "Am you from Korea?"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Найдите правильный вопрос: «Ты из Кореи?»"
           },
           {
             "type": "select",
@@ -118,7 +128,8 @@ window.GRAMMAR_DATA = [
               "I’m not British.",
               "I no British."
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Найдите правильный вариант: «Я не британец / британка»."
           },
           {
             "type": "select",
@@ -128,13 +139,14 @@ window.GRAMMAR_DATA = [
               "Where you from are?",
               "Are where you from?"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Найдите правильный вопрос: «Откуда ты?»"
           }
         ]
       },
       {
-        "title": "Build complete sentences",
-        "instructions": "Put the words in order. Use correct punctuation.",
+        "title": "Составь предложения",
+        "instructions": "Напиши слова в правильном порядке. Не забудь точку или вопросительный знак.",
         "items": [
           {
             "type": "reorder",
@@ -144,7 +156,8 @@ window.GRAMMAR_DATA = [
               "I’m",
               "Mexico"
             ],
-            "answer": "I’m from Mexico."
+            "answer": "I’m from Mexico.",
+            "promptRu": "Я из Мексики."
           },
           {
             "type": "reorder",
@@ -159,7 +172,8 @@ window.GRAMMAR_DATA = [
             "acceptedAnswers": [
               "You are not a teacher.",
               "You aren’t a teacher."
-            ]
+            ],
+            "promptRu": "Ты не учитель."
           },
           {
             "type": "reorder",
@@ -170,7 +184,8 @@ window.GRAMMAR_DATA = [
               "Portuguese",
               "?"
             ],
-            "answer": "Are you Portuguese?"
+            "answer": "Are you Portuguese?",
+            "promptRu": "Ты португалец / португалка?"
           },
           {
             "type": "reorder",
@@ -182,214 +197,254 @@ window.GRAMMAR_DATA = [
               "from",
               "?"
             ],
-            "answer": "Where are you from?"
+            "answer": "Where are you from?",
+            "promptRu": "Откуда ты?"
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "The verb be: more than an introduction",
-        "lead": "English sentences normally need a verb. With a name, nationality, profession, place or feeling, that verb is often be.",
+        "title": "Зачем нужен глагол be",
+        "lead": "В английском предложении, в отличие от русского, обычно нельзя обойтись без сказуемого. Когда говорим, кто мы, откуда мы или где находимся, используем be — «быть».",
         "blocks": [
           {
             "kind": "compare",
-            "leftTitle": "Russian idea",
-            "left": "«Я из Польши.» In Russian you can say this without a present-tense verb.",
-            "rightTitle": "English sentence",
-            "right": "I am from Poland. In English, do not leave out am.",
-            "conclusion": "I from Poland is not a complete standard English sentence."
+            "leftTitle": "По-русски",
+            "left": "Я студент. Я из Италии.",
+            "rightTitle": "По-английски",
+            "right": "I am a student. I am from Italy.",
+            "conclusion": "В настоящем времени по-русски «есть» часто опускается; в английском am пропускать нельзя."
+          },
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Местоимение",
+              "Форма be",
+              "Сокращение"
+            ],
+            "rows": [
+              [
+                "I — я",
+                "am",
+                "I’m"
+              ],
+              [
+                "you — ты / вы",
+                "are",
+                "you’re"
+              ]
+            ]
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
                 "sentence": "I am a student.",
-                "detail": "Who am I? My role."
+                "detail": "Я студентка / студент."
               },
               {
-                "sentence": "I am from Spain.",
-                "detail": "Where am I from?"
+                "sentence": "I’m from Poland.",
+                "detail": "Я из Польши."
               },
               {
-                "sentence": "You are early.",
-                "detail": "How are you?"
+                "sentence": "You are a teacher.",
+                "detail": "Ты учитель / Вы учитель."
               },
               {
-                "sentence": "You are in room seven.",
-                "detail": "Where are you?"
+                "sentence": "You’re at home.",
+                "detail": "Ты дома / Вы дома."
               }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Choose the correct form",
-        "lead": "A subject tells us who the sentence is about. The form of be must agree with that subject.",
-        "blocks": [
-          {
-            "kind": "table",
-            "title": "",
-            "headers": [
-              "Subject",
-              "Full form",
-              "Short form",
-              "Negative"
-            ],
-            "rows": [
-              [
-                "I",
-                "I am",
-                "I’m",
-                "I am not / I’m not"
-              ],
-              [
-                "you (one person)",
-                "you are",
-                "you’re",
-                "you are not / you aren’t / you’re not"
-              ],
-              [
-                "you (several people)",
-                "you are",
-                "you’re",
-                "you are not / you aren’t"
-              ]
             ]
           },
           {
             "kind": "rule",
-            "title": "Agreement and contractions",
-            "text": "With I, use am, never are or is. With you, use are, never am. There is no standard contraction amn’t: say I’m not.",
+            "title": "Главное правило",
+            "text": "I всегда употребляется с am, а you — с are. Нельзя: I are, you am, I from Italy.",
             "tone": "note"
+          }
+        ]
+      },
+      {
+        "title": "Утверждение и отрицание",
+        "lead": "Отрицание образуем с помощью not после am или are. Вспомогательный глагол do здесь не нужен.",
+        "blocks": [
+          {
+            "kind": "pattern",
+            "steps": [
+              "I / you",
+              "→",
+              "am / are",
+              "→",
+              "(not)",
+              "→",
+              "остальная часть"
+            ],
+            "caption": "Схема: подлежащее + be (+ not) + информация."
+          },
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Утверждение",
+              "Отрицание",
+              "Сокращение"
+            ],
+            "rows": [
+              [
+                "I am ready.",
+                "I am not ready.",
+                "I’m not ready."
+              ],
+              [
+                "You are late.",
+                "You are not late.",
+                "You aren’t late. / You’re not late."
+              ]
+            ]
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "I’m not a doctor.",
-                "detail": "I + am + not + a doctor"
+                "sentence": "I’m not tired.",
+                "detail": "Я не устал(а)."
               },
               {
-                "sentence": "You aren’t late.",
-                "detail": "you + are + not + late"
+                "sentence": "You aren’t a doctor.",
+                "detail": "Ты не врач."
               },
               {
                 "sentence": "You’re not late.",
-                "detail": "The same meaning as You aren’t late."
+                "detail": "Ты не опоздал(а)."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Ошибка",
+            "text": "Не говорим I don’t am, You don’t are. С be отрицание образуется непосредственно: am not / are not.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Statements, questions and short answers",
-        "lead": "To make an ordinary yes/no question with be, put am or are BEFORE the subject.",
+        "title": "Общие вопросы и короткие ответы",
+        "lead": "Чтобы спросить «Ты…?» или «Я…?», переместите am/are перед подлежащим. В коротком ответе верните обычный порядок.",
         "blocks": [
           {
             "kind": "pattern",
             "steps": [
-              "Are",
-              "you",
-              "from Turkey?",
+              "Am / Are",
               "→",
-              "Yes, I am. / No, I’m not."
+              "I / you",
+              "→",
+              "остальная часть",
+              "?"
             ],
-            "caption": "Question: be + subject + rest? Answer with the subject and be."
+            "caption": "В вопросе be стоит перед подлежащим."
           },
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Statement (+)",
-              "Question (?)",
-              "Short answer"
+              "Вопрос",
+              "Да",
+              "Нет"
             ],
             "rows": [
               [
-                "You are French.",
-                "Are you French?",
-                "Yes, I am. / No, I’m not."
+                "Am I late?",
+                "Yes, you are.",
+                "No, you aren’t."
               ],
               [
-                "I am early.",
-                "Am I early?",
-                "Yes, you are. / No, you aren’t."
+                "Are you a student?",
+                "Yes, I am.",
+                "No, I’m not."
               ]
             ]
           },
           {
-            "kind": "rule",
-            "title": "Short answers",
-            "text": "A positive short answer uses the full verb: Yes, I am. Not Yes, I’m. The answer pronoun changes with the speaker: Are you ready? — Yes, I am.",
-            "tone": "note"
-          },
-          {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Are you from London? — No, I’m not.",
-                "detail": "No + I am not"
+                "sentence": "Are you from Spain?",
+                "detail": "Ты из Испании?"
               },
               {
-                "sentence": "Am I in the right room? — Yes, you are.",
-                "detail": "The other person answers using you."
+                "sentence": "Yes, I am.",
+                "detail": "Да."
+              },
+              {
+                "sentence": "No, I’m not.",
+                "detail": "Нет."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Как отвечать",
+            "text": "На Are you…? о себе отвечаем Yes, I am / No, I’m not. Нельзя Yes, I’m (без продолжения): в положительном коротком ответе am не сокращается.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Questions with where and what",
-        "lead": "A question word goes before be; the subject goes after be. “Where you are from?” is the wrong order in a direct question.",
+        "title": "Вопросы с what и where",
+        "lead": "В вопросах со специальным словом сначала ставим what («что, какой») или where («где, откуда»), потом be, затем подлежащее.",
         "blocks": [
           {
             "kind": "pattern",
             "steps": [
-              "Where",
-              "are",
-              "you",
-              "from?"
+              "Where / What",
+              "→",
+              "am / are",
+              "→",
+              "I / you",
+              "→",
+              "… ?"
             ],
-            "caption": "Question word + be + subject + the rest."
+            "caption": "Порядок слов в специальном вопросе."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Where are you from? — I’m from Brazil.",
-                "detail": "Use from for origin."
+                "sentence": "Where are you from?",
+                "detail": "Откуда ты?"
               },
               {
-                "sentence": "What is your name? — My name is Ana.",
-                "detail": "“What” asks for information."
+                "sentence": "What is your name?",
+                "detail": "Как тебя зовут?"
               },
               {
-                "sentence": "Are you a teacher? — Yes, I am.",
-                "detail": "No question word = yes/no question."
+                "sentence": "Where am I?",
+                "detail": "Где я?"
               }
             ]
           },
           {
             "kind": "compare",
-            "leftTitle": "Who someone is",
-            "left": "I am a nurse. You are my teacher.",
-            "rightTitle": "What someone does",
-            "right": "I work in a hospital. You teach English.",
-            "conclusion": "Do not add am to a normal present-simple verb: I work, not I am work."
+            "leftTitle": "Неправильно",
+            "left": "Where you are from?",
+            "rightTitle": "Правильно",
+            "right": "Where are you from?",
+            "conclusion": "В прямом вопросе нельзя оставлять подлежащее перед are."
           },
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Проверь себя",
             "items": [
-              "Have I written am with I or are with you?",
-              "For a question, have I put be before the subject?",
-              "For a nationality: I’m Brazilian, not I’m a Brazilian in the ordinary adjective pattern.",
-              "For a job: I’m a student / an engineer."
+              "Кто выполняет роль подлежащего: I или you?",
+              "В утверждении выбрана форма am / are?",
+              "В вопросе be стоит перед подлежащим?",
+              "В отрицании not стоит после be?"
             ]
           }
         ]
@@ -401,20 +456,20 @@ window.GRAMMAR_DATA = [
     "id": "be-he-she-it-a1",
     "linkedLessonId": "lesson-2",
     "order": 2,
-    "title": "Present simple be: he, she, it",
+    "title": "Глагол be: he / she / it (is)",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=be-he-she-it-a1",
     "overview": {
-      "lead": "A full guide to present simple be: he, she, it. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Present simple be: he, she, it",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Глагол be: he / she / it (is)",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the correct form",
-        "instructions": "Choose the correct word.",
+        "title": "Выбери правильную форму",
+        "instructions": "Выбери подходящее слово.",
         "items": [
           {
             "type": "single",
@@ -424,7 +479,8 @@ window.GRAMMAR_DATA = [
               "is",
               "are"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Она офисный работник."
           },
           {
             "type": "single",
@@ -434,7 +490,8 @@ window.GRAMMAR_DATA = [
               "Are",
               "Am"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Он таксист?"
           },
           {
             "type": "single",
@@ -444,7 +501,8 @@ window.GRAMMAR_DATA = [
               "am",
               "is"
             ],
-            "answer": 2
+            "answer": 2,
+            "promptRu": "Это находится в Лондоне."
           },
           {
             "type": "single",
@@ -454,47 +512,52 @@ window.GRAMMAR_DATA = [
               "aren’t",
               "am not"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Он врач."
           }
         ]
       },
       {
-        "title": "Complete the sentences",
-        "instructions": "Write is or isn’t.",
+        "title": "Впиши форму is / isn’t",
+        "instructions": "Впиши is или isn’t.",
         "items": [
           {
             "type": "text",
             "prompt": "She ___ a businesswoman.",
-            "answer": "is"
+            "answer": "is",
+            "promptRu": "Она предпринимательница."
           },
           {
             "type": "text",
-            "prompt": "He ___ from Italy. (negative)",
+            "prompt": "He ___ from Italy. (отрицание)",
             "answer": "isn’t",
             "acceptedAnswers": [
               "isn’t",
               "is not"
-            ]
+            ],
+            "promptRu": "Он не из Италии."
           },
           {
             "type": "text",
             "prompt": "___ Kasia a doctor?",
-            "answer": "Is"
+            "answer": "Is",
+            "promptRu": "Кася врач?"
           },
           {
             "type": "text",
-            "prompt": "It ___ in Rome. (negative)",
+            "prompt": "It ___ in Rome. (отрицание)",
             "answer": "isn’t",
             "acceptedAnswers": [
               "isn’t",
               "is not"
-            ]
+            ],
+            "promptRu": "Это не в Риме."
           }
         ]
       },
       {
-        "title": "Correct the sentences",
-        "instructions": "Choose the correct sentence.",
+        "title": "Исправь ошибки",
+        "instructions": "Выбери предложение без ошибки.",
         "items": [
           {
             "type": "select",
@@ -504,7 +567,8 @@ window.GRAMMAR_DATA = [
               "She am a nurse.",
               "She a nurse."
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Исправьте ошибку в предложении «Она медсестра»."
           },
           {
             "type": "select",
@@ -514,7 +578,8 @@ window.GRAMMAR_DATA = [
               "Where is Rob from?",
               "Is where Rob from?"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Правильный вопрос: «Откуда Роб?»"
           },
           {
             "type": "select",
@@ -524,7 +589,8 @@ window.GRAMMAR_DATA = [
               "Yes, he are.",
               "Yes, he is."
             ],
-            "answer": 2
+            "answer": 2,
+            "promptRu": "Правильный короткий ответ на «Он художник?»."
           },
           {
             "type": "select",
@@ -534,13 +600,14 @@ window.GRAMMAR_DATA = [
               "It isn’t in London.",
               "It aren’t in London."
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Правильное отрицание: «Это не в Лондоне»."
           }
         ]
       },
       {
-        "title": "Build complete sentences",
-        "instructions": "Put the words in order. Use correct punctuation.",
+        "title": "Составь предложения",
+        "instructions": "Составь предложение из данных слов. Не забудь пунктуацию.",
         "items": [
           {
             "type": "reorder",
@@ -550,7 +617,8 @@ window.GRAMMAR_DATA = [
               "a doctor",
               "she"
             ],
-            "answer": "She is a doctor."
+            "answer": "She is a doctor.",
+            "promptRu": "Она врач."
           },
           {
             "type": "reorder",
@@ -562,7 +630,8 @@ window.GRAMMAR_DATA = [
               "where",
               "?"
             ],
-            "answer": "Where is he from?"
+            "answer": "Where is he from?",
+            "promptRu": "Откуда он?"
           },
           {
             "type": "reorder",
@@ -577,7 +646,8 @@ window.GRAMMAR_DATA = [
             "acceptedAnswers": [
               "It is not in France.",
               "It isn’t in France."
-            ]
+            ],
+            "promptRu": "Это не во Франции."
           },
           {
             "type": "reorder",
@@ -588,144 +658,154 @@ window.GRAMMAR_DATA = [
               "is",
               "?"
             ],
-            "answer": "Is she a shop assistant?"
+            "answer": "Is she a shop assistant?",
+            "promptRu": "Она продавец-консультант?"
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "One form for three subjects",
-        "lead": "He is for a man or boy. She is for a woman or girl. It is usually for an object, animal when its sex is not relevant, place, time or situation.",
+        "title": "He, she, it: одна форма is",
+        "lead": "С he («он»), she («она») и it («оно / это») в настоящем времени употребляется только is.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Subject",
-              "Affirmative",
-              "Negative"
+              "Подлежащее",
+              "Утверждение",
+              "Отрицание"
             ],
             "rows": [
               [
-                "he",
+                "he — он",
                 "he is / he’s",
-                "he is not / he isn’t / he’s not"
+                "he is not / he isn’t"
               ],
               [
-                "she",
+                "she — она",
                 "she is / she’s",
-                "she is not / she isn’t / she’s not"
+                "she is not / she isn’t"
               ],
               [
-                "it",
+                "it — оно, это",
                 "it is / it’s",
-                "it is not / it isn’t / it’s not"
+                "it is not / it isn’t"
               ]
             ]
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Marta is from Italy. She’s Italian.",
-                "detail": "She refers to Marta."
+                "sentence": "Marta is from Italy. She is Italian.",
+                "detail": "Марта из Италии. Она итальянка."
               },
               {
-                "sentence": "Sam is a doctor. He works in London.",
-                "detail": "He refers to Sam."
+                "sentence": "Sam is a doctor. He is busy.",
+                "detail": "Сэм — врач. Он занят."
               },
               {
-                "sentence": "This is my bag. It’s new.",
-                "detail": "It refers to the bag."
+                "sentence": "This is my bag. It is new.",
+                "detail": "Это моя сумка. Она новая."
               },
               {
-                "sentence": "It’s cold today.",
-                "detail": "It describes the weather."
+                "sentence": "It is cold today.",
+                "detail": "Сегодня холодно. Для погоды по-английски используем it."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Как выбрать местоимение",
+            "text": "He — мужчина или мальчик; she — женщина или девочка; it — предмет, ситуация, погода, время (а также животное, если пол неизвестен или не важен).",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Affirmative and negative meaning",
-        "lead": "Use is for one person or thing. Add not AFTER is to make a negative sentence.",
+        "title": "Утверждения, сокращения и отрицания",
+        "lead": "Is связывает подлежащее с описанием. Для отрицания поставьте not после is; полные и сокращённые формы равноправны.",
         "blocks": [
           {
             "kind": "pattern",
             "steps": [
-              "She",
+              "He / She / It",
+              "→",
               "is",
-              "a student."
+              "→",
+              "(not)",
+              "→",
+              "описание"
             ],
-            "caption": "Affirmative: subject + is + information"
-          },
-          {
-            "kind": "pattern",
-            "steps": [
-              "She",
-              "is not",
-              "a doctor."
-            ],
-            "caption": "Negative: subject + is not + information"
+            "caption": "Схема для утверждений и отрицаний."
           },
           {
             "kind": "compare",
-            "leftTitle": "She’s (= she is)",
-            "left": "She’s British. She’s an engineer.",
-            "rightTitle": "Her (= belongs to her)",
-            "right": "Her name is Eva. Her bag is blue.",
-            "conclusion": "She’s and her are different: She’s a teacher. Her name is Nina."
-          },
-          {
-            "kind": "rule",
-            "title": "Jobs and a/an",
-            "text": "A profession is usually a singular countable noun: He’s a teacher; She’s an artist. Do not say He’s teacher.",
-            "tone": "note"
+            "leftTitle": "Утверждение",
+            "left": "She is a nurse. — Она медсестра.",
+            "rightTitle": "Отрицание",
+            "right": "She isn’t a nurse. — Она не медсестра.",
+            "conclusion": "В отрицании не добавляем do или doesn’t."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "The Colosseum isn’t in Milan. It’s in Rome.",
-                "detail": "Negative + correction."
+                "sentence": "He’s from Brazil.",
+                "detail": "Он из Бразилии."
               },
               {
-                "sentence": "Emma isn’t a nurse. She’s a student.",
-                "detail": "One person: she + is."
+                "sentence": "She isn’t at home.",
+                "detail": "Её нет дома."
+              },
+              {
+                "sentence": "It’s not old.",
+                "detail": "Это не старое."
+              },
+              {
+                "sentence": "He is not a teacher.",
+                "detail": "Он не учитель."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Важно",
+            "text": "He’s = he is; she’s = she is; it’s = it is в этих примерах. Не путайте it’s («это есть») и its («его/её», о предмете).",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "How to ask and answer",
-        "lead": "Move is before he, she or it for yes/no questions. Keep any question word at the beginning.",
+        "title": "Вопросы: is ставим перед подлежащим",
+        "lead": "Если вопрос требует ответа «да» или «нет», поменяйте is и подлежащее местами.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Statement",
-              "Question",
-              "Answer"
+              "Утверждение",
+              "Вопрос",
+              "Короткий ответ"
             ],
             "rows": [
               [
-                "She is Spanish.",
-                "Is she Spanish?",
-                "Yes, she is. / No, she isn’t."
-              ],
-              [
-                "He is a doctor.",
-                "Is he a doctor?",
+                "He is British.",
+                "Is he British?",
                 "Yes, he is. / No, he isn’t."
               ],
               [
-                "It is new.",
-                "Is it new?",
+                "She is a doctor.",
+                "Is she a doctor?",
+                "Yes, she is. / No, she isn’t."
+              ],
+              [
+                "It is open.",
+                "Is it open?",
                 "Yes, it is. / No, it isn’t."
               ]
             ]
@@ -734,54 +814,79 @@ window.GRAMMAR_DATA = [
             "kind": "pattern",
             "steps": [
               "Where",
+              "→",
               "is",
-              "he",
+              "→",
+              "she",
+              "→",
               "from?"
             ],
-            "caption": "Question word + is + subject + rest"
-          },
-          {
-            "kind": "rule",
-            "title": "Answer in the same form",
-            "text": "Positive short answers use Yes, he is / Yes, she is / Yes, it is (not Yes, he’s). Negative short answers allow No, he isn’t / No, he’s not.",
-            "tone": "note"
+            "caption": "В вопросе с where сначала идёт вопросительное слово."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "What’s her job? — She’s a police officer.",
-                "detail": "What’s = What is."
+                "sentence": "Is she a nurse?",
+                "detail": "Она медсестра?"
               },
               {
-                "sentence": "Is she from Ankara? — Yes, she is.",
-                "detail": "Is she…? → she is."
+                "sentence": "Yes, she is.",
+                "detail": "Да."
+              },
+              {
+                "sentence": "Where is he from?",
+                "detail": "Откуда он?"
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Короткие ответы",
+            "text": "Нельзя Yes, he’s или Yes, she’s без продолжения. Верно: Yes, he is / Yes, she is.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Choose a subject, then the verb",
-        "lead": "Be is not an extra word you add to an ordinary verb.",
+        "title": "Be или обычный глагол?",
+        "lead": "Be употребляем с существительным, прилагательным, местом. Но перед обычным глаголом действия в Present Simple обычно не нужен is.",
         "blocks": [
           {
             "kind": "compare",
-            "leftTitle": "Be + description",
-            "left": "He is a waiter. She is happy. It is in London.",
-            "rightTitle": "Ordinary present verb",
-            "right": "He works in a café. She lives in London. It looks new.",
-            "conclusion": "He is work is incorrect. Use he works, or he is a worker."
+            "leftTitle": "Описание / состояние",
+            "left": "She is a student. — Она студентка.",
+            "rightTitle": "Действие",
+            "right": "She studies English. — Она изучает английский.",
+            "conclusion": "Нельзя She is studies English."
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "He is a doctor.",
+                "detail": "Он врач: профессия."
+              },
+              {
+                "sentence": "He works in a hospital.",
+                "detail": "Он работает в больнице: действие."
+              },
+              {
+                "sentence": "It is a nice city.",
+                "detail": "Это красивый город: описание."
+              }
+            ]
           },
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Проверка",
             "items": [
-              "He / she / it → is.",
-              "Is he/she/it …? in questions.",
-              "He’s means he is; his means belonging to him.",
-              "Is it a shop? not It is a shop? in a normal yes/no question."
+              "Подлежащее he, she или it? Тогда выберите is.",
+              "Есть отрицание? Поставьте not после is.",
+              "Общий вопрос? Поставьте is в начало.",
+              "Сказуемое — действие? Проверьте, действительно ли нужен be."
             ]
           }
         ]
@@ -793,21 +898,21 @@ window.GRAMMAR_DATA = [
     "id": "was-were-born-a1",
     "linkedLessonId": "lesson-4",
     "order": 4,
-    "title": "Past simple be: was / were (born)",
+    "title": "Прошедшее время be: was / were, born",
     "level": "A1+",
     "status": "available",
     "page": "grammar-topic.html?id=was-were-born-a1",
     "passScore": 100,
     "overview": {
-      "lead": "A full guide to past simple be: was / were (born). Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Past simple be: was / were (born)",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Прошедшее время be: was / were, born",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the past form",
-        "instructions": "Choose was or were.",
+        "title": "Выбери форму прошедшего времени",
+        "instructions": "Выбери was или were.",
         "items": [
           {
             "type": "single",
@@ -817,7 +922,8 @@ window.GRAMMAR_DATA = [
               "were",
               "am"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Я родился / родилась в июле."
           },
           {
             "type": "single",
@@ -827,7 +933,8 @@ window.GRAMMAR_DATA = [
               "were",
               "is"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Мои родители родились в разных городах."
           },
           {
             "type": "single",
@@ -837,7 +944,8 @@ window.GRAMMAR_DATA = [
               "is",
               "was"
             ],
-            "answer": 2
+            "answer": 2,
+            "promptRu": "Вчера он был на свадьбе."
           },
           {
             "type": "single",
@@ -847,23 +955,26 @@ window.GRAMMAR_DATA = [
               "Was",
               "Were"
             ],
-            "answer": 2
+            "answer": 2,
+            "promptRu": "Ты родился / родилась в 2005 году?"
           }
         ]
       },
       {
-        "title": "Write the correct form",
-        "instructions": "Write was, were, wasn’t or weren’t.",
+        "title": "Впиши нужную форму",
+        "instructions": "Впиши was, were, wasn’t или weren’t по смыслу.",
         "items": [
           {
             "type": "text",
             "prompt": "My sister ___ born in 2010.",
-            "answer": "was"
+            "answer": "was",
+            "promptRu": "Моя сестра родилась в 2010 году."
           },
           {
             "type": "text",
             "prompt": "We ___ at home yesterday.",
-            "answer": "were"
+            "answer": "were",
+            "promptRu": "Вчера мы были дома."
           },
           {
             "type": "text",
@@ -872,7 +983,8 @@ window.GRAMMAR_DATA = [
             "acceptedAnswers": [
               "wasn't",
               "was not"
-            ]
+            ],
+            "promptRu": "Я не родился / родилась в 1900 году — это невозможно!"
           },
           {
             "type": "text",
@@ -881,59 +993,64 @@ window.GRAMMAR_DATA = [
             "acceptedAnswers": [
               "weren't",
               "were not"
-            ]
+            ],
+            "promptRu": "Они не были на свадьбе: они были в отпуске."
           }
         ]
       },
       {
-        "title": "Make correct questions",
-        "instructions": "Choose the question with correct word order.",
+        "title": "Выбери правильный вопрос",
+        "instructions": "Выбери вопрос с правильным порядком слов.",
         "items": [
           {
             "type": "select",
-            "prompt": "Ask about a year of birth.",
+            "prompt": "Спроси, в каком году человек родился.",
             "options": [
               "When you were born?",
               "When were you born?",
               "When did you born?"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Спросите, в каком году человек родился."
           },
           {
             "type": "select",
-            "prompt": "Ask about a city of birth.",
+            "prompt": "Спроси, в каком городе человек родился.",
             "options": [
               "Where was she born?",
               "Where she was born?",
               "Where is she born?"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Спросите, в каком городе человек родился."
           },
           {
             "type": "select",
-            "prompt": "Ask if they were at the wedding.",
+            "prompt": "Спроси, были ли они на свадьбе.",
             "options": [
               "Were they at the wedding?",
               "Was they at the wedding?",
               "They were at the wedding?"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Спросите, были ли они на свадьбе."
           },
           {
             "type": "select",
-            "prompt": "Ask if your friend was born in 2004.",
+            "prompt": "Спроси, родился ли твой друг в 2004 году.",
             "options": [
               "Did you born in 2004?",
               "Were you born in 2004?",
               "Was you born in 2004?"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Спросите, родился ли друг в 2004 году."
           }
         ]
       },
       {
-        "title": "Build full sentences",
-        "instructions": "Use the words to write a full correct sentence or question.",
+        "title": "Составь предложения и вопросы",
+        "instructions": "Составь правильное предложение или вопрос из данных слов.",
         "items": [
           {
             "type": "reorder",
@@ -945,7 +1062,8 @@ window.GRAMMAR_DATA = [
               "in",
               "was"
             ],
-            "answer": "She was born in 2002."
+            "answer": "She was born in 2002.",
+            "promptRu": "Она родилась в 2002 году."
           },
           {
             "type": "reorder",
@@ -957,7 +1075,8 @@ window.GRAMMAR_DATA = [
               "where",
               "?"
             ],
-            "answer": "Where were you born?"
+            "answer": "Where were you born?",
+            "promptRu": "Где ты родился / родилась?"
           },
           {
             "type": "reorder",
@@ -973,7 +1092,8 @@ window.GRAMMAR_DATA = [
             "acceptedAnswers": [
               "We were not at the wedding.",
               "We weren't at the wedding."
-            ]
+            ],
+            "promptRu": "Нас не было на свадьбе."
           },
           {
             "type": "reorder",
@@ -985,28 +1105,34 @@ window.GRAMMAR_DATA = [
               "born",
               "7 May"
             ],
-            "answer": "He was born on 7 May."
+            "answer": "He was born on 7 May.",
+            "promptRu": "Он родился 7 мая."
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "Present versus past",
-        "lead": "Was and were are past forms of be. They describe something true at a finished time in the past; am, is and are describe the present.",
+        "title": "Was и were — прошлое глагола be",
+        "lead": "Am / is / are относятся к настоящему времени. Was / were — к завершённому прошлому: вчера, в прошлом году, при рождении.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Subject",
-              "Now: present be",
-              "Then: past be"
+              "Кто?",
+              "Сейчас",
+              "В прошлом"
             ],
             "rows": [
               [
-                "I / he / she / it",
-                "am / is",
+                "I — я",
+                "am",
+                "was"
+              ],
+              [
+                "he / she / it",
+                "is",
                 "was"
               ],
               [
@@ -1017,214 +1143,221 @@ window.GRAMMAR_DATA = [
             ]
           },
           {
-            "kind": "compare",
-            "leftTitle": "Now",
-            "left": "My parents are in London.",
-            "rightTitle": "Last year",
-            "right": "My parents were in London.",
-            "conclusion": "Be changes to show time. Do not add did to a statement with was/were."
-          },
-          {
             "kind": "pattern",
             "steps": [
               "1997",
               "→",
-              "2026",
+              "прошлое: was born",
               "→",
-              "now"
+              "сейчас: is"
             ],
-            "caption": "A birth happened in the past. A present fact is true now."
+            "caption": "Время рождения уже прошло, поэтому нужен was или were."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "She is 29 now.",
-                "detail": "Present age."
+                "sentence": "I am at home now.",
+                "detail": "Я сейчас дома."
               },
               {
-                "sentence": "She was born in 1997.",
-                "detail": "Birth happened in the past."
+                "sentence": "I was at home yesterday.",
+                "detail": "Я был(а) дома вчера."
               },
               {
-                "sentence": "We were at home yesterday.",
-                "detail": "Past location."
+                "sentence": "They are in London now.",
+                "detail": "Они сейчас в Лондоне."
+              },
+              {
+                "sentence": "They were in London last year.",
+                "detail": "В прошлом году они были в Лондоне."
               }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Be born: use was or were",
-        "lead": "The normal construction is was born / were born. Do not use am born for a birth in the past.",
-        "blocks": [
-          {
-            "kind": "table",
-            "title": "",
-            "headers": [
-              "Person",
-              "Correct pattern",
-              "Example"
-            ],
-            "rows": [
-              [
-                "one person (I, he, she)",
-                "was born",
-                "I was born in 2001."
-              ],
-              [
-                "you, we, they",
-                "were born",
-                "My parents were born in 1980."
-              ]
             ]
           },
           {
             "kind": "rule",
-            "title": "Fixed expression",
-            "text": "“Born” stays born: I was born, she was born, they were born. Never “was borned” or “was born in 2001 ago”.",
+            "title": "Запомни",
+            "text": "I / he / she / it → was; you / we / they → were. В прошедшем времени у be только две формы.",
             "tone": "note"
-          },
-          {
-            "kind": "compare",
-            "leftTitle": "In = year, month, place",
-            "left": "in 2005; in March; in Canada",
-            "rightTitle": "On = exact date or day",
-            "right": "on 4 July 2005; on Monday",
-            "conclusion": "At is for clock time: at 1.15 a.m."
-          },
-          {
-            "kind": "examples",
-            "title": "Examples",
-            "rows": [
-              {
-                "sentence": "My sister was born on 8 May.",
-                "detail": "On + a specific date."
-              },
-              {
-                "sentence": "I was born in Ufa.",
-                "detail": "In + city."
-              },
-              {
-                "sentence": "My son was born at six o’clock.",
-                "detail": "At + time."
-              }
-            ]
           }
         ]
       },
       {
-        "title": "Negative and question forms",
-        "lead": "With was/were, put not after the verb; put was/were BEFORE the subject to ask a yes/no question.",
+        "title": "Когда говорим was born / were born",
+        "lead": "Рождение — событие прошлого. Используем was/were + born («родился / родилась / родились»). Слово born не изменяется.",
+        "blocks": [
+          {
+            "kind": "pattern",
+            "steps": [
+              "Кто?",
+              "→",
+              "was / were",
+              "→",
+              "born",
+              "→",
+              "место или время"
+            ],
+            "caption": "Схема для информации о рождении."
+          },
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Подлежащее",
+              "Пример с переводом"
+            ],
+            "rows": [
+              [
+                "I / he / she",
+                "She was born in 2001. — Она родилась в 2001 году."
+              ],
+              [
+                "you / we / they",
+                "They were born in London. — Они родились в Лондоне."
+              ]
+            ]
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "Where were you born?",
+                "detail": "Где ты родился / родилась?"
+              },
+              {
+                "sentence": "When was he born?",
+                "detail": "Когда он родился?"
+              },
+              {
+                "sentence": "I was born on 7 May.",
+                "detail": "Я родился / родилась 7 мая."
+              }
+            ]
+          },
+          {
+            "kind": "rule",
+            "title": "Предлоги",
+            "text": "in + год, месяц, город, страна: in 2002, in June, in Ufa. on + точная дата: on 7 May. Не говорим I am born in 2002.",
+            "tone": "note"
+          }
+        ]
+      },
+      {
+        "title": "Отрицание и вопросы в прошедшем времени",
+        "lead": "Was / were образуют отрицание и вопрос сами, без did.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Positive",
-              "Negative",
-              "Question"
+              "Утверждение",
+              "Отрицание",
+              "Вопрос"
             ],
             "rows": [
               [
-                "I was happy.",
-                "I wasn’t happy.",
-                "Was I happy?"
+                "She was here.",
+                "She wasn’t here.",
+                "Was she here?"
               ],
               [
-                "She was in Paris.",
-                "She wasn’t in Paris.",
-                "Was she in Paris?"
-              ],
-              [
-                "They were students.",
-                "They weren’t students.",
-                "Were they students?"
+                "They were ready.",
+                "They weren’t ready.",
+                "Were they ready?"
               ]
             ]
           },
           {
             "kind": "pattern",
             "steps": [
-              "Where",
-              "were",
-              "you",
-              "born?"
+              "Where / When",
+              "→",
+              "was / were",
+              "→",
+              "подлежащее",
+              "→",
+              "… ?"
             ],
-            "caption": "Question word + was/were + subject + born?"
+            "caption": "Для специальных вопросов на первое место поставьте where или when."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Were you born in Russia? — Yes, I was.",
-                "detail": "The question has were you; the answer changes to I was."
+                "sentence": "Were you at home?",
+                "detail": "Ты был(а) дома?"
               },
               {
-                "sentence": "Was he born in 1995? — No, he wasn’t.",
-                "detail": "Negative short answer."
+                "sentence": "Yes, I was.",
+                "detail": "Да."
               },
               {
-                "sentence": "Where was she born? — In Spain.",
-                "detail": "Where asks for a place."
+                "sentence": "No, I wasn’t.",
+                "detail": "Нет."
+              },
+              {
+                "sentence": "When were they born?",
+                "detail": "Когда они родились?"
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Типичная ошибка",
+            "text": "Нельзя Did you were born? и Did she was here? Правильно: Were you born…? / Was she here?",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Birth is not the same as death",
-        "lead": "A birth and a death are both past events, but English uses different structures.",
+        "title": "Рождение и смерть: разные конструкции",
+        "lead": "В английском be born и die устроены по-разному. Не переносите одну конструкцию на другую.",
         "blocks": [
           {
             "kind": "compare",
-            "leftTitle": "Birth (be + born)",
-            "left": "My grandfather was born in 1950.",
-            "rightTitle": "Death (verb die)",
-            "right": "My grandfather died in 2020.",
-            "conclusion": "Do not say he was died. Died is the past of the verb die."
+            "leftTitle": "Рождение",
+            "left": "He was born in 1980. — Он родился в 1980 году.",
+            "rightTitle": "Смерть",
+            "right": "He died in 2020. — Он умер в 2020 году.",
+            "conclusion": "Born употребляется с was/were; die — обычный глагол, в прошедшем времени died."
           },
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Word",
-              "Meaning",
-              "Example"
+              "Смысл",
+              "Правильная форма",
+              "Неправильно"
             ],
             "rows": [
               [
-                "born",
-                "coming into the world",
-                "She was born in June."
+                "родился",
+                "was born",
+                "borned / did born"
               ],
               [
+                "умер",
                 "died",
-                "past verb (die)",
-                "He died last year."
+                "was died"
               ],
               [
-                "dead",
-                "adjective (state)",
-                "He is dead."
-              ],
-              [
-                "death",
-                "noun",
-                "His death was a shock."
+                "не родился там",
+                "was not born there",
+                "didn’t born there"
               ]
             ]
           },
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Проверь себя",
             "items": [
-              "Is the time past? Use was/were.",
-              "Is the subject one person or I? Use was.",
-              "Is the subject you/we/they? Use were.",
-              "Did I use in for a year and on for a date?"
+              "Это настоящее или прошлое?",
+              "Какое подлежащее: was или were?",
+              "Для рождения есть слово born?",
+              "В вопросе be стоит перед подлежащим?"
             ]
           }
         ]
@@ -1235,21 +1368,21 @@ window.GRAMMAR_DATA = [
     "id": "articles-a-an-a1",
     "linkedLessonId": "lesson-5",
     "order": 5,
-    "title": "Articles: a / an",
+    "title": "Неопределённый артикль a / an",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=articles-a-an-a1",
     "passScore": 100,
     "overview": {
-      "lead": "A full guide to articles: a / an. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Articles: a / an",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Неопределённый артикль a / an",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the correct form",
-        "instructions": "Choose the correct answer.",
+        "title": "Выбери правильный артикль",
+        "instructions": "Выбери a или an по первому звуку следующего слова.",
         "items": [
           {
             "type": "single",
@@ -1258,7 +1391,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "a",
               "an"
-            ]
+            ],
+            "promptRu": "У меня есть зонт."
           },
           {
             "type": "single",
@@ -1267,7 +1401,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "a",
               "an"
-            ]
+            ],
+            "promptRu": "У неё есть ноутбук."
           },
           {
             "type": "single",
@@ -1276,7 +1411,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "a",
               "an"
-            ]
+            ],
+            "promptRu": "У него есть американский паспорт."
           },
           {
             "type": "single",
@@ -1285,85 +1421,94 @@ window.GRAMMAR_DATA = [
             "options": [
               "a",
               "an"
-            ]
+            ],
+            "promptRu": "У нас есть кошелёк."
           }
         ]
       },
       {
-        "title": "Write the missing word",
-        "instructions": "Write the correct word.",
+        "title": "Впиши артикль",
+        "instructions": "Самостоятельно впиши a или an.",
         "items": [
           {
             "type": "text",
             "prompt": "It is ___ apple.",
-            "answer": "an"
+            "answer": "an",
+            "promptRu": "Это яблоко."
           },
           {
             "type": "text",
             "prompt": "This is ___ country.",
-            "answer": "a"
+            "answer": "a",
+            "promptRu": "Это страна."
           },
           {
             "type": "text",
             "prompt": "She is ___ actor.",
-            "answer": "an"
+            "answer": "an",
+            "promptRu": "Она актриса."
           },
           {
             "type": "text",
             "prompt": "I have ___ mobile phone.",
-            "answer": "a"
+            "answer": "a",
+            "promptRu": "У меня есть мобильный телефон."
           }
         ]
       },
       {
-        "title": "Use the rule in context",
-        "instructions": "Choose the correct sentence or phrase.",
+        "title": "Примени правило",
+        "instructions": "Выбери грамматически правильное выражение или предложение.",
         "items": [
           {
             "type": "select",
-            "prompt": "Which is correct?",
+            "prompt": "Какой вариант правильный?",
             "answer": 1,
             "options": [
               "an university",
               "a university",
               "an phones"
-            ]
+            ],
+            "promptRu": "Выбери вариант, в котором артикль употреблён правильно."
           },
           {
             "type": "select",
-            "prompt": "Choose the correct noun phrase.",
+            "prompt": "Выбери правильное словосочетание.",
             "answer": 0,
             "options": [
               "an hour",
               "a hour",
               "a hours"
-            ]
+            ],
+            "promptRu": "Выбери правильное словосочетание."
           },
           {
             "type": "select",
-            "prompt": "Which sentence is correct?",
+            "prompt": "Какое предложение правильное?",
             "answer": 2,
             "options": [
               "I have a apples.",
               "I have an apples.",
               "I have apples."
-            ]
+            ],
+            "promptRu": "Выбери предложение без ошибки."
           },
           {
             "type": "select",
-            "prompt": "Which is correct?",
+            "prompt": "Какой вариант правильный?",
             "answer": 1,
             "options": [
               "a office worker",
               "an office worker",
               "an bag"
-            ]
+            ],
+            "promptRu": "Какой вариант грамматически верный?"
           }
         ]
       },
       {
-        "title": "Build sentences and questions",
-        "instructions": "Put the words in the correct order.",
+        "title": "Составь предложения и вопросы",
+        "instructions": "Расставь слова в правильном порядке.",
         "items": [
           {
             "type": "reorder",
@@ -1374,7 +1519,8 @@ window.GRAMMAR_DATA = [
               "an",
               "I",
               "umbrella"
-            ]
+            ],
+            "promptRu": "У меня есть зонт."
           },
           {
             "type": "reorder",
@@ -1385,7 +1531,8 @@ window.GRAMMAR_DATA = [
               "she",
               "has",
               "laptop"
-            ]
+            ],
+            "promptRu": "У неё есть ноутбук."
           },
           {
             "type": "reorder",
@@ -1398,7 +1545,8 @@ window.GRAMMAR_DATA = [
               "do",
               "apple",
               "?"
-            ]
+            ],
+            "promptRu": "У тебя есть яблоко?"
           },
           {
             "type": "reorder",
@@ -1409,211 +1557,215 @@ window.GRAMMAR_DATA = [
               "a",
               "have",
               "they"
-            ]
+            ],
+            "promptRu": "У них есть паспорт."
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "What a/an means",
-        "lead": "Use a/an when you mention ONE non-specific countable thing or person. You often introduce it for the first time.",
+        "title": "Что означают артикли a и an",
+        "lead": "A/an ставим перед исчисляемым существительным в единственном числе, когда речь идёт об одном предмете или человеке без указания на конкретный, уже известный предмет.",
         "blocks": [
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
                 "sentence": "I have a bag.",
-                "detail": "One bag, not a particular bag known to the listener."
+                "detail": "У меня есть сумка (одна, какая именно — не уточняется)."
               },
               {
                 "sentence": "She is a doctor.",
-                "detail": "One job."
+                "detail": "Она врач (профессия)."
               },
               {
                 "sentence": "It is an umbrella.",
-                "detail": "One umbrella."
+                "detail": "Это зонт."
               },
               {
                 "sentence": "I have two phones.",
-                "detail": "Plural: no a or an."
+                "detail": "У меня два телефона: перед множественным числом a/an не нужен."
               },
               {
                 "sentence": "We drink water.",
-                "detail": "General uncountable noun: no a/an."
+                "detail": "Мы пьём воду: water обычно неисчисляемое, a/an не ставим."
               }
             ]
           },
           {
             "kind": "compare",
-            "leftTitle": "A/an: one, not specified",
-            "left": "I have a phone. (You do not know which phone.)",
-            "rightTitle": "The: specified or known",
-            "right": "The phone is on my desk. (Now you know which phone.)",
-            "conclusion": "Do not use a/an with a plural noun: a phones is incorrect."
+            "leftTitle": "A/an — один, неопределённый",
+            "left": "I have a phone. — У меня есть телефон.",
+            "rightTitle": "The — известный, определённый",
+            "right": "The phone is on the desk. — Этот телефон на столе.",
+            "conclusion": "Первое упоминание часто с a/an, повторное — с the; это лишь базовое сравнение, у the есть и другие случаи."
+          },
+          {
+            "kind": "rule",
+            "title": "Ограничение",
+            "text": "A/an нельзя ставить перед множественным числом (a books) и обычно перед неисчисляемыми существительными (a water).",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Choose with your ears, not your eyes",
-        "lead": "A comes before a consonant SOUND; an comes before a vowel SOUND. The first LETTER is not always the first SOUND.",
+        "title": "Выбор зависит от звука, а не буквы",
+        "lead": "Если следующее слово начинается на согласный ЗВУК — a; на гласный ЗВУК — an. Иногда написание и произношение расходятся.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Use a before a consonant SOUND",
-              "Use an before a vowel SOUND"
+              "Артикль",
+              "Следующий звук",
+              "Примеры"
             ],
             "rows": [
               [
-                "a bag",
-                "an apple"
+                "a",
+                "согласный",
+                "a book; a university /juː…/; a European city"
               ],
               [
-                "a teacher",
-                "an artist"
-              ],
-              [
-                "a university (starts /j/ = “y”)",
-                "an umbrella"
-              ],
-              [
-                "a European city (starts /j/)",
-                "an hour (h is silent)"
+                "an",
+                "гласный",
+                "an apple; an hour /aʊə/; an honest person"
               ]
             ]
           },
           {
             "kind": "pattern",
             "steps": [
-              "Listen to first sound",
+              "первый ЗВУК",
               "→",
-              "consonant sound: a",
+              "согласный: a",
               "/",
-              "vowel sound: an"
+              "гласный: an"
             ],
-            "caption": "The decision depends on pronunciation, not spelling."
-          },
-          {
-            "kind": "rule",
-            "title": "Important sound exceptions",
-            "text": "An hour and an honest person have a silent h. A university and a user begin with a /j/ sound, so take a. Most words beginning with h do pronounce it: a hotel, a house.",
-            "tone": "note"
+            "caption": "Смотрите на произношение следующего слова."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "an American passport",
-                "detail": "American starts with a vowel sound."
+                "sentence": "a university",
+                "detail": "университет: звук /j/ в начале, поэтому a."
               },
               {
-                "sentence": "a mobile phone",
-                "detail": "mobile starts with a consonant sound."
+                "sentence": "an hour",
+                "detail": "час: h не произносится, поэтому an."
               },
               {
-                "sentence": "an office worker",
-                "detail": "office starts with a vowel sound."
+                "sentence": "an English teacher",
+                "detail": "учитель английского: начинается с гласного звука."
+              },
+              {
+                "sentence": "a hotel",
+                "detail": "отель: обычно произносится /h/, поэтому a."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Ошибка",
+            "text": "Буква u не всегда означает an, а буква h — не всегда a. Говорим a university, an hour.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Where a/an goes in a phrase",
-        "lead": "If an adjective appears before the noun, choose the article using the adjective’s first sound.",
+        "title": "Если перед существительным есть прилагательное",
+        "lead": "Артикль ставится перед всей группой: a/an + прилагательное + существительное. Выбирайте по первому звуку прилагательного.",
         "blocks": [
           {
             "kind": "pattern",
             "steps": [
-              "an",
-              "old",
-              "computer"
+              "a / an",
+              "→",
+              "прилагательное",
+              "→",
+              "существительное"
             ],
-            "caption": "a/an + adjective + singular countable noun"
+            "caption": "Артикль стоит перед определением, если оно есть."
           },
           {
             "kind": "compare",
-            "leftTitle": "Before a noun",
-            "left": "a laptop; an umbrella",
-            "rightTitle": "Before an adjective + noun",
-            "right": "a new laptop; an old umbrella",
-            "conclusion": "Do not place a/an after the adjective: new a laptop is incorrect."
+            "leftTitle": "Без прилагательного",
+            "left": "an apple — яблоко",
+            "rightTitle": "С прилагательным",
+            "right": "a green apple — зелёное яблоко",
+            "conclusion": "Green начинается с согласного /g/, поэтому артикль изменился."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "It is an old house.",
-                "detail": "old starts with a vowel sound."
+                "sentence": "a new phone",
+                "detail": "новый телефон."
               },
               {
-                "sentence": "She has a beautiful family.",
-                "detail": "beautiful starts with a consonant sound."
+                "sentence": "an old phone",
+                "detail": "старый телефон."
               },
               {
-                "sentence": "He’s an English teacher.",
-                "detail": "English starts with a vowel sound."
+                "sentence": "an interesting book",
+                "detail": "интересная книга."
               },
               {
-                "sentence": "They are students.",
-                "detail": "Plural: no a/an."
+                "sentence": "a very interesting book",
+                "detail": "очень интересная книга: перед very нужен a."
               }
             ]
           }
         ]
       },
       {
-        "title": "Common situations and traps",
-        "lead": "A/an is NOT always the same as “one” in meaning, but it always introduces a singular countable noun.",
+        "title": "Где нужен артикль: частые случаи",
+        "lead": "С артиклями важно учитывать не только звук, но и тип существительного.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Situation",
-              "Correct",
-              "Why"
+              "Ситуация",
+              "Пример",
+              "Почему"
             ],
             "rows": [
               [
-                "Name a job",
-                "She’s an actor.",
-                "One person + job"
+                "Профессия",
+                "She is an engineer.",
+                "Один человек определённой профессии."
               ],
               [
-                "Talk about one object",
-                "I have a wallet.",
-                "Singular countable noun"
+                "Один предмет",
+                "I need a pen.",
+                "Pen — исчисляемое, единственное число."
               ],
               [
-                "Give a number",
-                "I have two wallets.",
-                "Plural: no a/an"
+                "Множественное число",
+                "I have pens.",
+                "A/an не употребляется."
               ],
               [
-                "Use a possessive",
-                "It is my bag.",
-                "Do not add a before my"
-              ],
-              [
-                "Use an uncountable idea",
-                "Water is cold.",
-                "Uncountable in general sense"
+                "Неисчисляемое",
+                "I like milk.",
+                "Milk обычно не считают поштучно."
               ]
             ]
           },
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Перед выбором a/an",
             "items": [
-              "Find the main noun. Is it singular and countable?",
-              "Listen to the FIRST sound of the next word.",
-              "No a/an before plural, my/your or ordinary uncountable nouns."
+              "Есть одно исчисляемое существительное?",
+              "Какой первый произносимый звук в следующем слове?",
+              "Есть ли прилагательное между артиклем и существительным?",
+              "Не требуется ли определённый артикль the по смыслу?"
             ]
           }
         ]
@@ -1624,21 +1776,21 @@ window.GRAMMAR_DATA = [
     "id": "plural-nouns-a1",
     "linkedLessonId": "lesson-5",
     "order": 6,
-    "title": "Singular and plural nouns",
+    "title": "Единственное и множественное число",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=plural-nouns-a1",
     "passScore": 100,
     "overview": {
-      "lead": "A full guide to singular and plural nouns. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Singular and plural nouns",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Единственное и множественное число",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the correct form",
-        "instructions": "Choose the correct answer.",
+        "title": "Выбери множественное число",
+        "instructions": "Выбери правильную форму существительного.",
         "items": [
           {
             "type": "single",
@@ -1647,7 +1799,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "purse",
               "purses"
-            ]
+            ],
+            "promptRu": "Два предмета (выбери нужную форму)."
           },
           {
             "type": "single",
@@ -1656,7 +1809,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "laptops",
               "laptop"
-            ]
+            ],
+            "promptRu": "Три предмета (выбери нужную форму)."
           },
           {
             "type": "single",
@@ -1665,7 +1819,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "country",
               "countries"
-            ]
+            ],
+            "promptRu": "Два предмета (выбери нужную форму)."
           },
           {
             "type": "single",
@@ -1674,85 +1829,94 @@ window.GRAMMAR_DATA = [
             "options": [
               "sandwiches",
               "sandwichs"
-            ]
+            ],
+            "promptRu": "Четыре предмета (выбери нужную форму)."
           }
         ]
       },
       {
-        "title": "Write the missing word",
-        "instructions": "Write the correct word.",
+        "title": "Образуй множественное число",
+        "instructions": "Впиши существительное во множественном числе.",
         "items": [
           {
             "type": "text",
             "prompt": "One wallet → two ___.",
-            "answer": "wallets"
+            "answer": "wallets",
+            "promptRu": "Один кошелёк → два кошелька."
           },
           {
             "type": "text",
             "prompt": "One phone → three ___.",
-            "answer": "phones"
+            "answer": "phones",
+            "promptRu": "Один телефон → три телефона."
           },
           {
             "type": "text",
             "prompt": "One country → two ___.",
-            "answer": "countries"
+            "answer": "countries",
+            "promptRu": "Одна страна → две страны."
           },
           {
             "type": "text",
             "prompt": "One box → two ___.",
-            "answer": "boxes"
+            "answer": "boxes",
+            "promptRu": "Одна коробка → две коробки."
           }
         ]
       },
       {
-        "title": "Use the rule in context",
-        "instructions": "Choose the correct sentence or phrase.",
+        "title": "Примени правило",
+        "instructions": "Выбери правильную форму по смыслу.",
         "items": [
           {
             "type": "select",
-            "prompt": "Choose the correct sentence.",
+            "prompt": "Выбери правильное предложение.",
             "answer": 0,
             "options": [
               "I have two bags.",
               "I have two bag.",
               "I have a two bags."
-            ]
+            ],
+            "promptRu": "Выбери правильное предложение."
           },
           {
             "type": "select",
-            "prompt": "Choose the correct phrase.",
+            "prompt": "Выбери правильное словосочетание.",
             "answer": 1,
             "options": [
               "three babys",
               "three babies",
               "three babyes"
-            ]
+            ],
+            "promptRu": "Выбери правильное словосочетание."
           },
           {
             "type": "select",
-            "prompt": "Choose the correct phrase.",
+            "prompt": "Выбери правильное словосочетание.",
             "answer": 2,
             "options": [
               "two childs",
               "two childrens",
               "two children"
-            ]
+            ],
+            "promptRu": "Выбери правильное словосочетание."
           },
           {
             "type": "select",
-            "prompt": "Choose the correct question.",
+            "prompt": "Выбери правильный вопрос.",
             "answer": 1,
             "options": [
               "How many phone do you have?",
               "How many phones do you have?",
               "How much phones do you have?"
-            ]
+            ],
+            "promptRu": "Выбери вопрос без ошибки."
           }
         ]
       },
       {
-        "title": "Build sentences and questions",
-        "instructions": "Put the words in the correct order.",
+        "title": "Составь предложения и вопросы",
+        "instructions": "Составь предложение или вопрос из данных слов.",
         "items": [
           {
             "type": "reorder",
@@ -1763,7 +1927,8 @@ window.GRAMMAR_DATA = [
               "have",
               "I",
               "wallets"
-            ]
+            ],
+            "promptRu": "У меня есть два кошелька."
           },
           {
             "type": "reorder",
@@ -1774,7 +1939,8 @@ window.GRAMMAR_DATA = [
               "she",
               "three",
               "keys"
-            ]
+            ],
+            "promptRu": "У неё есть три ключа."
           },
           {
             "type": "reorder",
@@ -1788,7 +1954,8 @@ window.GRAMMAR_DATA = [
               "you",
               "do",
               "?"
-            ]
+            ],
+            "promptRu": "Сколько у тебя телефонов?"
           },
           {
             "type": "reorder",
@@ -1802,23 +1969,24 @@ window.GRAMMAR_DATA = [
               "two",
               "sandwiches",
               "bag"
-            ]
+            ],
+            "promptRu": "В моей сумке два бутерброда."
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "One or more than one",
-        "lead": "The noun often changes when we talk about two or more people or things. Singular means one; plural means more than one.",
+        "title": "Единственное и множественное число",
+        "lead": "Единственное число (singular) — один предмет или человек. Множественное (plural) — два и больше. Существительное обычно изменяет окончание.",
         "blocks": [
           {
             "kind": "compare",
-            "leftTitle": "One: singular",
-            "left": "one bag, a nurse, this child",
-            "rightTitle": "Two or more: plural",
-            "right": "two bags, three nurses, these children",
-            "conclusion": "Use a/an with a singular countable noun, not a plural noun."
+            "leftTitle": "Один",
+            "left": "one bag — одна сумка; a nurse — медсестра; this child — этот ребёнок",
+            "rightTitle": "Несколько",
+            "right": "two bags — две сумки; three nurses — три медсестры; these children — эти дети",
+            "conclusion": "С существительным во множественном числе не используйте a/an."
           },
           {
             "kind": "pattern",
@@ -1827,206 +1995,230 @@ window.GRAMMAR_DATA = [
               "→",
               "two bags"
             ],
-            "caption": "Most countable nouns: add -s."
+            "caption": "Чаще всего для множественного числа прибавляем -s."
           },
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Quantity",
-              "Noun form",
-              "Example"
+              "Количество",
+              "Форма существительного",
+              "Пример"
             ],
             "rows": [
               [
-                "one",
-                "singular",
-                "one passport"
+                "one / a",
+                "единственное",
+                "one passport — один паспорт"
               ],
               [
-                "two / three / a lot of",
-                "plural",
-                "three passports"
+                "two / three / many",
+                "множественное",
+                "three passports — три паспорта"
               ],
               [
                 "some",
-                "usually plural with countable nouns",
-                "some keys"
+                "обычно множественное для исчисляемых",
+                "some keys — несколько ключей"
               ]
             ]
           },
           {
             "kind": "rule",
-            "title": "Number agreement",
-            "text": "Numbers greater than one need a plural noun: two phoneS, not two phone. English adjectives stay unchanged: two new phones, not two news phones.",
+            "title": "Важно",
+            "text": "После two, three, many нужен plural: two phones, а не two phone. Английские прилагательные не получают -s: two new phones, не two news phones.",
             "tone": "note"
           }
         ]
       },
       {
-        "title": "Spelling rules: -s, -es, -ies",
-        "lead": "Look at the END of the singular noun to decide how to write the plural.",
+        "title": "Правописание: -s, -es, -ies",
+        "lead": "Посмотрите, на какую букву заканчивается существительное в единственном числе.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Ending / case",
-              "Rule",
-              "Examples"
+              "Концовка",
+              "Правило",
+              "Пример"
             ],
             "rows": [
               [
-                "most nouns",
-                "add -s",
-                "bag → bags; phone → phones"
+                "Большинство слов",
+                "+ -s",
+                "book → books; key → keys"
               ],
               [
                 "-s, -ss, -sh, -ch, -x",
-                "add -es",
-                "bus → buses; dish → dishes; box → boxes"
+                "+ -es",
+                "bus → buses; box → boxes; watch → watches"
               ],
               [
-                "consonant + y",
-                "change y to -ies",
+                "Согласная + y",
+                "y → ies",
                 "city → cities; baby → babies"
               ],
               [
-                "vowel + y",
-                "add -s",
+                "Гласная + y",
+                "+ -s",
                 "boy → boys; day → days"
               ],
               [
-                "some -f / -fe nouns",
-                "change to -ves",
-                "wife → wives; life → lives"
+                "Некоторые -f / -fe",
+                "→ -ves",
+                "wife → wives; leaf → leaves"
               ]
             ]
           },
           {
-            "kind": "rule",
-            "title": "Spelling exceptions",
-            "text": "Not every -o or -f noun follows one rule: photo → photos, piano → pianos; roof → roofs, but knife → knives. Learn these noun by noun.",
-            "tone": "note"
-          },
-          {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "a country → two countries",
-                "detail": "consonant + y → ies"
+                "sentence": "one city — two cities",
+                "detail": "один город — два города."
               },
               {
-                "sentence": "a family → two families",
-                "detail": "consonant + y → ies"
+                "sentence": "one box — three boxes",
+                "detail": "одна коробка — три коробки."
               },
               {
-                "sentence": "a key → five keys",
-                "detail": "vowel + y → s"
+                "sentence": "one boy — two boys",
+                "detail": "один мальчик — два мальчика."
+              },
+              {
+                "sentence": "one roof — two roofs",
+                "detail": "одна крыша — две крыши: не все слова на -f превращаются в -ves."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Важно",
+            "text": "Если перед y стоит согласная, чаще пишем -ies; если гласная — просто -s. У некоторых слов на -o и -f есть исключения.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Irregular plurals need their own forms",
-        "lead": "Some common people nouns do not add -s. You need to remember the whole form.",
+        "title": "Неправильное множественное число",
+        "lead": "Не все существительные образуют множественное число с помощью -s. Эти формы нужно учить как отдельные слова.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Singular",
-              "Plural",
-              "Example"
+              "Один",
+              "Несколько",
+              "Перевод"
             ],
             "rows": [
               [
                 "man",
                 "men",
-                "Two men are here."
+                "мужчина — мужчины"
               ],
               [
                 "woman",
                 "women",
-                "The women are teachers."
+                "женщина — женщины"
               ],
               [
                 "child",
                 "children",
-                "We have three children."
+                "ребёнок — дети"
               ],
               [
                 "person",
                 "people",
-                "There are ten people."
+                "человек — люди"
               ],
               [
                 "foot",
                 "feet",
-                "My feet are cold."
+                "ступня — ступни"
               ],
               [
                 "tooth",
                 "teeth",
-                "My teeth are fine."
+                "зуб — зубы"
+              ],
+              [
+                "mouse",
+                "mice",
+                "мышь — мыши"
               ]
             ]
           },
           {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "One child is here.",
+                "detail": "Здесь один ребёнок."
+              },
+              {
+                "sentence": "Two children are here.",
+                "detail": "Здесь двое детей."
+              },
+              {
+                "sentence": "These people are friendly.",
+                "detail": "Эти люди дружелюбные."
+              }
+            ]
+          },
+          {
             "kind": "rule",
-            "title": "Important people nouns",
-            "text": "People is already plural in normal general use. Do not write peoples for “несколько человек”. One person → two people. Childrens and womens are incorrect as ordinary plurals.",
+            "title": "Типичная ошибка",
+            "text": "Не говорим childs, mans, womans, peoples для обычного множественного числа этих слов. Верно: children, men, women, people.",
             "tone": "note"
           }
         ]
       },
       {
-        "title": "Match the verb and demonstrative",
-        "lead": "A plural noun affects other words in the sentence, including be and this/these.",
+        "title": "Согласование: is/are, this/these",
+        "lead": "Множественное число влияет на соседние слова — не только на существительное, но и на глагол be и указательные слова.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Singular",
-              "Plural"
+              "Один предмет",
+              "Несколько предметов"
             ],
             "rows": [
               [
-                "This is a new bag.",
-                "These are new bags."
+                "This bag is new. — Эта сумка новая.",
+                "These bags are new. — Эти сумки новые."
               ],
               [
-                "That child is happy.",
-                "Those children are happy."
+                "That child is happy. — Тот ребёнок счастлив.",
+                "Those children are happy. — Те дети счастливы."
               ],
               [
-                "The student is here.",
-                "The students are here."
-              ],
-              [
-                "I have one key.",
-                "I have two keys."
+                "There is a key. — Есть ключ.",
+                "There are two keys. — Есть два ключа."
               ]
             ]
           },
           {
             "kind": "compare",
-            "leftTitle": "Plural noun",
-            "left": "parents; teachers; children",
-            "rightTitle": "Possessive form (different idea)",
-            "right": "my parents’ house; the teacher’s bag",
-            "conclusion": "An apostrophe shows possession. It does not create a regular plural: apples, not apple’s."
+            "leftTitle": "Неправильно",
+            "left": "These box is big.",
+            "rightTitle": "Правильно",
+            "right": "These boxes are big. — Эти коробки большие.",
+            "conclusion": "These требует множественного существительного и are."
           },
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Проверка",
             "items": [
-              "After two / three / some, do I need a plural noun?",
-              "Does the word end in consonant + y, -s/-sh/-ch, or have an irregular plural?",
-              "Does the verb agree: children are, a child is?"
+              "Один предмет или несколько?",
+              "Нужно ли -s, -es, -ies или неправильная форма?",
+              "Согласованы ли this/these и is/are?",
+              "Не стоит ли a/an перед множественным числом?"
             ]
           }
         ]
@@ -2037,21 +2229,21 @@ window.GRAMMAR_DATA = [
     "id": "have-has-a1",
     "linkedLessonId": "lesson-5",
     "order": 7,
-    "title": "Have / has",
+    "title": "Глагол have / has («иметь»)",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=have-has-a1",
     "passScore": 100,
     "overview": {
-      "lead": "A full guide to have / has. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Have / has",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Глагол have / has («иметь»)",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the correct form",
-        "instructions": "Choose the correct answer.",
+        "title": "Выбери have или has",
+        "instructions": "Выбери have или has.",
         "items": [
           {
             "type": "single",
@@ -2060,7 +2252,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "have",
               "has"
-            ]
+            ],
+            "promptRu": "У Ральфа есть кошелёк."
           },
           {
             "type": "single",
@@ -2069,7 +2262,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "have",
               "has"
-            ]
+            ],
+            "promptRu": "У меня два мобильных телефона."
           },
           {
             "type": "single",
@@ -2078,7 +2272,8 @@ window.GRAMMAR_DATA = [
             "options": [
               "have",
               "has"
-            ]
+            ],
+            "promptRu": "У них есть зонт."
           },
           {
             "type": "single",
@@ -2087,85 +2282,94 @@ window.GRAMMAR_DATA = [
             "options": [
               "have",
               "has"
-            ]
+            ],
+            "promptRu": "У неё есть ноутбук."
           }
         ]
       },
       {
-        "title": "Write the missing word",
-        "instructions": "Write the correct word.",
+        "title": "Впиши нужную форму",
+        "instructions": "Впиши подходящую форму самостоятельно.",
         "items": [
           {
             "type": "text",
             "prompt": "We ___ a bottle of water.",
-            "answer": "have"
+            "answer": "have",
+            "promptRu": "У нас есть бутылка воды."
           },
           {
             "type": "text",
             "prompt": "Teri ___ a phone.",
-            "answer": "has"
+            "answer": "has",
+            "promptRu": "У Тери есть телефон."
           },
           {
             "type": "text",
             "prompt": "___ your brother have keys?",
-            "answer": "Does"
+            "answer": "Does",
+            "promptRu": "У твоего брата есть ключи?"
           },
           {
             "type": "text",
             "prompt": "He doesn’t ___ a passport.",
-            "answer": "have"
+            "answer": "have",
+            "promptRu": "У него нет паспорта."
           }
         ]
       },
       {
-        "title": "Use the rule in context",
-        "instructions": "Choose the correct sentence or phrase.",
+        "title": "Найди правильное предложение",
+        "instructions": "Выбери предложение без грамматической ошибки.",
         "items": [
           {
             "type": "select",
-            "prompt": "Choose the correct sentence.",
+            "prompt": "Выбери правильное предложение.",
             "answer": 1,
             "options": [
               "She have a phone.",
               "She has a phone.",
               "She haves a phone."
-            ]
+            ],
+            "promptRu": "Найдите правильный вариант: «У неё есть телефон»."
           },
           {
             "type": "select",
-            "prompt": "Which is correct?",
+            "prompt": "Какой вариант правильный?",
             "answer": 0,
             "options": [
               "Does he have a wallet?",
               "Does he has a wallet?",
               "Do he have a wallet?"
-            ]
+            ],
+            "promptRu": "Найдите грамматически верный вариант."
           },
           {
             "type": "select",
-            "prompt": "Which is correct?",
+            "prompt": "Какой вариант правильный?",
             "answer": 2,
             "options": [
               "He doesn’t has a laptop.",
               "He don’t have a laptop.",
               "He doesn’t have a laptop."
-            ]
+            ],
+            "promptRu": "Найдите грамматически верный вариант."
           },
           {
             "type": "select",
-            "prompt": "Choose the correct short answer to “Does she have keys?”",
+            "prompt": "Выбери короткий ответ на вопрос «Does she have keys?»",
             "answer": 1,
             "options": [
               "Yes, she have.",
               "Yes, she does.",
               "Yes, she has."
-            ]
+            ],
+            "promptRu": "Выбери короткий ответ на вопрос «У неё есть ключи?»."
           }
         ]
       },
       {
-        "title": "Build sentences and questions",
-        "instructions": "Put the words in the correct order.",
+        "title": "Составь предложения и вопросы",
+        "instructions": "Расставь слова в правильном порядке.",
         "items": [
           {
             "type": "reorder",
@@ -2176,7 +2380,8 @@ window.GRAMMAR_DATA = [
               "has",
               "she",
               "bag"
-            ]
+            ],
+            "promptRu": "У неё есть сумка."
           },
           {
             "type": "reorder",
@@ -2187,7 +2392,8 @@ window.GRAMMAR_DATA = [
               "two",
               "have",
               "phones"
-            ]
+            ],
+            "promptRu": "У нас есть два телефона."
           },
           {
             "type": "reorder",
@@ -2198,7 +2404,8 @@ window.GRAMMAR_DATA = [
               "Ralph",
               "two",
               "cards"
-            ]
+            ],
+            "promptRu": "У Ральфа есть две карты."
           },
           {
             "type": "reorder",
@@ -2211,49 +2418,24 @@ window.GRAMMAR_DATA = [
               "have",
               "wallet",
               "?"
-            ]
+            ],
+            "promptRu": "У неё есть кошелёк?"
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "Use have and has to talk about what people have",
-        "lead": "The verb have can describe possession, family, characteristics and many everyday situations.",
+        "title": "Have и has: что они обозначают",
+        "lead": "Have / has часто означают «иметь, у кого-то есть». С их помощью говорим не только о вещах, но и о семье, внешности и занятиях.",
         "blocks": [
-          {
-            "kind": "examples",
-            "title": "Examples",
-            "rows": [
-              {
-                "sentence": "I have a mobile phone.",
-                "detail": "Possession: an object."
-              },
-              {
-                "sentence": "She has two brothers.",
-                "detail": "Family relationship."
-              },
-              {
-                "sentence": "He has blue eyes.",
-                "detail": "Physical description."
-              },
-              {
-                "sentence": "We have English on Friday.",
-                "detail": "A scheduled activity."
-              },
-              {
-                "sentence": "They have breakfast at eight.",
-                "detail": "An everyday activity."
-              }
-            ]
-          },
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Subject",
-              "Positive",
-              "Negative (present simple)"
+              "Подлежащее",
+              "Утверждение",
+              "Отрицание"
             ],
             "rows": [
               [
@@ -2269,45 +2451,64 @@ window.GRAMMAR_DATA = [
             ]
           },
           {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "I have a mobile phone.",
+                "detail": "У меня есть мобильный телефон."
+              },
+              {
+                "sentence": "She has two brothers.",
+                "detail": "У неё два брата."
+              },
+              {
+                "sentence": "He has blue eyes.",
+                "detail": "У него голубые глаза."
+              },
+              {
+                "sentence": "We have English on Friday.",
+                "detail": "У нас английский в пятницу."
+              },
+              {
+                "sentence": "They have breakfast at eight.",
+                "detail": "Они завтракают в восемь."
+              }
+            ]
+          },
+          {
             "kind": "rule",
-            "title": "The -s moves to does",
-            "text": "Has goes with he, she and it in positive statements only. After does / doesn’t, use have: She doesn’t have a car, not She doesn’t has a car.",
+            "title": "Главное правило",
+            "text": "В обычном утвердительном предложении с he/she/it употребляем has, со всеми остальными — have.",
             "tone": "note"
           }
         ]
       },
       {
-        "title": "Build the three sentence forms",
-        "lead": "With have as an ordinary verb, present-simple negatives and questions usually use do/does.",
+        "title": "Отрицания и вопросы с do/does",
+        "lead": "Have — обычный смысловой глагол. В Present Simple для вопросов и отрицаний чаще используем вспомогательные do/does.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Meaning",
-              "I / you / we / they",
-              "He / she / it"
+              "Кто?",
+              "Утверждение",
+              "Отрицание",
+              "Вопрос"
             ],
             "rows": [
               [
-                "+ Positive",
-                "I have a bag.",
-                "She has a bag."
+                "I / you / we / they",
+                "have",
+                "do not have",
+                "Do … have?"
               ],
               [
-                "− Negative",
-                "I don’t have a bag.",
-                "She doesn’t have a bag."
-              ],
-              [
-                "? Question",
-                "Do you have a bag?",
-                "Does she have a bag?"
-              ],
-              [
-                "Short answer",
-                "Yes, I do. / No, I don’t.",
-                "Yes, she does. / No, she doesn’t."
+                "he / she / it",
+                "has",
+                "does not have",
+                "Does … have?"
               ]
             ]
           },
@@ -2315,124 +2516,142 @@ window.GRAMMAR_DATA = [
             "kind": "pattern",
             "steps": [
               "Does",
+              "→",
               "she",
+              "→",
               "have",
-              "a passport?"
+              "→",
+              "a car?"
             ],
-            "caption": "Does + he/she/it + have + object? (not has)"
-          },
-          {
-            "kind": "compare",
-            "leftTitle": "Be is its own question verb",
-            "left": "Are you a teacher? She isn’t British.",
-            "rightTitle": "Have is an ordinary present verb",
-            "right": "Do you have a phone? She doesn’t have a phone.",
-            "conclusion": "Do not mix the two: Are you have a phone? is incorrect."
+            "caption": "После does всегда используем начальную форму have (без -s)."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Do they have children? — Yes, they do.",
-                "detail": "Short answer uses do."
+                "sentence": "Do you have a sister?",
+                "detail": "У тебя есть сестра?"
               },
               {
-                "sentence": "Does he have a bicycle? — No, he doesn’t.",
-                "detail": "Short answer uses does."
+                "sentence": "Yes, I do.",
+                "detail": "Да."
+              },
+              {
+                "sentence": "Does he have a passport?",
+                "detail": "У него есть паспорт?"
+              },
+              {
+                "sentence": "No, he doesn’t.",
+                "detail": "Нет."
+              },
+              {
+                "sentence": "She doesn’t have a car.",
+                "detail": "У неё нет машины."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Ошибка",
+            "text": "Нельзя Does she has…? и She doesn’t has…. Правильно: Does she have…? и She doesn’t have…. Показатель -s уже есть в does.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "British English: have got",
-        "lead": "Have got is common in British English for possession and family. It is similar in meaning to have, but it makes negatives and questions differently.",
+        "title": "Have got — другой способ сказать «есть»",
+        "lead": "В разговорном британском английском принадлежность также выражают через have got/has got. Значение близко к have, но вопросы и отрицания строятся иначе.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Ordinary have",
-              "Have got (British English)"
+              "Обычное have",
+              "Have got",
+              "Перевод"
             ],
             "rows": [
               [
-                "I have a sister.",
-                "I’ve got a sister."
+                "I have a bike.",
+                "I’ve got a bike.",
+                "У меня есть велосипед."
               ],
               [
-                "She has a laptop.",
-                "She’s got a laptop."
+                "She has a bike.",
+                "She’s got a bike.",
+                "У неё есть велосипед."
               ],
               [
-                "Do you have a car?",
-                "Have you got a car?"
+                "Do you have a bike?",
+                "Have you got a bike?",
+                "У тебя есть велосипед?"
               ],
               [
-                "He doesn’t have a car.",
-                "He hasn’t got a car."
-              ],
-              [
-                "Yes, I do.",
-                "Yes, I have."
+                "She doesn’t have a bike.",
+                "She hasn’t got a bike.",
+                "У неё нет велосипеда."
               ]
             ]
           },
           {
-            "kind": "rule",
-            "title": "Two patterns, not one mixed pattern",
-            "text": "Never mix the patterns: Do you have a car? OR Have you got a car? Avoid Do you have got a car? Also, “She’s got” means she has got, not she is got.",
-            "tone": "note"
+            "kind": "compare",
+            "leftTitle": "С обычным have",
+            "left": "Does he have a car?",
+            "rightTitle": "С have got",
+            "right": "Has he got a car?",
+            "conclusion": "Не смешивайте модели: Does he have got a car? — неверно."
           },
           {
-            "kind": "compare",
-            "leftTitle": "Have = possession or activity",
-            "left": "I have lunch at noon. / I have a shower every day.",
-            "rightTitle": "Have got = usually possession",
-            "right": "I’ve got a phone. / She’s got two sisters.",
-            "conclusion": "For activities and habitual events, use have, not have got: I have breakfast every day."
+            "kind": "rule",
+            "title": "Где применять",
+            "text": "Have got употребляется главным образом для владения, семьи и характеристик. Для регулярных действий, например have breakfast, используйте обычное have.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "A/an and plurals after have",
-        "lead": "The noun after have/has must also be correct.",
+        "title": "Существительное после have/has",
+        "lead": "После глагола проверьте существительное: с одним исчисляемым предметом нужен артикль, с несколькими — множественное число.",
         "blocks": [
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "He has a wallet.",
-                "detail": "One singular countable noun."
+                "sentence": "I have a pen.",
+                "detail": "У меня есть ручка (одна)."
               },
               {
                 "sentence": "She has an umbrella.",
-                "detail": "Vowel sound."
+                "detail": "У неё есть зонт."
               },
               {
-                "sentence": "They have two children.",
-                "detail": "Plural irregular noun."
+                "sentence": "They have two phones.",
+                "detail": "У них два телефона."
               },
               {
-                "sentence": "I have three phones.",
-                "detail": "Plural regular noun."
-              },
-              {
-                "sentence": "We have some water.",
-                "detail": "Uncountable noun in a general quantity."
+                "sentence": "We have some books.",
+                "detail": "У нас есть книги."
               }
             ]
           },
           {
+            "kind": "compare",
+            "leftTitle": "Неправильно",
+            "left": "He has two phone.",
+            "rightTitle": "Правильно",
+            "right": "He has two phones. — У него два телефона.",
+            "conclusion": "В выражении two phones существительное должно быть во множественном числе."
+          },
+          {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Проверка",
             "items": [
-              "He/she/it → has in positive sentences.",
-              "Do/does questions need have (not has).",
-              "I have ≠ I am; he has ≠ he is.",
-              "Use a/an or the correct plural after have/has."
+              "Подлежащее he/she/it? Для утверждения has.",
+              "Есть does/doesn’t? После него только have.",
+              "Есть have got? Не добавляйте do/does.",
+              "Правильно ли стоит a/an или множественное число?"
             ]
           }
         ]
@@ -2443,20 +2662,20 @@ window.GRAMMAR_DATA = [
     "id": "be-we-you-they-a1",
     "linkedLessonId": "lesson-7",
     "order": 8,
-    "title": "Present simple be: we, you, they",
+    "title": "Глагол be: we / you / they (are)",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=be-we-you-they-a1",
     "overview": {
-      "lead": "A full guide to present simple be: we, you, they. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Present simple be: we, you, they",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Глагол be: we / you / they (are)",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "Choose the form",
-        "instructions": "Choose am, is or are.",
+        "title": "Выбери am / is / are",
+        "instructions": "Выбери am, is или are.",
         "items": [
           {
             "type": "single",
@@ -2466,7 +2685,8 @@ window.GRAMMAR_DATA = [
               "is",
               "are"
             ],
-            "answer": 2
+            "answer": 2,
+            "promptRu": "Мы из Турции."
           },
           {
             "type": "single",
@@ -2476,7 +2696,8 @@ window.GRAMMAR_DATA = [
               "are",
               "am"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Они не старые."
           },
           {
             "type": "single",
@@ -2486,7 +2707,8 @@ window.GRAMMAR_DATA = [
               "are",
               "is"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Ты мой друг."
           },
           {
             "type": "single",
@@ -2496,85 +2718,94 @@ window.GRAMMAR_DATA = [
               "Are",
               "Am"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Твои родители австралийцы?"
           }
         ]
       },
       {
-        "title": "Complete the sentences",
-        "instructions": "Write the correct form of be. Use contractions where possible.",
+        "title": "Впиши нужную форму",
+        "instructions": "Впиши правильную форму be. Используй сокращение, если оно требуется по смыслу.",
         "items": [
           {
             "type": "text",
             "prompt": "We ___ happy here.",
-            "answer": "are"
+            "answer": "are",
+            "promptRu": "Нам здесь хорошо."
           },
           {
             "type": "text",
             "prompt": "They ___ from Spain.",
-            "answer": "are"
+            "answer": "are",
+            "promptRu": "Они из Испании."
           },
           {
             "type": "text",
             "prompt": "You ___ not late.",
-            "answer": "are"
+            "answer": "are",
+            "promptRu": "Ты не опоздал(а)."
           },
           {
             "type": "text",
             "prompt": "Where ___ they from?",
-            "answer": "are"
+            "answer": "are",
+            "promptRu": "Откуда они?"
           }
         ]
       },
       {
-        "title": "Find the correct sentence",
-        "instructions": "Choose the correct sentence.",
+        "title": "Выбери правильное предложение",
+        "instructions": "Выбери грамматически правильный вариант.",
         "items": [
           {
             "type": "single",
-            "prompt": "Choose the correct negative sentence.",
+            "prompt": "Выбери правильное отрицательное предложение.",
             "options": [
               "They isn’t cold.",
               "They aren’t cold.",
               "They not cold."
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Выбери правильно построенное отрицательное предложение."
           },
           {
             "type": "single",
-            "prompt": "Choose the correct short answer to “Are you students?”",
+            "prompt": "Выбери короткий ответ на вопрос «Are you students?»",
             "options": [
               "Yes, we’re.",
               "Yes, we are.",
               "Yes, we is."
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Выбери короткий ответ на «Вы студенты?»."
           },
           {
             "type": "single",
-            "prompt": "Choose the correct question.",
+            "prompt": "Выбери правильный вопрос.",
             "options": [
               "Where are they from?",
               "Where they are from?",
               "Where is they from?"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Выбери правильно построенный вопрос."
           },
           {
             "type": "single",
-            "prompt": "Choose the correct answer to “Are they new?”",
+            "prompt": "Выбери ответ на вопрос «Are they new?»",
             "options": [
               "No, they're not.",
               "No, they not.",
               "No, they isn’t."
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Выбери ответ на «Они новые?»."
           }
         ]
       },
       {
-        "title": "Build questions and answers",
-        "instructions": "Put the words in the correct order.",
+        "title": "Составь предложения и вопросы",
+        "instructions": "Составь предложение или вопрос, расставив слова по порядку.",
         "items": [
           {
             "type": "reorder",
@@ -2585,7 +2816,8 @@ window.GRAMMAR_DATA = [
               "you",
               "from"
             ],
-            "answer": "Where are you from?"
+            "answer": "Where are you from?",
+            "promptRu": "Откуда ты?"
           },
           {
             "type": "reorder",
@@ -2595,7 +2827,8 @@ window.GRAMMAR_DATA = [
               "tired",
               "are"
             ],
-            "answer": "Are they tired?"
+            "answer": "Are they tired?",
+            "promptRu": "Они устали."
           },
           {
             "type": "reorder",
@@ -2606,7 +2839,8 @@ window.GRAMMAR_DATA = [
               "not",
               "old"
             ],
-            "answer": "We are not old."
+            "answer": "We are not old.",
+            "promptRu": "Мы не старые."
           },
           {
             "type": "reorder",
@@ -2617,250 +2851,249 @@ window.GRAMMAR_DATA = [
               "are",
               "France"
             ],
-            "answer": "They are from France."
+            "answer": "They are from France.",
+            "promptRu": "Они из Франции."
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "You, we and they all take are",
-        "lead": "These subjects can refer to two or more people. You can refer to one person or several people, but its verb is always are.",
+        "title": "We, you, they: всегда are",
+        "lead": "Для we («мы»), you («ты / вы») и they («они») форма be одна — are. You не меняется даже при обращении к одному человеку.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Subject",
-              "Meaning",
-              "Statement",
-              "Negative"
+              "Кто?",
+              "Значение",
+              "Утверждение",
+              "Отрицание"
             ],
             "rows": [
               [
                 "we",
-                "the speaker + another person",
+                "мы (я и ещё кто-то)",
                 "We are ready.",
                 "We aren’t ready."
               ],
               [
                 "you",
-                "person/people being spoken to",
-                "You are friends.",
-                "You aren’t friends."
+                "ты / вы",
+                "You are ready.",
+                "You aren’t ready."
               ],
               [
                 "they",
-                "other people or things",
-                "They are students.",
-                "They aren’t students."
+                "они (люди или предметы)",
+                "They are ready.",
+                "They aren’t ready."
               ]
             ]
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
                 "sentence": "We’re from Turkey.",
-                "detail": "I + another person."
+                "detail": "Мы из Турции."
               },
               {
                 "sentence": "You’re very friendly.",
-                "detail": "One listener OR more than one listener."
+                "detail": "Ты очень дружелюбный / Вы очень дружелюбны."
               },
               {
                 "sentence": "They’re new students.",
-                "detail": "Other people."
+                "detail": "Они новые ученики."
               },
               {
                 "sentence": "The bags are old. They aren’t new.",
-                "detail": "They can refer to things, too."
+                "detail": "Сумки старые. Они не новые."
               }
             ]
           },
           {
             "kind": "rule",
-            "title": "Subject–verb agreement",
-            "text": "Do not use is with we, you or they. We is from Spain → We are from Spain. They are in the UK → correct.",
+            "title": "Ошибка",
+            "text": "Нельзя we is, you is, they is. Во всех случаях используйте are.",
             "tone": "note"
           }
         ]
       },
       {
-        "title": "Contractions and negatives",
-        "lead": "In natural conversation, are often becomes ’re. For negatives, you can contract are not in two ways.",
+        "title": "Сокращения и отрицание",
+        "lead": "В устной и неформальной письменной речи are сокращают до ’re. Отрицание с not имеет две привычные формы.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Full positive",
-              "Short positive",
-              "Two correct negatives"
+              "Полная форма",
+              "Сокращение",
+              "Отрицание"
             ],
             "rows": [
               [
                 "we are",
                 "we’re",
-                "we are not / we’re not / we aren’t"
+                "we aren’t / we’re not"
               ],
               [
                 "you are",
                 "you’re",
-                "you are not / you’re not / you aren’t"
+                "you aren’t / you’re not"
               ],
               [
                 "they are",
                 "they’re",
-                "they are not / they’re not / they aren’t"
+                "they aren’t / they’re not"
               ]
             ]
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "We’re not American.",
-                "detail": "we + are not"
+                "sentence": "We aren’t late.",
+                "detail": "Мы не опоздали."
               },
               {
-                "sentence": "They aren’t in London.",
-                "detail": "they + are not"
+                "sentence": "They’re not busy.",
+                "detail": "Они не заняты."
               },
               {
-                "sentence": "You’re not late.",
-                "detail": "same meaning as You aren’t late."
+                "sentence": "You aren’t alone.",
+                "detail": "Ты не один / одна."
               }
             ]
           },
           {
             "kind": "compare",
-            "leftTitle": "They’re = they are",
-            "left": "They’re happy. / They’re from Mexico.",
-            "rightTitle": "Their = belongs to them",
-            "right": "Their names are Leo and Maya.",
-            "conclusion": "There is a place word: The café is over there. These three words sound similar but have different jobs."
+            "leftTitle": "Полная",
+            "left": "They are not teachers.",
+            "rightTitle": "Сокращённая",
+            "right": "They aren’t teachers. / They’re not teachers.",
+            "conclusion": "Все три варианта грамматически правильны."
+          },
+          {
+            "kind": "rule",
+            "title": "Важно",
+            "text": "Не используйте don’t с are: They don’t are tired — неверно. Говорим They aren’t tired.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Questions and answers: put are first",
-        "lead": "A question with be puts are BEFORE the subject. With where, who and what, put the question word before are.",
+        "title": "Как задать вопрос",
+        "lead": "Are перемещается перед подлежащим. В специальном вопросе сначала вопросительное слово, затем are.",
         "blocks": [
           {
             "kind": "pattern",
             "steps": [
               "Are",
-              "they",
-              "your friends?"
+              "→",
+              "you / we / they",
+              "→",
+              "… ?"
             ],
-            "caption": "Are + we/you/they + rest?"
+            "caption": "Вопрос да/нет: are + подлежащее + остальное."
           },
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Statement",
-              "Yes/no question",
-              "Short answer"
+              "Утверждение",
+              "Вопрос",
+              "Ответ"
             ],
             "rows": [
               [
-                "They are doctors.",
-                "Are they doctors?",
+                "They are from France.",
+                "Are they from France?",
                 "Yes, they are. / No, they aren’t."
               ],
               [
-                "We are ready.",
-                "Are we ready?",
-                "Yes, we are. / No, we aren’t."
-              ],
-              [
-                "You are Spanish.",
-                "Are you Spanish?",
+                "You are ready.",
+                "Are you ready?",
                 "Yes, I am. / No, I’m not."
               ]
             ]
           },
           {
-            "kind": "rule",
-            "title": "Speaker changes",
-            "text": "A person answering “Are you Spanish?” usually says Yes, I am, not Yes, you are. Subject pronouns change depending on who speaks.",
-            "tone": "note"
-          },
-          {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Where are they from? — They’re from Italy.",
-                "detail": "Question word + are + they."
+                "sentence": "Where are they from?",
+                "detail": "Откуда они?"
               },
               {
-                "sentence": "Who are they? — They’re my parents.",
-                "detail": "Who asks about identity."
+                "sentence": "Who are they?",
+                "detail": "Кто они?"
               },
               {
-                "sentence": "Are your parents Australian? — Yes, they are.",
-                "detail": "The plural noun parents becomes they."
+                "sentence": "Are we late?",
+                "detail": "Мы опоздали?"
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Ответ от своего лица",
+            "text": "На Are you…? отвечайте Yes, I am / No, I’m not, когда речь о вас. На Are they…? — Yes, they are / No, they aren’t.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Build sentences with different subjects",
-        "lead": "The same sentence changes when the subject changes.",
+        "title": "Сравните формы be для всех лиц",
+        "lead": "Форма глагола определяется подлежащим — не профессией, национальностью и не стоящим рядом существительным.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Subject",
-              "Statement",
-              "Question"
+              "Подлежащее",
+              "Be",
+              "Пример с переводом"
             ],
             "rows": [
               [
-                "John",
-                "John is cold.",
-                "Is John cold?"
+                "I",
+                "am",
+                "I am a student. — Я студент(ка)."
               ],
               [
-                "John and Simon",
-                "John and Simon are cold.",
-                "Are John and Simon cold?"
+                "he / she / it",
+                "is",
+                "She is a student. — Она студентка."
               ],
               [
-                "a bike",
-                "The bike is old.",
-                "Is the bike old?"
-              ],
-              [
-                "the bikes",
-                "The bikes are old.",
-                "Are the bikes old?"
+                "you / we / they",
+                "are",
+                "We are students. — Мы студенты."
               ]
             ]
           },
           {
             "kind": "compare",
-            "leftTitle": "One person or thing",
-            "left": "My friend is friendly. / It is new.",
-            "rightTitle": "Two or more",
-            "right": "My friends are friendly. / They are new.",
-            "conclusion": "Choose is/are by the subject, not by the noun later in the sentence."
+            "leftTitle": "Один человек",
+            "left": "He is happy. — Он счастлив.",
+            "rightTitle": "Несколько людей",
+            "right": "They are happy. — Они счастливы.",
+            "conclusion": "При смене подлежащего меняйте форму be."
           },
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Перед проверкой",
             "items": [
-              "Who am I speaking about: one or more?",
-              "I → am; he/she/it → is; we/you/they → are.",
-              "Move are before the subject in a question.",
-              "In positive short answers: Yes, they are (not Yes, they’re)."
+              "Кто в предложении: I, he/she/it или we/you/they?",
+              "Какая форма нужна: am, is или are?",
+              "Если вопрос — перенесли be вперёд?",
+              "Если отрицание — поставили not сразу после be?"
             ]
           }
         ]
@@ -2872,20 +3105,20 @@ window.GRAMMAR_DATA = [
     "id": "possessive-adjectives-a1",
     "linkedLessonId": "lesson-8",
     "order": 9,
-    "title": "Possessive adjectives: my, your, his, her, its, our, their",
+    "title": "Притяжательные прилагательные: my, your, his, her, its, our, their",
     "level": "A1",
     "status": "available",
     "page": "grammar-topic.html?id=possessive-adjectives-a1",
     "overview": {
-      "lead": "A full guide to possessive adjectives: my, your, his, her, its, our, their. Read the examples, compare the forms and then complete the practice below.",
-      "keyRule": "Possessive adjectives: my, your, his, her, its, our, their",
+      "lead": "Прочитай объяснение на русском языке, изучи таблицы и примеры с переводом. Затем выполни проверочный тест.",
+      "keyRule": "Притяжательные прилагательные: my, your, his, her, its, our, their",
       "example": "",
       "subjects": []
     },
     "quizExercises": [
       {
-        "title": "1 · Choose the correct word",
-        "instructions": "Choose the possessive adjective.",
+        "title": "1 · Выбери нужное слово",
+        "instructions": "Выбери правильное притяжательное слово.",
         "items": [
           {
             "type": "single",
@@ -2895,7 +3128,8 @@ window.GRAMMAR_DATA = [
               "Your",
               "His"
             ],
-            "answer": 0
+            "answer": 0,
+            "promptRu": "Я студент(ка). Меня зовут Амира."
           },
           {
             "type": "single",
@@ -2905,7 +3139,8 @@ window.GRAMMAR_DATA = [
               "His",
               "Their"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Он мой друг. Его зовут Бен."
           },
           {
             "type": "single",
@@ -2915,7 +3150,8 @@ window.GRAMMAR_DATA = [
               "Their",
               "Our"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Они сёстры. Их дом большой."
           },
           {
             "type": "single",
@@ -2925,39 +3161,44 @@ window.GRAMMAR_DATA = [
               "Its",
               "Her"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Это моя собака. Её зовут Лаки."
           }
         ]
       },
       {
-        "title": "2 · Complete the sentences",
-        "instructions": "Write the correct possessive adjective.",
+        "title": "2 · Впиши притяжательное слово",
+        "instructions": "Самостоятельно впиши my, your, his, her, its, our или their.",
         "items": [
           {
             "type": "text",
             "prompt": "She is British. ___ mother is French.",
-            "answer": "Her"
+            "answer": "Her",
+            "promptRu": "Она британка. Её мама француженка."
           },
           {
             "type": "text",
             "prompt": "We are students. ___ teacher is Helen.",
-            "answer": "Our"
+            "answer": "Our",
+            "promptRu": "Мы студенты. Нашу учительницу зовут Хелен."
           },
           {
             "type": "text",
             "prompt": "You have a new bike. Is this ___ bike?",
-            "answer": "your"
+            "answer": "your",
+            "promptRu": "У тебя новый велосипед. Это твой велосипед?"
           },
           {
             "type": "text",
             "prompt": "My father has a brother. ___ name is Sam.",
-            "answer": "His"
+            "answer": "His",
+            "promptRu": "У моего отца есть брат. Его зовут Сэм."
           }
         ]
       },
       {
-        "title": "3 · Choose in context",
-        "instructions": "Choose the correct form in each sentence.",
+        "title": "3 · Выбери слово по смыслу",
+        "instructions": "Выбери нужное слово по смыслу.",
         "items": [
           {
             "type": "single",
@@ -2967,7 +3208,8 @@ window.GRAMMAR_DATA = [
               "her",
               "his"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Это Анна и её муж Макс."
           },
           {
             "type": "single",
@@ -2977,7 +3219,8 @@ window.GRAMMAR_DATA = [
               "their",
               "there"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Мои друзья здесь со своими родителями."
           },
           {
             "type": "single",
@@ -2987,7 +3230,8 @@ window.GRAMMAR_DATA = [
               "Its",
               "Their"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "Это школа. Её название Гринхилл."
           },
           {
             "type": "single",
@@ -2997,13 +3241,14 @@ window.GRAMMAR_DATA = [
               "Her",
               "His"
             ],
-            "answer": 1
+            "answer": 1,
+            "promptRu": "У нас есть малыш. Её зовут Кейт."
           }
         ]
       },
       {
-        "title": "4 · Write complete sentences",
-        "instructions": "Write a complete sentence. Use a possessive adjective.",
+        "title": "4 · Составь предложения",
+        "instructions": "Напиши полное английское предложение с притяжательным словом.",
         "items": [
           {
             "type": "text",
@@ -3011,7 +3256,8 @@ window.GRAMMAR_DATA = [
             "answer": "Her brother is a teacher.",
             "acceptedAnswers": [
               "Her brother is a teacher."
-            ]
+            ],
+            "promptRu": "Её брат — учитель."
           },
           {
             "type": "text",
@@ -3019,7 +3265,8 @@ window.GRAMMAR_DATA = [
             "answer": "Our house is old.",
             "acceptedAnswers": [
               "Our house is old."
-            ]
+            ],
+            "promptRu": "Наш дом старый."
           },
           {
             "type": "text",
@@ -3027,7 +3274,8 @@ window.GRAMMAR_DATA = [
             "answer": "Their daughter is a doctor.",
             "acceptedAnswers": [
               "Their daughter is a doctor."
-            ]
+            ],
+            "promptRu": "Их дочь — врач."
           },
           {
             "type": "text",
@@ -3035,308 +3283,324 @@ window.GRAMMAR_DATA = [
             "answer": "His wife is British.",
             "acceptedAnswers": [
               "His wife is British."
-            ]
+            ],
+            "promptRu": "Его жена британка."
           }
         ]
       }
     ],
     "guide": [
       {
-        "title": "Who does it belong to?",
-        "lead": "Use a possessive adjective BEFORE a noun to show whose person or thing it is. Its form depends on the OWNER, not on the thing owned.",
+        "title": "Что такое притяжательные прилагательные",
+        "lead": "Слова my, your, his, her, its, our, their показывают, кому принадлежит предмет или с кем связан человек. В английском они стоят перед существительным.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Owner (subject)",
-              "Possessive adjective",
-              "Example"
+              "Владелец",
+              "Притяжательное слово",
+              "Пример с переводом"
             ],
             "rows": [
               [
-                "I",
+                "I — я",
                 "my",
-                "my family"
+                "my family — моя семья"
               ],
               [
-                "you",
+                "you — ты / вы",
                 "your",
-                "your sister"
+                "your sister — твоя сестра"
               ],
               [
-                "he",
+                "he — он",
                 "his",
-                "his brother"
+                "his brother — его брат"
               ],
               [
-                "she",
+                "she — она",
                 "her",
-                "her daughter"
+                "her daughter — её дочь"
               ],
               [
-                "it",
+                "it — это / оно",
                 "its",
-                "its name"
+                "its name — его/её название"
               ],
               [
-                "we",
+                "we — мы",
                 "our",
-                "our parents"
+                "our parents — наши родители"
               ],
               [
-                "they",
+                "they — они",
                 "their",
-                "their children"
+                "their children — их дети"
               ]
             ]
           },
           {
             "kind": "pattern",
             "steps": [
-              "She",
+              "she — она",
               "→",
-              "her",
+              "her — её",
               "→",
-              "her book"
+              "her book — её книга"
             ],
-            "caption": "Owner she → possessive adjective her → noun book"
-          },
-          {
-            "kind": "rule",
-            "title": "Before a noun",
-            "text": "Possessive adjectives need a noun: my phone, her name, their parents. They do not change for singular/plural possessions: my child AND my children.",
-            "tone": "note"
+            "caption": "Выбираем форму по ВЛАДЕЛЬЦУ, затем ставим существительное."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
                 "sentence": "I’m Sara. My brother is Tom.",
-                "detail": "I → my."
+                "detail": "Я Сара. Моего брата зовут Том."
               },
               {
-                "sentence": "He’s Mike. His mother is a nurse.",
-                "detail": "he → his."
+                "sentence": "He is Mike. His mother is a nurse.",
+                "detail": "Он Майк. Его мама — медсестра."
               },
               {
-                "sentence": "Anna has a laptop. Her laptop is new.",
-                "detail": "she → her."
-              },
-              {
-                "sentence": "We live in Paris. Our apartment is small.",
-                "detail": "we → our."
+                "sentence": "We are students. Our teacher is Helen.",
+                "detail": "Мы ученики. Наша учительница — Хелен."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Правило",
+            "text": "Сначала спросите «Чей это предмет?», а не «Какого рода предмет?». В английском his/her зависят от владельца.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Choose by the owner, not by the noun",
-        "lead": "English uses his for a male owner and her for a female owner, whatever the noun is. For two owners, choose their.",
+        "title": "His или her? Не смотрите на предмет",
+        "lead": "Русское «его/её» легко спутать, если обращать внимание на то, мальчик или девочка упоминаются в предложении. В английском главное — чей предмет.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Owner",
-              "Possession",
-              "Correct phrase"
+              "Кому принадлежит?",
+              "Что принадлежит?",
+              "Правильно"
             ],
             "rows": [
               [
-                "Mark (he)",
-                "daughter",
-                "his daughter"
+                "мужчине / мальчику",
+                "сумка",
+                "his bag — его сумка"
               ],
               [
-                "Lina (she)",
-                "son",
-                "her son"
+                "женщине / девочке",
+                "велосипед",
+                "her bike — её велосипед"
               ],
               [
-                "John and Ana (they)",
-                "daughter",
-                "their daughter"
-              ],
-              [
-                "my sister and I (we)",
-                "home",
-                "our home"
+                "двум людям",
+                "дом",
+                "their house — их дом"
               ]
             ]
           },
           {
             "kind": "compare",
-            "leftTitle": "Who? (subject pronoun)",
-            "left": "She is a doctor. They are here.",
-            "rightTitle": "Whose? (possessive adjective + noun)",
-            "right": "Her job is difficult. Their house is big.",
-            "conclusion": "Do not say She job or They house. Use her and their."
+            "leftTitle": "Мальчик владеет вещью",
+            "left": "Ben has a car. His car is red. — У Бена машина. Его машина красная.",
+            "rightTitle": "Девочка владеет вещью",
+            "right": "Anna has a car. Her car is red. — У Анны машина. Её машина красная.",
+            "conclusion": "Цвет, предмет и грамматический род русского слова car не влияют на his/her."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "Kate and Kirsten are sisters. Their brother is an actor.",
-                "detail": "Two sisters are the owners → their."
+                "sentence": "She has two brothers. Her brothers are young.",
+                "detail": "У неё два брата. Её братья молодые."
               },
               {
-                "sentence": "My husband and I are teachers. Our school is big.",
-                "detail": "My husband and I = we → our."
-              },
-              {
-                "sentence": "The dog is small. Its name is Max.",
-                "detail": "The dog = it → its."
+                "sentence": "They have a daughter. Their daughter is five.",
+                "detail": "У них есть дочь. Их дочери пять лет."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Число предметов",
+            "text": "Одно и то же притяжательное слово ставится перед единственным и множественным числом: my child — мой ребёнок; my children — мои дети.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Small words that look or sound similar",
-        "lead": "These mistakes are common even when you know the meanings.",
+        "title": "His/her и he/she; its и it’s",
+        "lead": "Личные местоимения называют человека, а притяжательные слова употребляются перед существительным. Похожее написание не делает формы взаимозаменяемыми.",
         "blocks": [
           {
             "kind": "table",
             "title": "",
             "headers": [
-              "Form",
-              "What it means",
-              "Example"
+              "Личное местоимение",
+              "Притяжательное",
+              "Пример"
             ],
             "rows": [
               [
-                "its",
-                "belongs to it",
-                "The cat eats its food."
+                "he — он",
+                "his — его",
+                "He is here. His phone is here."
               ],
               [
-                "it’s",
-                "it is / it has",
-                "It’s a black cat."
+                "she — она",
+                "her — её",
+                "She is here. Her phone is here."
               ],
               [
-                "their",
-                "belongs to them",
-                "Their children are here."
+                "they — они",
+                "their — их",
+                "They are here. Their car is here."
               ],
               [
-                "they’re",
-                "they are",
-                "They’re students."
-              ],
-              [
-                "there",
-                "place / existence",
-                "Their bags are over there."
-              ],
-              [
-                "your",
-                "belongs to you",
-                "Is this your bag?"
-              ],
-              [
-                "you’re",
-                "you are",
-                "You’re very kind."
-              ],
-              [
-                "his",
-                "belongs to him",
-                "His name is Leo."
-              ],
-              [
-                "he’s",
-                "he is / he has",
-                "He’s a teacher."
+                "it — оно, это",
+                "its — его/её",
+                "It is a school. Its name is Greenhill."
               ]
             ]
           },
           {
-            "kind": "rule",
-            "title": "Its versus it’s",
-            "text": "Its never has an apostrophe when it means possession. It’s always means it is or it has. The apostrophe can completely change the meaning.",
-            "tone": "note"
+            "kind": "compare",
+            "leftTitle": "its — притяжательное",
+            "left": "Its name is Max. — Его зовут Макс (об объекте или животном).",
+            "rightTitle": "it’s — сокращение it is",
+            "right": "It’s Max. — Это Макс.",
+            "conclusion": "У притяжательного its НЕТ апострофа; it’s = it is."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "It’s an old house. Its windows are small.",
-                "detail": "It’s = It is. Its windows = windows of the house."
+                "sentence": "She is British. Her mother is French.",
+                "detail": "Она британка. Её мама француженка."
               },
               {
-                "sentence": "They’re sisters. Their names are Alice and May.",
-                "detail": "They’re = They are. Their = belonging to them."
+                "sentence": "He is my friend. His name is Ben.",
+                "detail": "Он мой друг. Его зовут Бен."
               }
             ]
+          },
+          {
+            "kind": "rule",
+            "title": "Типичные ошибки",
+            "text": "Нельзя she mother, he bag, it’s name (если хотите сказать «его название»). Правильно: her mother, his bag, its name.",
+            "tone": "note"
           }
         ]
       },
       {
-        "title": "Put the adjective in the right place",
-        "lead": "A possessive adjective replaces a/an/the in a noun phrase in these simple sentences. It comes before an adjective if there is one.",
+        "title": "Место в предложении",
+        "lead": "Притяжательное слово ставится перед существительным, а если есть прилагательное — перед прилагательным.",
         "blocks": [
           {
             "kind": "pattern",
             "steps": [
-              "my",
-              "new",
-              "phone"
+              "my / her / their",
+              "→",
+              "(прилагательное)",
+              "→",
+              "существительное"
             ],
-            "caption": "possessive adjective + adjective + noun"
+            "caption": "Порядок внутри группы существительного."
+          },
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Без прилагательного",
+              "С прилагательным"
+            ],
+            "rows": [
+              [
+                "my bag — моя сумка",
+                "my new bag — моя новая сумка"
+              ],
+              [
+                "their house — их дом",
+                "their big house — их большой дом"
+              ],
+              [
+                "her son — её сын",
+                "her young son — её маленький сын"
+              ]
+            ]
           },
           {
             "kind": "compare",
-            "leftTitle": "Correct",
-            "left": "This is my book. / Her new phone is on the desk.",
-            "rightTitle": "Incorrect",
-            "right": "This is a my book. / New her phone is on the desk.",
-            "conclusion": "Do not put a/an immediately before my/your/his/her/its/our/their."
-          },
-          {
-            "kind": "rule",
-            "title": "Adjective versus pronoun",
-            "text": "My, your, his, her, its, our, their are different from independent possessive pronouns (mine, yours, his, hers, ours, theirs). At A1, first practise the forms followed by a noun: my bag, not “my” alone.",
-            "tone": "note"
+            "leftTitle": "Неправильно",
+            "left": "the my bag / my a bag",
+            "rightTitle": "Правильно",
+            "right": "my bag — моя сумка",
+            "conclusion": "В простых конструкциях my, her, their и т. п. заменяют a/an/the. Не ставьте их вместе."
           },
           {
             "kind": "examples",
-            "title": "Examples",
+            "title": "Примеры с переводом",
             "rows": [
               {
-                "sentence": "What’s her name?",
-                "detail": "What’s = What is. Her + name."
+                "sentence": "Is this your phone?",
+                "detail": "Это твой телефон?"
               },
               {
-                "sentence": "Is that their house?",
-                "detail": "Their + house."
+                "sentence": "Our new house is big.",
+                "detail": "Наш новый дом большой."
               },
               {
-                "sentence": "My parents are from China. Their names are Li and Wei.",
-                "detail": "Parents = they → their."
+                "sentence": "Their children are here.",
+                "detail": "Их дети здесь."
               }
             ]
           }
         ]
       },
       {
-        "title": "Checking a sentence",
-        "lead": "When you see an empty space before a noun, identify the person who owns the thing.",
+        "title": "Алгоритм выбора формы",
+        "lead": "Не переводите механически с русского каждое «его» и «её»: сначала определите, о ком речь.",
         "blocks": [
           {
             "kind": "list",
-            "title": "Check yourself",
+            "title": "Пять шагов",
             "items": [
-              "Find the noun after the blank: name, husband, family, phone ...",
-              "Find the owner: I / you / he / she / it / we / they.",
-              "Use the matching form from the table.",
-              "If the word could be it’s / its or they’re / their, test its meaning."
+              "Найдите пропуск перед существительным: ___ name, ___ parents.",
+              "Поймите, чей это предмет или человек по смыслу предыдущего предложения.",
+              "Определите владельца: I, you, he, she, it, we или they.",
+              "Выберите соответствующее слово: my, your, his, her, its, our, their.",
+              "Проверьте, что после выбранного слова стоит существительное (возможно, с прилагательным)."
             ]
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "I have a sister. Her name is Kate.",
+                "detail": "У меня есть сестра. Её зовут Кейт: сестра = she → her."
+              },
+              {
+                "sentence": "My parents have a house. Their house is big.",
+                "detail": "У родителей дом. Их дом большой: родители = they → their."
+              }
+            ]
+          },
+          {
+            "kind": "rule",
+            "title": "Проверка",
+            "text": "He → his; she → her; they → their. Если владелец выражен словом my, не добавляйте перед ним the или a.",
+            "tone": "note"
           }
         ]
       }
