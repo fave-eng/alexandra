@@ -1499,5 +1499,142 @@ window.VOCABULARY_DATA = [
         "audio": ""
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-2b-writing",
+    "title": "Lesson 2B · Family photo and writing",
+    "label": "Unit 2 · Lesson 2B · Review / Homework 9",
+    "icon": "📷",
+    "type": "lesson",
+    "linkedLessonId": "lesson-9",
+    "page": "vocabulary.html?id=vocab-lesson-2b-writing",
+    "words": [
+      {
+        "id": "wb-2b9-word-01",
+        "en": "mum",
+        "ru": "мама (разговорное)",
+        "transcription": "",
+        "exampleEn": "This is my mum.",
+        "exampleRu": "Это моя мама.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-02",
+        "en": "dad",
+        "ru": "папа (разговорное)",
+        "transcription": "",
+        "exampleEn": "My dad is a teacher.",
+        "exampleRu": "Мой папа — учитель.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-03",
+        "en": "bike",
+        "ru": "велосипед",
+        "transcription": "",
+        "exampleEn": "My bike is new.",
+        "exampleRu": "Мой велосипед новый.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-04",
+        "en": "on holiday",
+        "ru": "в отпуске, на отдыхе",
+        "transcription": "",
+        "exampleEn": "My brother is on holiday in London.",
+        "exampleRu": "Мой брат отдыхает в Лондоне.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-05",
+        "en": "a photo of",
+        "ru": "фотография кого-то / чего-то",
+        "transcription": "",
+        "exampleEn": "This is a photo of my family.",
+        "exampleRu": "Это фотография моей семьи.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-06",
+        "en": "in the photo",
+        "ru": "на фотографии",
+        "transcription": "",
+        "exampleEn": "There are four people in the photo.",
+        "exampleRu": "На фотографии четыре человека.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-07",
+        "en": "aged five",
+        "ru": "в возрасте пяти лет",
+        "transcription": "",
+        "exampleEn": "They have two sons aged five and six.",
+        "exampleRu": "У них два сына пяти и шести лет.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-08",
+        "en": "together",
+        "ru": "вместе",
+        "transcription": "",
+        "exampleEn": "They are together in the photo.",
+        "exampleRu": "Они вместе на фотографии.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-09",
+        "en": "on the sofa",
+        "ru": "на диване",
+        "transcription": "",
+        "exampleEn": "The children are on the sofa.",
+        "exampleRu": "Дети сидят на диване.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-10",
+        "en": "a description",
+        "ru": "описание",
+        "transcription": "",
+        "exampleEn": "Write a description of the photo.",
+        "exampleRu": "Напиши описание фотографии.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-11",
+        "en": "make notes",
+        "ru": "делать заметки",
+        "transcription": "",
+        "exampleEn": "Make notes before writing.",
+        "exampleRu": "Сделай заметки перед письмом.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-12",
+        "en": "look at",
+        "ru": "смотреть на",
+        "transcription": "",
+        "exampleEn": "Look at the family photo.",
+        "exampleRu": "Посмотри на семейную фотографию.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-13",
+        "en": "and",
+        "ru": "и (соединяет слова и части предложения)",
+        "transcription": "",
+        "exampleEn": "A mother and a father.",
+        "exampleRu": "Мама и папа.",
+        "audio": ""
+      },
+      {
+        "id": "wb-2b9-word-14",
+        "en": "their names",
+        "ru": "их имена",
+        "transcription": "",
+        "exampleEn": "Their names are Leo and Mia.",
+        "exampleRu": "Их зовут Лео и Мия.",
+        "audio": ""
+      }
+    ]
   }
 ];

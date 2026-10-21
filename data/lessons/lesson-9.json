@@ -10,8 +10,10 @@
     "enabled": true,
     "version": 1
   },
-  "vocabularyId": "vocab-lesson-2b",
+  "vocabularyId": "vocab-lesson-2b-writing",
   "grammarIds": [
+    "family-photo-description-a1",
+    "plural-nouns-a1",
     "possessive-adjectives-a1"
   ],
   "autosaveDraft": true,
@@ -20,9 +22,15 @@
     {
       "type": "section",
       "id": "hw9-vocab-section",
-      "title": "1 · Семья и люди",
+      "title": "1 · Семья и люди: словарь",
       "eyebrow": "LESSON 2B · REVIEW",
-      "text": "Повтори слова о семье, отношениях и формы единственного и множественного числа."
+      "text": "Перед Homework 9 изучи новый словарь «Lesson 2B · Family photo and writing»: слова и выражения для описания семьи и фотографии. Уже изученные 27 слов из Homework 8 сохраняются отдельно."
+    },
+    {
+      "type": "info",
+      "id": "hw9-vocabulary-guide",
+      "title": "📚 Новый словарь Homework 9 · 14 выражений",
+      "text": "Открой кнопку «Lesson vocabulary» над домашним заданием: новый словарь из 14 слов и выражений, которые пригодятся для описания семьи. 27 слов Lesson 2B из Homework 8 не дублируются."
     },
     {
       "type": "exercise",
@@ -319,16 +327,33 @@
     {
       "type": "section",
       "id": "hw9-grammar-section",
-      "title": "2 · Possessive adjectives",
+      "title": "2 · Грамматика: повторение и применение",
       "eyebrow": "LESSON 2B · REVIEW",
-      "text": "Притяжательные прилагательные: my, your, his, her, its, our, their. Перед заданиями при необходимости повтори правило в Grammar."
+      "text": "В Grammar добавлена новая тема на русском «Описание семьи»: his/her/their, конструкция Dave’s wife, единственное/множественное число, be и have/has, 16 заданий для проверки. Старые объяснения тоже доступны ниже."
+    },
+    {
+      "type": "grammar-link",
+      "id": "hw9-grammar-writing-review",
+      "grammarId": "family-photo-description-a1",
+      "title": "Новая грамматика Homework 9 · Как описать семью",
+      "text": "Русское объяснение: my/his/her/their, Dave’s wife, child → children, have/has, is/are и текст о фотографии. 16 заданий для закрепления.",
+      "buttonLabel": "Изучить новую тему"
+    },
+    {
+      "type": "grammar-link",
+      "id": "hw9-plural-nouns-support",
+      "grammarId": "plural-nouns-a1",
+      "title": "Правило 1 · Единственное и множественное число",
+      "text": "Объяснение на русском языке с таблицами: -s, -es, -ies и исключения (man → men, child → children, person → people).",
+      "buttonLabel": "Повторить правило"
     },
     {
       "type": "grammar-link",
       "id": "hw9-grammar-support",
       "grammarId": "possessive-adjectives-a1",
-      "title": "Повторить правило: my / your / his / her / its / our / their",
-      "text": "Открой объяснение на русском языке, если нужна подсказка по теме."
+      "title": "Правило 2 · Притяжательные прилагательные",
+      "text": "На русском: my, your, his, her, its, our, their, примеры и сравнения.",
+      "buttonLabel": "Повторить правило"
     },
     {
       "type": "exercise",

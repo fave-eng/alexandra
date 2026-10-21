@@ -3606,5 +3606,696 @@ window.GRAMMAR_DATA = [
       }
     ],
     "passScore": 100
+  },
+  {
+    "id": "family-photo-description-a1",
+    "linkedLessonId": "lesson-9",
+    "order": 10,
+    "title": "Описание семьи: his / her / their, Dave’s wife и множественное число",
+    "level": "A1",
+    "status": "available",
+    "page": "grammar-topic.html?id=family-photo-description-a1",
+    "overview": {
+      "lead": "Разберём по-русски, как описать семью на фотографии: члены семьи, притяжательные слова, ’s, множественное число и простые предложения.",
+      "keyRule": "His wife · Her husband · Their children · Dave’s wife",
+      "example": "This is Dave’s family. His wife is Lisa. They have two sons.",
+      "subjects": []
+    },
+    "quizExercises": [
+      {
+        "title": "1 · Выбери форму по владельцу",
+        "instructions": "Прочитай ситуацию по-русски и выбери правильное слово перед членом семьи.",
+        "items": [
+          {
+            "type": "single",
+            "prompt": "Dave is my brother. ___ wife is Lisa.",
+            "promptRu": "Дейв — мой брат. Его жена — Лиза.",
+            "options": [
+              "Her",
+              "His",
+              "Their"
+            ],
+            "answer": 1
+          },
+          {
+            "type": "single",
+            "prompt": "Anna is a teacher. ___ son is five.",
+            "promptRu": "Анна — учитель. Её сыну пять лет.",
+            "options": [
+              "His",
+              "Our",
+              "Her"
+            ],
+            "answer": 2
+          },
+          {
+            "type": "single",
+            "prompt": "Leo and Max are brothers. ___ parents are in London.",
+            "promptRu": "Лео и Макс — братья. Их родители в Лондоне.",
+            "options": [
+              "Their",
+              "His",
+              "Its"
+            ],
+            "answer": 0
+          },
+          {
+            "type": "single",
+            "prompt": "We have two children. ___ daughter is six.",
+            "promptRu": "У нас двое детей. Нашей дочери шесть.",
+            "options": [
+              "Your",
+              "Our",
+              "Their"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "title": "2 · Заполни пропуски",
+        "instructions": "Самостоятельно впиши одно английское слово. Учитывай, кто владелец, и форму множественного числа.",
+        "items": [
+          {
+            "type": "text",
+            "prompt": "Mary is my sister. ___ husband is a doctor.",
+            "promptRu": "Мэри — моя сестра. Её муж — врач.",
+            "answer": "Her"
+          },
+          {
+            "type": "text",
+            "prompt": "The family has two ___ (child).",
+            "promptRu": "В семье двое детей.",
+            "answer": "children"
+          },
+          {
+            "type": "text",
+            "prompt": "Dave and Lisa ___ two sons.",
+            "promptRu": "У Дейва и Лизы два сына.",
+            "answer": "have"
+          },
+          {
+            "type": "text",
+            "prompt": "Their ___ (name) are Otis and Ralph.",
+            "promptRu": "Их зовут Отис и Ральф (имён два).",
+            "answer": "names"
+          }
+        ]
+      },
+      {
+        "title": "3 · Отличай ’s, his/her/their и is/are",
+        "instructions": "Выбери единственный грамматически правильный вариант.",
+        "items": [
+          {
+            "type": "select",
+            "prompt": "«Жена Дейва — врач».",
+            "promptRu": "Выбери правильную форму притяжательного ’s.",
+            "options": [
+              "Daves wife is a doctor.",
+              "Dave’s wife is a doctor.",
+              "Dave wife are a doctor."
+            ],
+            "answer": 1
+          },
+          {
+            "type": "select",
+            "prompt": "«Дети Лизы очень счастливы».",
+            "promptRu": "Детей несколько.",
+            "options": [
+              "Lisa’s children are very happy.",
+              "Lisas childrens is very happy.",
+              "Lisa’s children is very happy."
+            ],
+            "answer": 0
+          },
+          {
+            "type": "select",
+            "prompt": "«Они родители, а их сын — ученик».",
+            "promptRu": "Выбери сочетание they are / their.",
+            "options": [
+              "Their parents and they son is a student.",
+              "They are parents and their son is a student.",
+              "They parents and they’re son are a student."
+            ],
+            "answer": 1
+          },
+          {
+            "type": "select",
+            "prompt": "«У неё две дочери».",
+            "promptRu": "Выбери правильную форму have/has и plural.",
+            "options": [
+              "She have two daughters.",
+              "She has two daughter.",
+              "She has two daughters."
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "title": "4 · Составь предложения о семье",
+        "instructions": "Расставь слова в правильном порядке. Сохрани знаки препинания.",
+        "items": [
+          {
+            "type": "reorder",
+            "prompt": "«Это фотография моей семьи».",
+            "promptRu": "Это фотография моей семьи.",
+            "tokens": [
+              "my",
+              "of",
+              "a",
+              "This",
+              "photo",
+              "family.",
+              "is"
+            ],
+            "answer": "This is a photo of my family."
+          },
+          {
+            "type": "reorder",
+            "prompt": "«У них двое детей».",
+            "promptRu": "У них двое детей.",
+            "tokens": [
+              "children.",
+              "two",
+              "have",
+              "They"
+            ],
+            "answer": "They have two children."
+          },
+          {
+            "type": "reorder",
+            "prompt": "«Её муж — учитель».",
+            "promptRu": "Её муж — учитель.",
+            "tokens": [
+              "teacher.",
+              "husband",
+              "is",
+              "a",
+              "Her"
+            ],
+            "answer": "Her husband is a teacher."
+          },
+          {
+            "type": "reorder",
+            "prompt": "«Это сын Анны».",
+            "promptRu": "Это сын Анны.",
+            "tokens": [
+              "Anna’s",
+              "is",
+              "son.",
+              "This"
+            ],
+            "answer": "This is Anna’s son."
+          }
+        ]
+      }
+    ],
+    "guide": [
+      {
+        "title": "Как описать семью на фотографии",
+        "lead": "В Lesson 2B мы называем родственников, показываем, кому кто приходится, и составляем простые предложения о фотографии. Главные инструменты — my/his/her/their, форма множественного числа и конструкция с ’s.",
+        "blocks": [
+          {
+            "kind": "rule",
+            "title": "План описания",
+            "text": "1) Кто на фото? 2) Кем они приходятся друг другу? 3) Как их зовут? 4) Откуда они? 5) Что можно сказать об их семье?",
+            "tone": "note"
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "This is a photo of my brother and his family.",
+                "detail": "Это фотография моего брата и его семьи."
+              },
+              {
+                "sentence": "They have two children. Their names are Ben and Mia.",
+                "detail": "У них двое детей. Их зовут Бен и Мия."
+              },
+              {
+                "sentence": "My sister is a doctor and her husband is a teacher.",
+                "detail": "Моя сестра — врач, а её муж — учитель."
+              }
+            ]
+          },
+          {
+            "kind": "pattern",
+            "steps": [
+              "Кто на фото",
+              "→",
+              "члены семьи",
+              "→",
+              "чья семья / чьё имя",
+              "→",
+              "дополнительная информация"
+            ],
+            "caption": "Сначала определяем, о ком речь, затем выбираем грамматические формы."
+          }
+        ]
+      },
+      {
+        "title": "My, your, his, her, its, our, their — чей предмет или родственник?",
+        "lead": "Притяжательное прилагательное всегда определяется владельцем. Оно стоит перед существительным: his mother, their children, our photo.",
+        "blocks": [
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Чей? (владелец)",
+              "Слово",
+              "Пример"
+            ],
+            "rows": [
+              [
+                "I — я",
+                "my",
+                "my mother — моя мама"
+              ],
+              [
+                "you — ты / вы",
+                "your",
+                "your brother — твой брат"
+              ],
+              [
+                "he — он",
+                "his",
+                "his wife — его жена"
+              ],
+              [
+                "she — она",
+                "her",
+                "her husband — её муж"
+              ],
+              [
+                "it — оно",
+                "its",
+                "its name — его/её название"
+              ],
+              [
+                "we — мы",
+                "our",
+                "our family — наша семья"
+              ],
+              [
+                "they — они",
+                "their",
+                "their children — их дети"
+              ]
+            ]
+          },
+          {
+            "kind": "compare",
+            "leftTitle": "Кто владелец?",
+            "left": "Dave — мужчина → he",
+            "rightTitle": "Выбираем",
+            "right": "his family — его семья",
+            "conclusion": "Форма his зависит от Дейва (he), а не от слова family."
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "Lisa is a doctor. Her husband is Dave.",
+                "detail": "Лиза — врач. Её муж — Дейв."
+              },
+              {
+                "sentence": "Dave has two sons. Their names are Otis and Ralph.",
+                "detail": "У Дейва два сына. Их зовут Отис и Ральф."
+              },
+              {
+                "sentence": "We live in London. Our children are here.",
+                "detail": "Мы живём в Лондоне. Наши дети здесь."
+              }
+            ]
+          },
+          {
+            "kind": "rule",
+            "title": "Не путай местоимения и притяжательные слова",
+            "text": "He is a teacher — он учитель, но his teacher — его учитель. They are sisters — они сёстры, но their sister — их сестра.",
+            "tone": "warning"
+          }
+        ]
+      },
+      {
+        "title": "Dave’s wife, Lisa’s brother — принадлежность и родство через ’s",
+        "lead": "Можно назвать владельца по имени: имя + ’s + существительное. Это отдельная конструкция, не то же самое, что is.",
+        "blocks": [
+          {
+            "kind": "pattern",
+            "steps": [
+              "Dave",
+              "+",
+              "’s",
+              "+",
+              "wife",
+              "→",
+              "Dave’s wife"
+            ],
+            "caption": "Схема: имя человека + ’s + член семьи / предмет."
+          },
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Конструкция",
+              "Перевод",
+              "Как это работает"
+            ],
+            "rows": [
+              [
+                "Dave’s wife",
+                "жена Дейва",
+                "Dave + ’s + wife"
+              ],
+              [
+                "Lisa’s husband",
+                "муж Лизы",
+                "Lisa + ’s + husband"
+              ],
+              [
+                "Anna’s brother",
+                "брат Анны",
+                "Anna + ’s + brother"
+              ],
+              [
+                "my dad’s bike",
+                "велосипед моего папы",
+                "my dad + ’s + bike"
+              ]
+            ]
+          },
+          {
+            "kind": "compare",
+            "leftTitle": "Притяжательное слово",
+            "left": "his wife — его жена",
+            "rightTitle": "Притяжательное ’s",
+            "right": "Dave’s wife — жена Дейва",
+            "conclusion": "Оба варианта выражают связь, но his указывает на местоимение he, а Dave’s на имя конкретного человека."
+          },
+          {
+            "kind": "rule",
+            "title": "’s не всегда равно is",
+            "text": "В Dave’s wife после ’s стоит существительное wife — это притяжательная конструкция. В Dave’s happy после ’s стоит прилагательное happy — здесь Dave’s = Dave is. Смотри на слово после ’s.",
+            "tone": "warning"
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "This is my brother Dave and his wife Lisa.",
+                "detail": "Это мой брат Дейв и его жена Лиза."
+              },
+              {
+                "sentence": "Lisa’s daughter is five.",
+                "detail": "Дочери Лизы пять лет."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Один человек и несколько: singular / plural",
+        "lead": "Если людей несколько, английские существительные меняют форму. В теме «семья» особенно важны нестандартные множественные числа.",
+        "blocks": [
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Один",
+              "Несколько",
+              "Комментарий"
+            ],
+            "rows": [
+              [
+                "son",
+                "sons",
+                "обычное -s"
+              ],
+              [
+                "daughter",
+                "daughters",
+                "обычное -s"
+              ],
+              [
+                "baby",
+                "babies",
+                "согласная + y → -ies"
+              ],
+              [
+                "wife",
+                "wives",
+                "f / fe → -ves для wife"
+              ],
+              [
+                "man",
+                "men",
+                "исключение"
+              ],
+              [
+                "woman",
+                "women",
+                "исключение"
+              ],
+              [
+                "child",
+                "children",
+                "исключение"
+              ],
+              [
+                "person",
+                "people",
+                "особая форма"
+              ]
+            ]
+          },
+          {
+            "kind": "rule",
+            "title": "Сравни число в предложении",
+            "text": "One child is in the photo. Two children are in the photo. Меняются и существительное, и глагол be: is для одного, are для нескольких.",
+            "tone": "note"
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "They have a son and a daughter.",
+                "detail": "У них есть сын и дочь."
+              },
+              {
+                "sentence": "Their children are very happy.",
+                "detail": "Их дети очень счастливы."
+              },
+              {
+                "sentence": "There are three people in the photo.",
+                "detail": "На фотографии три человека."
+              }
+            ]
+          },
+          {
+            "kind": "compare",
+            "leftTitle": "Один",
+            "left": "The child is five.",
+            "rightTitle": "Несколько",
+            "right": "The children are five and six.",
+            "conclusion": "После children нужен are. Не говори childs или childrens."
+          }
+        ]
+      },
+      {
+        "title": "Is/are и have/has в описании семьи",
+        "lead": "В описании фотографии be сообщает, кто человек и где он находится. Have/has сообщает, кто или что у него есть.",
+        "blocks": [
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Кто?",
+              "be",
+              "have"
+            ],
+            "rows": [
+              [
+                "I",
+                "am",
+                "have"
+              ],
+              [
+                "he / she / it",
+                "is",
+                "has"
+              ],
+              [
+                "we / you / they",
+                "are",
+                "have"
+              ]
+            ]
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "Lisa is Australian.",
+                "detail": "Лиза — австралийка."
+              },
+              {
+                "sentence": "Dave is a doctor.",
+                "detail": "Дейв — врач."
+              },
+              {
+                "sentence": "They have two sons.",
+                "detail": "У них два сына."
+              },
+              {
+                "sentence": "Their names are Otis and Ralph.",
+                "detail": "Их имена — Отис и Ральф."
+              }
+            ]
+          },
+          {
+            "kind": "compare",
+            "leftTitle": "Связка be",
+            "left": "They are children. — Они дети.",
+            "rightTitle": "Наличие have",
+            "right": "They have children. — У них есть дети.",
+            "conclusion": "Are и have нельзя менять местами: они выражают разные значения."
+          },
+          {
+            "kind": "rule",
+            "title": "После he / she",
+            "text": "He has a son. / She has a daughter. Но They have two children. Субъект (он/она или они) определяет форму have.",
+            "tone": "note"
+          }
+        ]
+      },
+      {
+        "title": "Как соединить предложения с and и не перепутать местоимения",
+        "lead": "Союз and соединяет слова или две равноправные части предложения. Он помогает составить связный текст из 50–80 слов.",
+        "blocks": [
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Что соединяем?",
+              "Пример",
+              "Перевод"
+            ],
+            "rows": [
+              [
+                "Два члена семьи",
+                "a son and a daughter",
+                "сын и дочь"
+              ],
+              [
+                "Два имени",
+                "Otis and Ralph",
+                "Отис и Ральф"
+              ],
+              [
+                "Два предложения",
+                "She is a doctor and her husband is a teacher.",
+                "Она врач, а её муж — учитель."
+              ]
+            ]
+          },
+          {
+            "kind": "examples",
+            "title": "Примеры с переводом",
+            "rows": [
+              {
+                "sentence": "This is my brother and his family.",
+                "detail": "Это мой брат и его семья."
+              },
+              {
+                "sentence": "They are from London and they have two children.",
+                "detail": "Они из Лондона, и у них двое детей."
+              }
+            ]
+          },
+          {
+            "kind": "rule",
+            "title": "Не путай and и притяжательные слова",
+            "text": "And соединяет идеи, а her/his/their показывает связь с владельцем: Her sister and her brother are students.",
+            "tone": "note"
+          },
+          {
+            "kind": "list",
+            "title": "План собственного описания",
+            "items": [
+              "Начни с This is a photo of… или In the photo, there are…",
+              "Назови членов семьи и их отношения.",
+              "Добавь 1–2 предложения с my / his / her / their или ’s.",
+              "Проверь множественное число и is / are.",
+              "Используй and не меньше четырёх раз, если это требуется по заданию."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Типичные ошибки и самопроверка",
+        "lead": "После написания каждого предложения проверь владельца, число, форму глагола и порядок слов.",
+        "blocks": [
+          {
+            "kind": "table",
+            "title": "",
+            "headers": [
+              "Неверно",
+              "Правильно",
+              "Почему"
+            ],
+            "rows": [
+              [
+                "He wife is a teacher.",
+                "His wife is a teacher.",
+                "Перед wife нужно his."
+              ],
+              [
+                "Their name are Ben and Mia.",
+                "Their names are Ben and Mia.",
+                "Имен два: names are."
+              ],
+              [
+                "They has two children.",
+                "They have two children.",
+                "После they нужна форма have."
+              ],
+              [
+                "Two childs are here.",
+                "Two children are here.",
+                "Child → children."
+              ],
+              [
+                "Dave wife is Lisa.",
+                "Dave’s wife is Lisa.",
+                "Нужно притяжательное ’s."
+              ],
+              [
+                "Their a happy family.",
+                "They are a happy family.",
+                "Their ≠ they are."
+              ]
+            ]
+          },
+          {
+            "kind": "list",
+            "title": "Пять вопросов к своему тексту",
+            "items": [
+              "Кто владелец: he / she / they / we?",
+              "Нужна форма his / her / their / our?",
+              "Два человека → правильная форма множественного числа?",
+              "Нужен is / are или have / has?",
+              "’s выражает родство («чей?») или сокращение is?"
+            ]
+          }
+        ]
+      }
+    ],
+    "passScore": 100
   }
 ];
